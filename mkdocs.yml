@@ -1,0 +1,60 @@
+# Project information
+site_name: Desenho e Arquitetura de Software
+site_description: Artefatos de Desenho e Arquitetura de Software, 2019.2
+# site_author: TO_EDIT
+# site_url: TO_EDIT
+
+# Repository
+repo_name: nomeProjeto
+repo_url: https://github.com/2019-2-arquitetura-desenho/wiki
+
+# Copyright
+# copyright: 'Copyright &copy; 2019 TOEDIT'
+
+# Theme settings
+theme:
+  # logo: TO_EDIT
+  # favicon: TO_EDIT
+  font:
+    text: Roboto
+    code: Roboto Mono
+  feature:
+    tabs: true
+  language: 'pt'
+  name: 'material'  
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+
+# Content Menu
+nav:
+  - NomeProjeto: index.md
+  - Dinâmicas e Seminários:
+    - Dinâmica e Seminário I:
+      - nome_artefato: index.md
+  - Iniciativas Extras:
+    - nome_artefato: index.md
+
+# Markdown extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+  - footnotes
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
