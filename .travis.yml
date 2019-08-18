@@ -1,0 +1,23 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker pull squidfunk/mkdocs-material
+  - mkdir -p site
+
+script:
+  - docker run --rm -v ${PWD}:/docs squidfunk/mkdocs-material build
+
+deploy:
+  provider: pages
+  local-dir: site
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
+
+notifications:
+  email: false

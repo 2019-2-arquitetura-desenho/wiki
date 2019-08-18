@@ -24,5 +24,5 @@ pull:
 build:
 	sudo docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
 
-deploy: build
-	sudo docker run --rm -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy
+#deploy: build
+#	sudo docker run --rm -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy
