@@ -10,7 +10,7 @@ help:
 		@echo "pull        Pull the latest Mkdocs image"
 		@echo "build       Build the documentation site"
 		@echo "serve       Start the live docs server"
-		@echo "deploy      Deploy to GitHub Pages"
+#		@echo "deploy      Deploy to GitHub Pages"
 		@echo ""
 
 all: serve
