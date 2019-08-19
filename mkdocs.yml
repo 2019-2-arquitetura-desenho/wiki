@@ -31,7 +31,7 @@ nav:
   - NomeProjeto: index.md
   - Dinâmicas e Seminários:
     - Dinâmica e Seminário I:
-      - nome_artefato: index.md
+      - Design Sprint: dinamica_seminario_I/design_sprint.md
   - Iniciativas Extras:
     - nome_artefato: index.md
 
