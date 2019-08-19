@@ -5,6 +5,7 @@
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
 | 18/08/19 | 0.1 | Adiciona Design Sprint | Welison Regis |
+| 19/08/19 | 0.2 | Incrementa metologia e referências | Welison Regis |
 
 ## Introdução
 
@@ -31,3 +32,52 @@ As etapas de uma Design Sprint podem ser classificadas como abaixo[^2]:
 4. **Fase de decisão** (decide): selecione a melhor ideia até então.
 5. **Fase de prototipação** (prototype): Crie artefatos que permitam testar as ideias com os usuários.
 6. **Fase de validação** (validate): Teste as ideias com usuários, *stakeholders* e especialistas técnicos.
+
+## Metodologia
+
+Por consenso, o grupo avaliou que seria mais prudente avaliar as três melhores ideias de projetos, disponíveis e votadas em [issue no GitHub](https://github.com/2019-2-arquitetura-desenho/wiki/issues/3), e então prosseguir com o desenvolvimento de um tema.
+
+### Understanding, define, sketch 
+
+Para melhor compreensão e definição dos temas propostos, reservou-se a aplicação da **fase understanding**, **fase define** e **fase sketch** com a elaboração dos **seguintes artefatos**:
+
+!!! note ""
+    * RichPicture;
+    * Brainstorm com mapas mentais;
+    * 5W2H.
+
+### Decision
+
+Para a decisão sobre qual é a melhor ideia proposta, o grupo discorreu em uma **argumentação** tendo como base as **causas** que acarretam no **fracasso do produto**. Logo, elaborou-se:
+
+!!! note ""
+    * Diagrama de Ishikawa: o que poderia causar o fracasso do produto?;
+    * Argumentação.
+
+TODO: Plano de elicitação.
+
+### Prototype
+
+Nessa etapa, já com os requisitos da aplicação encaminhados, destina-se a desenvolver:
+
+!!! note ""
+    * Protótipo de média/alta fidelidade.
+
+Outros artefatos interessantes:
+
+!!! note ""
+    * Benchmarking das soluções do mercado;
+    * Identidade visual.
+    * Game Storming.
+
+### Validate
+
+A validação da aplicação será bsaeada em testes de usabilidade, sendo realizados por três pessoas do ciclo de interesse do contexto da software.
+
+!!! note ""
+    * Teste de usabilidade.
+
+
+[^1]: DESIGN SPRINT ACADEMY. . In: DESIGN SPRINT ACADEMY. What is a Design Sprint. [S. l.]: Design Sprint Academy, 8 jan. 2019. Disponível em: https://designsprint.academy/design-sprint-3-0/. Acesso em: 19 ago. 2019.
+
+[^2]: DIREKOVA, Nadya. Design Sprint Methods: Playbook for start ups and designers. Mountain View: [s. n.], 2015. Disponível em: https://www.garage2020.nl/wp-content/uploads/2017/01/DesignSprintMethods.pdf. Acesso em: 19 ago. 2019.
