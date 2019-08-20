@@ -20,7 +20,7 @@ Fora utilizada, tamb√©m, a ferramenta [canva.com](www.canva.com) para a elabora√
 ## 3 Modelos
 
 ### 3.1 UnB Spotted
-
+![Spotted](assets/img/ishikawa/spotted.png)
 ### 3.2 Monitorias
 
 ### 3.3 FreeLancer App
