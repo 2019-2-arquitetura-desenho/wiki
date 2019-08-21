@@ -7,8 +7,8 @@
 | 20/08/19 | 0.1 | Implementação incial da página | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
 | 20/08/19 | 0.2 | Adição de introdução e Metodologia | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
 | 20/08/19 | 0.3 | Adição do modelo Ishikawa ao 3.1 - Spotted | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
-| 20/08/19 | 0.4 | Adição do modelo Ishikawa ao 3.3 - FreeLancer | [Lieverton Santos](https://github.com/lievertom) e Welison Regis | 
-| 20/08/19 | 0.5 | Adição da definição | [Lieverton Santos](https://github.com/lievertom) |
+| 20/08/19 | 0.4 | Adição do modelo Ishikawa ao 3.3 - FreeLancer | [Lieverton Silva](https://github.com/lievertom) e Welison Regis | 
+| 20/08/19 | 0.5 | Adição da definição | [Lieverton Silva](https://github.com/lievertom) |
 
 ## 1 Introdução
 
@@ -37,5 +37,3 @@ Fora utilizada, também, a ferramenta [canva.com](www.canva.com) para a elabora�
 ![FreeLancer](assets/img/ishikawa/freelancer.png)
 
 [^1]: CAMARGO, Robson. Diagrama de Ishikawa no gerenciamento de projetos. ROBSON CAMARGO, 20 jun. 2018. Disponível em: https://robsoncamargo.com.br/blog/Diagrama-de-Ishikawa-no-gerenciamento-de-projetos. Acesso em: 19 ago. 2019.
-
-[^1]: DESIGN SPRINT ACADEMY. . In: DESIGN SPRINT ACADEMY. What is a Design Sprint. [S. l.]: Design Sprint Academy, 8 jan. 2019. Disponível em: https://designsprint.academy/design-sprint-3-0/. Acesso em: 19 ago. 2019.
