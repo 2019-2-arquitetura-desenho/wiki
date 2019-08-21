@@ -38,6 +38,10 @@ nav:
   - Iniciativas Extras:
     - Extensões: samples.md
 
+# Style
+extra_css:
+  - assets/style/extra.css
+
 # Markdown extensions
 markdown_extensions:
   - admonition
