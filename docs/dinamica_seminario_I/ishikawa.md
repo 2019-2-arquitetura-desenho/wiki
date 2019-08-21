@@ -7,11 +7,20 @@
 | 20/08/19 | 0.1 | Implementação incial da página | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
 | 20/08/19 | 0.2 | Adição de introdução e Metodologia | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
 | 20/08/19 | 0.3 | Adição do modelo Ishikawa ao 3.1 - Spotted | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
-| 20/08/19 | 0.4 | Adição do modelo Ishikawa ao 3.3 - FreeLancer | [Lieverton Santos](https://github.com/lievertom) e Welison Regis |
+| 20/08/19 | 0.4 | Adição do modelo Ishikawa ao 3.3 - FreeLancer | [Lieverton Santos](https://github.com/lievertom) e Welison Regis | 
+| 20/08/19 | 0.5 | Adição da definição | [Lieverton Santos](https://github.com/lievertom) |
 
 ## 1 Introdução
 
 Este documento tem por objetivo explicitar os pontos de riscos para o desenvolvimento de cada tema do **Top 3** sugeridos pelo grupo 5 da disciplina de Arquitetura e Desenho de Software. Estes pontos serão apresentados por meio de Diagramas de Ishikawa - Diagrama Espinha de Peixe.
+
+## Diagrma de Ishikawa
+### Definição
+
+No gerenciamento de projetos, assim como em qualquer área, existem problemas que podem ser solucionados definitivamente ao se conhecer as suas origens. Ou seja, para tratar o efeito é preciso entender as causas. Uma ferramenta bastante eficaz na solução de problemáticas de forma definitiva é o Diagrama de Ishikawa.
+
+!!! info "Conceito de *Diagrama de Ishikawa*"
+    Também conhecido como Diagrama de Causa e Efeito  ou Diagrama Espinha de Peixe,  o *diagrama Ishikawa* é uma ferramenta gráfica indicada para gerenciar e controlar a qualidade em diferentes processos dentro das empresas, possibilita investigar as verdadeiras causas dos problemas ou oportunidades de melhorias, mas vai além das causas principais e esmiúça também as causas secundárias.[^1]
 
 ## 2 Metodologia
 
@@ -26,3 +35,7 @@ Fora utilizada, também, a ferramenta [canva.com](www.canva.com) para a elabora�
 
 ### 3.3 FreeLancer App
 ![FreeLancer](assets/img/ishikawa/freelancer.png)
+
+[^1]: CAMARGO, Robson. Diagrama de Ishikawa no gerenciamento de projetos. ROBSON CAMARGO, 20 jun. 2018. Disponível em: https://robsoncamargo.com.br/blog/Diagrama-de-Ishikawa-no-gerenciamento-de-projetos. Acesso em: 19 ago. 2019.
+
+[^1]: DESIGN SPRINT ACADEMY. . In: DESIGN SPRINT ACADEMY. What is a Design Sprint. [S. l.]: Design Sprint Academy, 8 jan. 2019. Disponível em: https://designsprint.academy/design-sprint-3-0/. Acesso em: 19 ago. 2019.
