@@ -27,15 +27,16 @@ theme:
     accent: 'indigo'
 
 # Content Menu
+pages:
+  - Início: index.md
 nav:
-  - NomeProjeto: index.md
   - Dinâmicas e Seminários:
     - Dinâmica e Seminário I:
       - Design Sprint: dinamica_seminario_I/design_sprint.md
       - 5W2H - Temas a serem definidos: dinamica_seminario_I/5W2H.md
       - Ishikawa - Temas a serem definidos: dinamica_seminario_I/ishikawa.md
   - Iniciativas Extras:
-    - nome_artefato: index.md
+    - Extensões: samples.md
 
 # Markdown extensions
 markdown_extensions:
