@@ -6,7 +6,8 @@
 |:----:|:------:|:---------:|:--------:|
 | 20/08/19 | 0.1 | Implementação incial da página | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
 | 20/08/19 | 0.2 | Adição de introdução e Metodologia | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
-| 20/08/19 | 0.3 | Adição do modelo Ishikawa ao 3.2 - Monitorias | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
+| 20/08/19 | 0.3 | Adição do modelo Ishikawa ao 3.1 - Spotted | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
+| 20/08/19 | 0.4 | Adição do modelo Ishikawa ao 3.3 - FreeLancer | [Lieverton Santos](https://github.com/lievertom) e Welison Regis |
 
 ## 1 Introdução
 
@@ -24,3 +25,4 @@ Fora utilizada, também, a ferramenta [canva.com](www.canva.com) para a elabora�
 ### 3.2 Monitorias
 
 ### 3.3 FreeLancer App
+![FreeLancer](assets/img/ishikawa/freelancer.png)
