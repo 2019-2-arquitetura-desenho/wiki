@@ -13,7 +13,7 @@ copyright: 'Copyright &copy; 2019 A Monitoria'
 
 # Theme settings
 theme:
-  logo: /assets/img/logo/logo_icon.png
+  logo: assets/img/logo/logo_icon.png
   # favicon: 
   font:
     text: Roboto
