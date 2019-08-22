@@ -5,12 +5,16 @@
 
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
-|22/08/2019|0.1|Adiciona Rich Picture|[Ivan Dobbin](https://github.com/darmsDD)|
-|22/08/2019|0.2|Adição de introdução e definição|[Ivan Dobbin](https://github.com/darmsDD)|
+|22/08/19|0.1|Adiciona Rich Picture|[Ivan Dobbin](https://github.com/darmsDD)|
+|22/08/19|0.2|Adição de introdução e definição|[Ivan Dobbin](https://github.com/darmsDD)|
+|22/08/19|0.4| Criação do RP Freelancer| [Lucas Maciel](lucasmacielaguiar@gmail.com) e [Leonardo Medeiros](https://github.com/leomedeiros1) 
+|22/08/19|0.5| Criação do RP A Monitoria|[Ivan Dobbin](https://github.com/darmsDD) e [Welison Regis](https://github.com/WelisonR)
+|22/08/19|0.6| Criação do RP Spotted|[João Rossi](https://github.com/bielrossi15) e [Gustavo Lima](https://github.com/gustavolima00)|
+|22/08/19|0.7|Adição dos RP|[Ivan Dobbin](https://github.com/darmsDD)
 
 
 ## Introdução
-    O objetivo deste documento é apresentar de maneira simples as ideias do **Top 3** temas discutidos anteriormente pelo grupo 5 da disciplina de Arquitetura e Desenho de Software. Essa apresentação será feito for Rich Pictures.
+O objetivo deste documento é apresentar de maneira simples as ideias do **Top 3** temas discutidos anteriormente pelo grupo 5 da disciplina de Arquitetura e Desenho de Software. Essa apresentação será feito for Rich Pictures.
 
 ## Definição
 
@@ -21,3 +25,15 @@ Um modelo completamente informal, normalmente criado sem um rigor muito técnico
 ## 3 Modelos
 
 ### 3.1 UnB Spotted
+![Spotted](assets/img/rich_picture/spotted.jpg)
+
+### 3.2 Monitorias
+
+#### Versão 1
+![Monitoria](assets/img/rich_picture/monitoria_v1.jpg)
+
+#### Versão 2
+![Monitoria](assets/img/rich_picture/monitoria_v2.png)
+
+### 3.3 FreeLancer App
+![FreeLancer](assets/img/rich_picture/freelancer.jpg)
