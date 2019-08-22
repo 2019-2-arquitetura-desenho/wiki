@@ -39,6 +39,7 @@ nav:
         - Ishikawa: dinamica_seminario_I/definicao_tema/ishikawa.md
   - Iniciativas Extras:
     - Extensões: samples.md
+    - Documento de Visão: documento_visao.md
 
 # Style
 extra_css:
