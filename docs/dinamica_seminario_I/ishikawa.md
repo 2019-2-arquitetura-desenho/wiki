@@ -9,6 +9,7 @@
 | 20/08/19 | 0.3 | Adição do modelo Ishikawa ao 3.1 - Spotted | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
 | 20/08/19 | 0.4 | Adição do modelo Ishikawa ao 3.3 - FreeLancer | [Lieverton Silva](https://github.com/lievertom) e Welison Regis | 
 | 20/08/19 | 0.5 | Adição da definição | [Lieverton Silva](https://github.com/lievertom) |
+| 21/08/19 | 0.6 | Adição do modelo Ishikawa ao 3.2 - Monitoria | [Paulo Vitor Rocha](https://github.com/PauloVitorRocha) e João Matheus |
 
 ## 1 Introdução
 
@@ -32,7 +33,7 @@ Fora utilizada, também, a ferramenta [canva.com](www.canva.com) para a elabora�
 ### 3.1 UnB Spotted
 ![Spotted](assets/img/ishikawa/spotted.png)
 ### 3.2 Monitorias
-
+![Monitoria](assets/img/ishikawa/monitoria.png)
 ### 3.3 FreeLancer App
 ![FreeLancer](assets/img/ishikawa/freelancer.png)
 
