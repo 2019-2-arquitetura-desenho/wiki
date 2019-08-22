@@ -1,30 +1,30 @@
 # Project information
-site_name: Desenho e Arquitetura de Software
+site_name: A Monitoria
 site_description: Artefatos de Desenho e Arquitetura de Software, 2019.2
-# site_author: TO_EDIT
-# site_url: TO_EDIT
+site_author: Grupo 05 (Brainly++)
+site_url: https://2019-2-arquitetura-desenho.github.io/wiki/
 
 # Repository
-repo_name: nomeProjeto
+repo_name: A Monitoria
 repo_url: https://github.com/2019-2-arquitetura-desenho/wiki
 
 # Copyright
-# copyright: 'Copyright &copy; 2019 TOEDIT'
+copyright: 'Copyright &copy; 2019 A Monitoria'
 
 # Theme settings
 theme:
-  # logo: TO_EDIT
-  # favicon: TO_EDIT
+  logo: /assets/img/logo/logo_icon.png
+  # favicon: 
   font:
     text: Roboto
     code: Roboto Mono
   feature:
     tabs: true
   language: 'pt'
-  name: 'material'  
+  name: 'material'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: 'blue'
+    accent: 'purple'
 
 # Content Menu
 pages:
