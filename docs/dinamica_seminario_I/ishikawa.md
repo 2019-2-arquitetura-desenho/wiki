@@ -4,12 +4,11 @@
 
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
-| 20/08/19 | 0.1 | Implementação incial da página | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
-| 20/08/19 | 0.2 | Adição de introdução e Metodologia | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
-| 20/08/19 | 0.3 | Adição do modelo Ishikawa ao 3.1 - Spotted | [Rafael Makaha](http://github.com/rafaelmakaha) e André Lucas |
-| 20/08/19 | 0.4 | Adição do modelo Ishikawa ao 3.3 - FreeLancer | [Lieverton Silva](https://github.com/lievertom) e Welison Regis | 
-| 20/08/19 | 0.5 | Adição da definição | [Lieverton Silva](https://github.com/lievertom) |
-| 21/08/19 | 0.6 | Adição do modelo Ishikawa ao 3.2 - Monitoria | [Paulo Vitor Rocha](https://github.com/PauloVitorRocha) e João Matheus |
+| 20/08/19 | 0.1 | Adição de introdução e Metodologia | [Rafael Makaha](http://github.com/rafaelmakaha) e [André Lucas](https://github.com/andrelucax) |
+| 20/08/19 | 0.2 | Adição do modelo Ishikawa ao 3.1 - Spotted | [Rafael Makaha](http://github.com/rafaelmakaha) e [André Lucas](https://github.com/andrelucax) |
+| 20/08/19 | 0.3 | Adição do modelo Ishikawa ao 3.3 - FreeLancer | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) | 
+| 20/08/19 | 0.4 | Adição da definição | [Lieverton Silva](https://github.com/lievertom) |
+| 21/08/19 | 0.5 | Adição do modelo Ishikawa ao 3.2 - Monitoria | [Paulo Vitor Rocha](https://github.com/PauloVitorRocha) e [João Rodrigues](https://github.com/rjoao) |
 
 ## 1 Introdução
 
@@ -26,7 +25,7 @@ No gerenciamento de projetos, assim como em qualquer área, existem problemas qu
 ## 2 Metodologia
 
 Para a elaboração dos Diagramas de Ishikawa foram utilizados os conhecimentos adquiridos na disciplina de Requisitos de Software da Universidade de Brasília, bem como os de Arquitetura e Desenho de Software.
-Fora utilizada, também, a ferramenta [canva.com](www.canva.com) para a elaboração dos modelos, a seguir, apresentados.
+Fora utilizada, também, a ferramenta [canva.com](https://www.canva.com) para a elaboração dos modelos, a seguir, apresentados.
 
 ## 3 Modelos
 

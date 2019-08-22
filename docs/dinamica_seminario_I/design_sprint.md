@@ -4,8 +4,8 @@
 
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
-| 18/08/19 | 0.1 | Adiciona Design Sprint | Welison Regis |
-| 19/08/19 | 0.2 | Incrementa metologia e referências | Welison Regis |
+| 18/08/19 | 0.1 | Adiciona Design Sprint | [Welison Regis](https://github.com/WelisonR) |
+| 19/08/19 | 0.2 | Incrementa metologia e referências | [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
