@@ -33,8 +33,10 @@ nav:
   - Dinâmicas e Seminários:
     - Dinâmica e Seminário I:
       - Design Sprint: dinamica_seminario_I/design_sprint.md
-      - 5W2H - Temas a serem definidos: dinamica_seminario_I/5W2H.md
-      - Ishikawa - Temas a serem definidos: dinamica_seminario_I/ishikawa.md
+      - Definição do tema:
+        - 5W2H: dinamica_seminario_I/definicao_tema/5W2H.md
+        - Rich Picture: dinamica_seminario_I/definicao_tema/rich_picture.md
+        - Ishikawa: dinamica_seminario_I/definicao_tema/ishikawa.md
   - Iniciativas Extras:
     - Extensões: samples.md
 
