@@ -6,10 +6,11 @@
 |:----:|:------:|:---------:|:--------:|
 | 18/08/19 | 0.1 | Adiciona Design Sprint | Welison Regis |
 | 19/08/19 | 0.2 | Incrementa metologia e referências | Welison Regis |
+| 22/08/19 | 0.3 | Adiciona tópicos de introdução e decisão do tema | Lieverton Silva e Welison Regis |
 
 ## Introdução
 
-
+O atual documento utiliza-se da metodologia de **design sprint** proposta pela Google Ventures. A design sprint desenvolvida nesse documento possui dois principais objetivos: definir o tema adotado pelo grupo e começar a desenvolver as ideias e os artefatos iniciais do projeto escolhido e, para atingir tais objetivos, utiliza-se de recursos que dão suporte ao entendimento do problema, auxiliam a tomada de decisões e corroboram com o desenvolvimento do projeto.
 
 ## Design Sprint
 
@@ -18,7 +19,7 @@
 Decorrente da necessidade de alinhar o time de trabalho sob uma visão compartilhada de metas e resultados claramente definidos, e a ânsia da redução do tempo de produção de um produto, surgiu-se o conceito de *design sprint*.
 
 !!! info "Conceito de *Design Sprint*"
-    A *design sprint*, inicialmente proposta pela Google, é um método usado para resolver problemas por meio de idealização, prototipagem e teste de ideias em um curto espaço de tempo.[^1]
+    A *design sprint*, inicialmente proposta pela Google Ventures, é um método usado para resolver problemas por meio de idealização, prototipagem e teste de ideias em um curto espaço de tempo.[^1]
 
 ### Etapas
 
@@ -77,6 +78,26 @@ A validação da aplicação será bsaeada em testes de usabilidade, sendo reali
 !!! note ""
     * Teste de usabilidade.
 
+
+## Decisão do tema
+
+Após a elaboração dos artefatos necessários para entender as sugestões de temas e os seus problemas, decidiu-se fazer uma reunião via [Discord](https://discordapp.com/) para a decisão do tema (aúdio disponível) e os artefatos a ser desenvovlidos.
+
+!!! note "Aúdio de discussão e definição do tema"
+    Aúdio de decisão do tema: [Decisão do Tema]().
+
+Tópicos abordados:
+
+*   Problematização acerca dos temas;
+*   Sugestões e discussões sobre as ideias propostas;
+*   Possíveis dificuldades que os projetos encontrariam;
+*   Votação do tema;
+*   Definição dos futuros artefatos elaborados.
+
+Decidiu-se como temas mais viáveis "A monitoria" e "Freelancer". Conforme votação abaixo, **a aplicação desenvolvida será "A monitoria"**.
+
+
+## Referências
 
 [^1]: DESIGN SPRINT ACADEMY. . In: DESIGN SPRINT ACADEMY. What is a Design Sprint. [S. l.]: Design Sprint Academy, 8 jan. 2019. Disponível em: https://designsprint.academy/design-sprint-3-0/. Acesso em: 19 ago. 2019.
 
