@@ -1077,21 +1077,55 @@ O modelo COCOMO Intermediário usa a seguinte equação para a estimativa do esf
 </ul>
 <h3 id="resultados">Resultados</h3>
 <h4 id="estimativa-de-quantidade-de-linhas-de-codigos">Estimativa de Quantidade de Linhas de Códigos</h4>
-<p>O Projeto possui certa complexidade, porém levando em consideração o uso de frameworks para a agilidade e padronização de código, também considerando a linguagem de programação que será utilizada no backend, o Python com Django, que possuí uma sintaxe bastante simples, enquanto no front end será utilizado algum framework baseado em JavaScript. O grupo estimou que a aplicação deve pelo menos alcançar umas <strong>3000 linhas de código</strong> úteis, descartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">S</span> <span class="o">=</span> <span class="mi">3000</span> <span class="n">LoC</span> <span class="n">ou</span> <span class="n">S</span> <span class="o">=</span> <span class="mi">3</span> <span class="n">KLoC</span>
+<p>O Projeto possui certa complexidade, porém levando em consideração o uso de frameworks para a agilidade e padronização de código, também considerando a linguagem de programação que será utilizada no backend, o Python com Django, que possuí uma sintaxe bastante simples, enquanto no front end será utilizado algum framework baseado em JavaScript. O grupo estimou que a aplicação deve pelo menos alcançar umas <strong>3000 linhas de código</strong> úteis, descartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo. Podendo variar para <strong>2500 linhas</strong> devido o uso de reutilização de código que agiliza o processo de desenvolvimento. </p>
+<p>Possíveis Linhas de Código para cada modulo:</p>
+<p>BACKEND:</p>
+<ul>
+<li>crud teacher - 200 linhas</li>
+<li>crud aluno - 200 linhas</li>
+<li>registrar disciplinas - 100 linhas</li>
+<li>listar e classificar disciplinas- 200 linhas</li>
+<li>listar e classificar estudantes - 200 linhas</li>
+<li>gerar ranking de estudantes  - 200 linhas</li>
+<li>enviar, reconhecer histórico pdf - 200 linhas</li>
+<li>Login system: 100 linhas</li>
+</ul>
+<p>SCRAPPER:</p>
+<ul>
+<li>Scrapper Disciplinas em Unb Matricula Web - 300 linhas</li>
+</ul>
+<p>FRONTEND:</p>
+<ul>
+<li>Tela de possiveis disciplinas: 200 linhas</li>
+<li>Tela de estudantes concorrendo em uma disciplina : 200 linhas</li>
+<li>Tela com o ranking dos estudantes - 200 linhas</li>
+<li>Tela de Login- 100 linhas</li>
+<li>Tela de Cadastro de usuário - 100 linhas</li>
+<li>Tela de Cadastro de aluno  em uma disciplina - 100 linhas</li>
+<li>Tela com informações da disciplina - 200 linhas</li>
+<li>Tela com perfil e informações do estudante - 200 linhas</li>
+<li>
+<p>Tela com perfil do professor - 100 linhas</p>
+<p>S = 3000 LoC ou S = 3 KLoC</p>
+</li>
+</ul>
+<h4 id="estimativa-de-esforco">Estimativa de Esforço</h4>
+<p>Para 3Kloc
+    E = a x S^b x fae</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">00</span> <span class="n">x</span> <span class="mi">3</span><span class="o">^</span><span class="mi">1</span><span class="p">.</span><span class="mi">12</span> <span class="o">*</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">99</span><span class="p">)</span>
+
+<span class="n">E</span> <span class="o">=</span> <span class="mi">10</span><span class="p">.</span><span class="mi">16</span> <span class="n">pessoas</span><span class="o">/</span><span class="n">mes</span>
 </pre></div>
 </td></tr></table>
 
-<h4 id="estimativa-de-esforco">Estimativa de Esforço</h4>
+<p>Para 2.5Kloc</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="n">a</span> <span class="n">x</span> <span class="n">S</span><span class="o">^</span><span class="n">b</span> <span class="n">x</span> <span class="n">fae</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">00</span> <span class="n">x</span> <span class="mi">2</span><span class="p">.</span><span class="mi">5</span><span class="o">^</span><span class="mi">1</span><span class="p">.</span><span class="mi">12</span> <span class="o">*</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">99</span><span class="p">)</span>
 
-<span class="n">E</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">00</span> <span class="n">x</span> <span class="mi">3</span><span class="o">^</span><span class="mi">1</span><span class="p">.</span><span class="mi">12</span> <span class="o">*</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">99</span><span class="p">)</span>
-
-<span class="n">E</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span><span class="mi">16</span> <span class="n">pessoas</span><span class="o">/</span><span class="n">mes</span>
+<span class="n">E</span> <span class="o">=</span> <span class="mi">8</span><span class="p">.</span><span class="mi">91</span> <span class="n">pessoas</span><span class="o">/</span><span class="n">mes</span>
 </pre></div>
 </td></tr></table>
 
@@ -1261,6 +1295,7 @@ O modelo COCOMO Intermediário usa a seguinte equação para a estimativa do esf
 
 <h4 id="estimativa-de-tempo">Estimativa de Tempo:</h4>
 <p>Utiliza o resultado calculado do esforço para calcular o tempo, pois estão diretamente relacionados, também utiliza o coeficiente <strong>c = 2.50</strong> e <strong>d = 0.35</strong> da tabela:</p>
+<p>Para 3Kloc</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -1270,6 +1305,15 @@ O modelo COCOMO Intermediário usa a seguinte equação para a estimativa do esf
 <span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="p">.</span><span class="mi">50</span> <span class="n">x</span> <span class="mi">10</span><span class="p">.</span><span class="mi">16</span><span class="o">^</span><span class="mi">0</span><span class="p">.</span><span class="mi">35</span>
 
 <span class="n">T</span> <span class="o">=</span> <span class="mi">5</span><span class="p">.</span><span class="mi">62</span> <span class="n">meses</span>
+</pre></div>
+</td></tr></table>
+
+<p>Para 2,5Kloc</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="p">.</span><span class="mi">50</span> <span class="n">x</span> <span class="mi">8</span><span class="p">.</span><span class="mi">91</span><span class="o">^</span><span class="mi">0</span><span class="p">.</span><span class="mi">35</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="mi">5</span><span class="p">.</span><span class="mi">37</span> <span class="n">meses</span>
 </pre></div>
 </td></tr></table>
 
