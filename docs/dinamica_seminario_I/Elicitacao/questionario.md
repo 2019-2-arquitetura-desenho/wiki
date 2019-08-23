@@ -9,6 +9,8 @@
 | 20/08/19 | 0.3 | Adição das Ramificações e SubRamificações|[Ivan Dobbin](https://github.com/darmsDD)|
 | 20/08/19 | 0.4 | Adição da Introdução |[Ivan Dobbin](https://github.com/darmsDD)|
 | 23/08/19 | 0.5 | Correção estética nos questionários |[Gustavo Lima](https://github.com/gustavolima00)|
+
+
 ## Introdução
 O objetivo deste questionário é tentar entender um pouco melhor quais as opiniões e ideias do nosso público-alvo sobre o processo de inscrição de monitoria atual. Isto nos auxiliará no desenvolvimento de nosso projeto.
 
