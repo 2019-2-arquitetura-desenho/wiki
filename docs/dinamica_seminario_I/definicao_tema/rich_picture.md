@@ -6,7 +6,7 @@
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
 |22/08/19|0.1|Adição de introdução e definição|[Ivan Dobbin](https://github.com/darmsDD)|
-|22/08/19|0.2| Criação do RP Freelancer| [Lucas Maciel](lucasmacielaguiar@gmail.com) e [Leonardo Medeiros](https://github.com/leomedeiros1) 
+|22/08/19|0.2| Criação do RP Freelancer| [Lucas Maciel](https://github.com/Ridersk) e [Leonardo Medeiros](https://github.com/leomedeiros1) 
 |22/08/19|0.3| Criação do RP A Monitoria|[Ivan Dobbin](https://github.com/darmsDD) e [Welison Regis](https://github.com/WelisonR)
 |22/08/19|0.4| Criação do RP Spotted|[João Rossi](https://github.com/bielrossi15) e [Gustavo Lima](https://github.com/gustavolima00)|
 |22/08/19|0.5|Adição dos RP|[Ivan Dobbin](https://github.com/darmsDD) e [João Rossi](https://github.com/bielrossi15)
