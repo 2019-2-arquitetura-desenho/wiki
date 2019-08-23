@@ -37,7 +37,11 @@ nav:
         - 5W2H: dinamica_seminario_I/definicao_tema/5W2H.md
         - Rich Picture: dinamica_seminario_I/definicao_tema/rich_picture.md
         - Ishikawa: dinamica_seminario_I/definicao_tema/ishikawa.md
-      - Protótipo: dinamica_seminario_I/prototipo.md
+      - Elicitação :
+        - Protótipo: dinamica_seminario_I/Elicitacao/prototipo.md
+        - Questionário: dinamica_seminario_I/Elicitacao/questionario.md
+      - Benchmarking: dinamica_seminario_I/benchmarking.md
+      - Estimativas de Custo: dinamica_seminario_I/estimativas_de_custo.md
   - Iniciativas Extras:
     - Extensões: samples.md
     - Documento de Visão: documento_visao.md
