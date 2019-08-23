@@ -1,0 +1,882 @@
+
+
+
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Artefatos de Desenho e Arquitetura de Software, 2019.2">
+      
+      
+        <link rel="canonical" href="https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/estimativas_de_custo/">
+      
+      
+        <meta name="author" content="Grupo 05 (Brainly++)">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar para área de transferência">
+      
+        <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
+      
+        <meta name="lang:search.language" content="pt">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nenhum resultado encontrado">
+      
+        <meta name="lang:search.result.one" content="1 resultado encontrado">
+      
+        <meta name="lang:search.result.other" content="# resultados encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.1">
+    
+    
+      
+        <title>Estimativas de Custo - A Monitoria</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../assets/style/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#estimativas-de-custo" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://2019-2-arquitetura-desenho.github.io/wiki/" title="A Monitoria" class="md-header-nav__button md-logo">
+          
+            <img src="../../assets/img/logo/logo_icon.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              A Monitoria
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Estimativas de Custo
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Digite para iniciar a busca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/2019-2-arquitetura-desenho/wiki/" title="Ir ao repositório" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    A Monitoria
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../design_sprint/" title="Dinâmicas e Seminários" class="md-tabs__link">
+          Dinâmicas e Seminários
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../samples/" title="Iniciativas Extras" class="md-tabs__link">
+          Iniciativas Extras
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://2019-2-arquitetura-desenho.github.io/wiki/" title="A Monitoria" class="md-nav__button md-logo">
+      
+        <img src="../../assets/img/logo/logo_icon.png" width="48" height="48">
+      
+    </a>
+    A Monitoria
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/2019-2-arquitetura-desenho/wiki/" title="Ir ao repositório" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    A Monitoria
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Dinâmicas e Seminários
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Dinâmicas e Seminários
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1" type="checkbox" id="nav-1-1">
+    
+    <label class="md-nav__link" for="nav-1-1">
+      Dinâmica e Seminário I
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-1">
+        Dinâmica e Seminário I
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../design_sprint/" title="Design Sprint" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1-2" type="checkbox" id="nav-1-1-2">
+    
+    <label class="md-nav__link" for="nav-1-1-2">
+      Definição do tema
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-1-2">
+        Definição do tema
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../definicao_tema/5W2H/" title="5W2H" class="md-nav__link">
+      5W2H
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../definicao_tema/rich_picture/" title="Rich Picture" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../definicao_tema/ishikawa/" title="Ishikawa" class="md-nav__link">
+      Ishikawa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prototipo/" title="Protótipo" class="md-nav__link">
+      Protótipo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Iniciativas Extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Iniciativas Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samples/" title="Extensões" class="md-nav__link">
+      Extensões
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documento_visao/" title="Documento de Visão" class="md-nav__link">
+      Documento de Visão
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" title="Introdução" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-de-custo-construtivo-constructive-cost-model-cocomo" title="MODELO DE CUSTO CONSTRUTIVO (CONSTRUCTIVE COST MODEL - COCOMO)" class="md-nav__link">
+    MODELO DE CUSTO CONSTRUTIVO (CONSTRUCTIVE COST MODEL - COCOMO)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cocomo-intermediario" title="COCOMO Intermediário" class="md-nav__link">
+    COCOMO Intermediário
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-estimativa-do-esforco" title="Calculo da Estimativa do Esforço" class="md-nav__link">
+    Calculo da Estimativa do Esforço
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-estimativa-do-tempo" title="Calculo da Estimativa do Tempo" class="md-nav__link">
+    Calculo da Estimativa do Tempo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" title="Referências" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/2019-2-arquitetura-desenho/wiki/edit/master/docs/dinamica_seminario_I/estimativas_de_custo.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="estimativas-de-custo">Estimativas de Custo</h1>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">22/08/19</td>
+<td align="center">0.1</td>
+<td align="center">Adição de Introdução e Definição</td>
+<td align="center"><a href="https://github.com/Ridersk">Lucas Aguiar</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="introducao">Introdução</h2>
+<p>Neste documento será abordado sobre técnicas utilizadas para a medição de custos de fabricação do software, onde esses custos representam o valor dos insumos utilizados na fabricação de um determinado produto. Segundo Fenton e Pfleeger (1997), uma estimativa é uma avaliação de probabilidade. Uma estimativa só é útil se for razoavelmente precisa.</p>
+<p>Estimativas são necessárias nas fases iniciais do ciclo de vida de cada projeto, pois há uma necessidade de apresentar propostas apropriadas de negócio e administrar corretamente os recursos ao longo do mesmo. O uso de técnicas formais de estimativa pode dobrar a probabilidade do projeto de software ser concluído com sucesso, conforme indicaram as pesquisas de Roetzheim (2000b).</p>
+<p>Para a estimativa do custo, será levado em consideração apenas o ciclo de produção do software e não o ciclo de vida por completo, que poderia envolver questões como distribuição, atendimento ao cliente, garantia, propaganda, retirada de mercado etc. Geralmente os custos são subdivididos em <strong>Custos de Matéria-Prima</strong>, <strong>Custos de Mão-de-Obra Direta</strong> e <strong>Custos Indiretos de Fabricação</strong>. O modelo utilizado para a realização dessas estimativas será feito utilizando o método COCOMO(COnstructive COst MOdel).</p>
+<h2 id="modelo-de-custo-construtivo-constructive-cost-model-cocomo">MODELO DE CUSTO CONSTRUTIVO (CONSTRUCTIVE COST MODEL - COCOMO)</h2>
+<p>COCOMO ou Modelo de Custo Construtivo, é um modelo de estimativa do tempo de desenvolvimento de um software. Criado por Barry Boehm. É baseado no estudo de sessenta e três projetos. Os programas examinaram de 2.000 a 100.000 linhas de código em linguagens de programação de Assembly a PL/I. Pelo fato dessa metodologia ter utilizado várias linguagens de programação para criar as deduções, constantes e atributos para cada situação, esse método pode ser considerado generalista e útil para quase todos os projetos de software.
+O COCOMO pode ser divido em três implementações, a depender do tipo de software que será desenvolvido e qual o grau de confiabilidade se quer chegar na estimativa de um projeto, são eles:</p>
+<ul>
+<li>
+<p><strong>COCOMO Básico (Basic):</strong> computa o esforço e o custo de desenvolvimento considerando
+uma estimativa do tamanho do programa (em LOC ou contagem do número de linhas de código).</p>
+</li>
+<li>
+<p><strong>COCOMO Intermediário (Intermediate):</strong> computa o esforço e o custo de
+desenvolvimento considerando uma estimativa do tamanho do programa e um conjunto de
+direcionadores de custo (avaliações subjetivas do produto, do hardware, do pessoal e dos
+atributos do projeto).</p>
+</li>
+<li>
+<p><strong>COCOMO Detalhado (Detailed):</strong> além das características do COCOMO intermediário,
+inclui uma avaliação do impacto dos direcionadores de custo sobre cada etapa do
+desenvolvimento.</p>
+</li>
+</ul>
+<p><strong>O modelo COCOMO pode ser aplicado em três classes de projetos:</strong></p>
+<ul>
+<li><strong>Modo Orgânico:</strong> projetos simples, relativamente pequenos, com conjuntos de requisitos não tão rígidos, com equipes pequenas e experientes.</li>
+<li><strong>Modo Semidestacado:</strong> projetos intermediários (em tamanho e complexidade), com alguns requisitos rígidos e outros não tão rígidos, com níveis mistos de experiência nas equipes.</li>
+<li><strong>Modo Embutido:</strong> projetos com conjunto rígido de restrições operacionais, tanto de hardware, quanto de software.</li>
+</ul>
+<p>Dado as características do software que será desenvolvido, no caso um aplicativo para facilitar e agilizar o cadastro de possíveis monitores em disciplinas, o projeto se encaixa na classe de <strong>Semidestacado</strong>, pois ele exige certos requisitos rígidos, como confiabilidade na identificação dos dados corretos de monitores, há normas internas a FGA no processo de monitoria, entre outros requisitos que não são considerados triviais. Além do projeto ser composto por vários alunos que não fazem parte de uma equipe fixa, e que possuem níveis mistos de experiência tanto nas questões tecnológicas quanto no entendimento dos processos de monitoria.</p>
+<h3 id="cocomo-intermediario">COCOMO Intermediário</h3>
+<p>De acordo com as caracteristicas do prjeto a ser densenvolvido, se torna necessário o uso de uma implementação mais avançada que o <strong>COCOMO Básico</strong>, mas que também não tenha que lidar com variáveis muito complexas, como no <strong>COCOMO Detalhado</strong> que se faz uso de multiplicadores sensiveis à fase do projeto, ou hierarquia do produto(Nível de Módulo, Nível de Subsistema e Nível de Sistema). Então a implementação Intermediária que considera atributos de esforços e unindo com a simplicidade comparada com o <strong>COCOMO Detalhado</strong> é a melhor escolha.</p>
+<p>Neste modelo, o COCOMO Básico é ampliado com a finalidade de levar em consideração um conjunto de atributos direcionadores do custo que são agrupados em quatro categorias:</p>
+<ul>
+<li><strong>Atributos do produto:</strong></li>
+<li>confiabilidade exigida do software;</li>
+<li>tamanho do banco de dados;</li>
+<li>
+<p>complexidade do produto.</p>
+</li>
+<li>
+<p><strong>Atributos do hardware:</strong></p>
+</li>
+<li>restrições ao tempo de execução;</li>
+<li>restrições de memória;</li>
+<li>volatilidade do ambiente de máquina virtual;</li>
+<li>
+<p>tempo de turnaround (tempo para completar o ciclo) exigido.</p>
+</li>
+<li>
+<p><strong>Atributos de pessoal:</strong></p>
+</li>
+<li>capacidade do analista;</li>
+<li>experiência em aplicações;</li>
+<li>capacidade do programador;</li>
+<li>experiência em máquina virtual;</li>
+<li>
+<p>experiência com a linguagem de programação.</p>
+</li>
+<li>
+<p><strong>Atributos de projeto:</strong></p>
+</li>
+<li>uso de práticas modernas de programação;</li>
+<li>uso de ferramentas de software;</li>
+<li>cronograma exigido de desenvolvimento.</li>
+</ul>
+<p>Cada um desses atributos deve ser classificado de acordo com uma escala que varia de “muito baixo” a “extremamente elevado” (em importância e valor). A partir desta classificação determina-se o Multiplicador de Esforço (considerando a Tabela publicada por Boehm (1981)). O produto de todos os resultados de Multiplicadores de Esforços é chamado de Fator de Ajustamento de Esforço.</p>
+<table>
+    <thead>
+        <tr bgcolor="#6c6f73">
+            <th>Direcionadores de Custo</th>
+            <th>Muito Baixo</th>
+            <th>Baixo</th>
+            <th>Normal</th>
+            <th>Elevado</th>
+            <th>Muito Elevado</th>
+            <th>Extremamente Elevado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTOS DO PRODUTO</td>
+        </tr>
+        <tr>
+            <td>Confiabilidade exigida do software</td>
+            <td>0.75</td>
+            <td>0.88</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.40</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tamanho do banco de dados</td>
+            <td>-</td>
+            <td>0.94</td>
+            <td>1.00</td>
+            <td>1.08</td>
+            <td>1.16</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Complexidade do produto</td>
+            <td>0.70</td>
+            <td>0.85</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTOS DO HARDWARE</td>
+        </tr>
+        <tr>
+            <td>Restrições ao tempo de execução</td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.11</td>
+            <td>1.30</td>
+            <td>1.66</td>
+        </tr>
+        <tr>
+            <td>Restrições de memória</td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.06</td>
+            <td>1.21</td>
+            <td>1.56</td>
+        </tr>
+        <tr>
+            <td>Volatilidade do ambiente de máquina</td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tempo de turnaround (tempo para completar o ciclo) exigido</td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.07</td>
+            <td>1.15</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTOS DE PESSOAL</td>
+        </tr>
+        <tr>
+            <td>Capacidade do analista</td>
+            <td>1.46</td>
+            <td>1.19</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.71</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Experiência em aplicações</td>
+            <td>1.29</td>
+            <td>1.13</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Capacidade do programador</td>
+            <td>1.42</td>
+            <td>1.17</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.70</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Experiência em Máquina Virtual</td>
+            <td>1.21</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.90</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Experiência com a linguagem de programação</td>
+            <td>1.14</td>
+            <td>1.07</td>
+            <td>1.00</td>
+            <td>0.95</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTO DE PROJETO</td>
+        </tr>
+        <tr>
+            <td>Uso de práticas modernas de programação</td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Uso de ferramentas de software</td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.83</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Cronograma exigido de desenvolvimento</td>
+            <td>1.23</td>
+            <td>1.08</td>
+            <td>1.00</td>
+            <td>1.04</td>
+            <td>1.10</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4 id="calculo-da-estimativa-do-esforco">Calculo da Estimativa do Esforço</h4>
+<p>O modelo COCOMO Intermediário usa a seguinte equação para a estimativa do esforço:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="n">a</span> <span class="n">x</span> <span class="n">S</span><span class="o">^</span><span class="n">b</span> <span class="n">x</span> <span class="n">fae</span>
+</pre></div>
+</td></tr></table>
+
+<p>onde:</p>
+<ul>
+<li><strong>E:</strong> é o esforço aplicado (em pessoas-mês).</li>
+<li><strong>S:</strong> é o número (estimado) de linhas de código para o projeto (em milhares).</li>
+<li><strong>a:</strong> é um coeficiente fornecido pela Tabela.</li>
+<li><strong>b:</strong> é um expoente fornecido pela Tabela.</li>
+<li><strong>fae:</strong> é o Fator de Ajustamento do Esforço (multiplicação de cada um dos Multiplicadores de Esforço fornecidos pela Tabela).</li>
+</ul>
+<h4 id="calculo-da-estimativa-do-tempo">Calculo da Estimativa do Tempo</h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="k">c</span> <span class="n">x</span> <span class="n">E</span><span class="o">^</span><span class="n">d</span>
+</pre></div>
+</td></tr></table>
+
+<p>onde:</p>
+<ul>
+<li><strong>E:</strong> é o esforço aplicado (em pessoas-mês).</li>
+<li><strong>T:</strong> é o tempo de desenvolvimento (em meses cronológicos).</li>
+<li><strong>S:</strong> é o número estimado de linhas de código em milhares (KLOC)* .</li>
+<li><strong>a:</strong> é um coeficiente fornecido pela Tabela.</li>
+<li><strong>b:</strong> é um expoente fornecido pela Tabela.</li>
+<li><strong>c:</strong> é um coeficiente fornecido pela Tabela.</li>
+<li><strong>d:</strong> é um expoente fornecido pela Tabela.</li>
+</ul>
+<h2 id="referencias">Referências</h2>
+<p>[1] Meller, Maristela Corrêa. <strong>Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte.</strong> 2002.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 A Monitoria
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.pt.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
