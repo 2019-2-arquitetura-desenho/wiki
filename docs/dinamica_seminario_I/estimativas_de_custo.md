@@ -276,17 +276,53 @@ onde:
 
 #### Estimativa de Quantidade de Linhas de Códigos
 
-O Projeto possui certa complexidade, porém levando em consideração o uso de frameworks para a agilidade e padronização de código, também considerando a linguagem de programação que será utilizada no backend, o Python com Django, que possuí uma sintaxe bastante simples, enquanto no front end será utilizado algum framework baseado em JavaScript. O grupo estimou que a aplicação deve pelo menos alcançar umas **3000 linhas de código** úteis, descartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo.
+O Projeto possui certa complexidade, porém levando em consideração o uso de frameworks para a agilidade e padronização de código, também considerando a linguagem de programação que será utilizada no backend, o Python com Django, que possuí uma sintaxe bastante simples, enquanto no front end será utilizado algum framework baseado em JavaScript. O grupo estimou que a aplicação deve pelo menos alcançar umas **3000 linhas de código** úteis, descartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo. Podendo variar para **2500 linhas** devido o uso de reutilização de código que agiliza o processo de desenvolvimento. 
+
+Possíveis Linhas de Código para cada modulo:
+
+BACKEND:
+
+* crud teacher - 200 linhas
+* crud aluno - 200 linhas
+* registrar disciplinas - 100 linhas
+* listar e classificar disciplinas- 200 linhas
+* listar e classificar estudantes - 200 linhas
+* gerar ranking de estudantes  - 200 linhas
+* enviar, reconhecer histórico pdf - 200 linhas
+* Login system: 100 linhas
+
+SCRAPPER:
+
+* Scrapper Disciplinas em Unb Matricula Web - 300 linhas
+
+FRONTEND:
+
+* Tela de possiveis disciplinas: 200 linhas
+* Tela de estudantes concorrendo em uma disciplina : 200 linhas
+* Tela com o ranking dos estudantes - 200 linhas
+* Tela de Login- 100 linhas
+* Tela de Cadastro de usuário - 100 linhas
+* Tela de Cadastro de aluno  em uma disciplina - 100 linhas
+* Tela com informações da disciplina - 200 linhas
+* Tela com perfil e informações do estudante - 200 linhas
+* Tela com perfil do professor - 100 linhas
 
     S = 3000 LoC ou S = 3 KLoC
 
 #### Estimativa de Esforço
 
+Para 3Kloc
     E = a x S^b x fae
 
     E = 3.00 x 3^1.12 * (0,99)
 
-    E = 10,16 pessoas/mes
+    E = 10.16 pessoas/mes
+
+Para 2.5Kloc
+
+    E = 3.00 x 2.5^1.12 * (0,99)
+
+    E = 8.91 pessoas/mes
 
 Pesos atribuidos a cada atributo através de uma reunião em grupo para a convergência em cada esforço de cada atributo:
 
@@ -457,11 +493,19 @@ Pesos atribuidos a cada atributo através de uma reunião em grupo para a conver
 
 Utiliza o resultado calculado do esforço para calcular o tempo, pois estão diretamente relacionados, também utiliza o coeficiente **c = 2.50** e **d = 0.35** da tabela:
 
+Para 3Kloc
+
     T = c x E^d
 
     T = 2.50 x 10.16^0.35
 
     T = 5.62 meses
+
+Para 2,5Kloc
+
+    T = 2.50 x 8.91^0.35
+
+    T = 5.37 meses
 
 ## Referências
 
