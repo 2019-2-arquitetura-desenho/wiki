@@ -10,6 +10,8 @@
 | 23/08/19 | 0.4 | Incrementa mapa mental sobre metodologia e visão geral | [Welison Regis](https://github.com/WelisonR) |
 | 23/08/19 | 0.5 | Coloca tópico de decisão de tema | [Welison Regis](https://github.com/WelisonR) |
 | 23/08/19 | 0.6 | Descreve todos os detalhes acerca dos artefatos desenvolvidos | [Welison Regis](https://github.com/WelisonR) |
+| 23/08/19 | 0.7 | Adiciona texto no mapa mental sobre metodologia | [Welison Regis](https://github.com/WelisonR) |
+| 23/08/19 | 1.0 | Gera primeira versão do documento de design sprint | [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
@@ -18,6 +20,14 @@ O atual documento utiliza-se da metodologia de **design sprint** proposta pela G
 ## Metodologia e Visão Geral
 
 ![Metodologia e Visão Geral da Design Sprint](assets/img/mapa_mental.jpg)
+
+Durante o período de cinco dias entre as datas 19/08/2019 e 23/08/2019 o grupo de número 05 esteve focado em responder quatro vertences essenciais acerca do projeto a ser desenvolvido: metodologia de **integração da equipe**, metodologia de **trabalho no github pages**, **padronização** das atividades realizadas e **escolha de tema junto aos artefatos a ser elaborados**.
+
+Nesse sentido, tomou-se para a metodologia as seguintes ferramentas: **telegram** para realizar contato rápido; **discord** para **pareamentos** com aúdio, texto, vídeo e transmissões de telas; **Visual Studio Live Share** para facilitar o pareamento, permitindo que o par possa trabalhar sob um mesmo ambiente (o que auxilia muito em escrever textos em markdown); **google drive** para rastrear e guardar artefatos; **issues** no github como forma de organização; e **bot no discord** para informar o andamento das issues do repositório.
+
+Além disso, o grupo procurou manter uma metodologia consistente em relação a produção dos artefatos disponibilizados no **GitHub Pages** do projeto. Portanto, definiu-se um **deploy contínuo**, sendo subsidiado por container **docker** do ambiente **mkdocs material** com todas as **extensões (supersets) de markdown** disponíveis, além de **Makefile** para facilitar a execução de comandos e deploy realizado na *master* pela ferramenta **Travis CI**.
+
+
 
 ## Design Sprint
 
