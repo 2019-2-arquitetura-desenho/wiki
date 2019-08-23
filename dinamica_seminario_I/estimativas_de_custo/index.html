@@ -187,7 +187,9 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -200,7 +202,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../design_sprint/" title="Dinâmicas e Seminários" class="md-tabs__link">
+        <a href="../design_sprint/" title="Dinâmicas e Seminários" class="md-tabs__link md-tabs__link--active">
           Dinâmicas e Seminários
         </a>
       
@@ -270,10 +272,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
     
     <label class="md-nav__link" for="nav-1">
       Dinâmicas e Seminários
@@ -289,10 +293,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1" type="checkbox" id="nav-1-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1" type="checkbox" id="nav-1-1" checked>
     
     <label class="md-nav__link" for="nav-1-1">
       Dinâmica e Seminário I
@@ -433,6 +439,137 @@
     <a href="../benchmarking/" title="Benchmarking" class="md-nav__link">
       Benchmarking
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Estimativas de Custo
+      </label>
+    
+    <a href="./" title="Estimativas de Custo" class="md-nav__link md-nav__link--active">
+      Estimativas de Custo
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" title="Introdução" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-de-custo-construtivo-constructive-cost-model-cocomo" title="MODELO DE CUSTO CONSTRUTIVO (CONSTRUCTIVE COST MODEL - COCOMO)" class="md-nav__link">
+    MODELO DE CUSTO CONSTRUTIVO (CONSTRUCTIVE COST MODEL - COCOMO)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cocomo-intermediario" title="COCOMO Intermediário" class="md-nav__link">
+    COCOMO Intermediário
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-estimativa-do-esforco" title="Calculo da Estimativa do Esforço" class="md-nav__link">
+    Calculo da Estimativa do Esforço
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-estimativa-do-tempo" title="Calculo da Estimativa do Tempo" class="md-nav__link">
+    Calculo da Estimativa do Tempo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados" title="Resultados" class="md-nav__link">
+    Resultados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estimativa-de-quantidade-de-linhas-de-codigos" title="Estimativa de Quantidade de Linhas de Códigos" class="md-nav__link">
+    Estimativa de Quantidade de Linhas de Códigos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimativa-de-esforco" title="Estimativa de Esforço" class="md-nav__link">
+    Estimativa de Esforço
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimativa-de-tempo" title="Estimativa de Tempo:" class="md-nav__link">
+    Estimativa de Tempo:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" title="Referências" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1154,6 +1291,41 @@ O modelo COCOMO Intermediário usa a seguinte equação para a estimativa do esf
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../benchmarking/" title="Benchmarking" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Benchmarking
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../samples/" title="Extensões" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Extensões
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
