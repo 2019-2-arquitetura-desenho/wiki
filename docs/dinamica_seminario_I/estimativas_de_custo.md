@@ -233,6 +233,7 @@ Cada um desses atributos deve ser classificado de acordo com uma escala que vari
 
 #### Calculo da Estimativa do Esforço
 
+O resultado do esforço representa o valor de **Pessoas/Mês**
 O modelo COCOMO Intermediário usa a seguinte equação para a estimativa do esforço:
 
     E = a x S^b x fae
@@ -245,7 +246,19 @@ onde:
 * **b:** é um expoente fornecido pela Tabela.
 * **fae:** é o Fator de Ajustamento do Esforço (multiplicação de cada um dos Multiplicadores de Esforço fornecidos pela Tabela).
 
+Tabela para os valores dos coeficientes "a" e "b" de acordo com o tipo do projeto, a mesma tabela utilizada no COCOMO básico:
+
+| Projeto de Software | a | b | c | d |
+|:-------------------:|:--|:-:|:-:|:-:|
+| Orgânico            | 2.40 | 1.05 | 2.50 | 0.38 |
+| Semidestacado       | 3.00 | 1.12 | 2.50 | 0.35 |
+| Embutido            | 3.60 | 1.20 | 2.50 | 0.32 |
+
+Como dito na introdução, nosso projeto é do tipo Semidestacado, portanto os valores serão **a = 3.00** e **b = 1.12**.
+
 #### Calculo da Estimativa do Tempo
+
+Representa a **quantidade de meses prevista para a conclusão do projeto**:
 
     T = c x E^d
 
@@ -259,6 +272,197 @@ onde:
 * **c:** é um coeficiente fornecido pela Tabela.
 * **d:** é um expoente fornecido pela Tabela.
 
+### Resultados
+
+#### Estimativa de Quantidade de Linhas de Códigos
+
+O Projeto possui certa complexidade, porém levando em consideração o uso de frameworks para a agilidade e padronização de código, também considerando a linguagem de programação que será utilizada no backend, o Python com Django, que possuí uma sintaxe bastante simples, enquanto no front end será utilizado algum framework baseado em JavaScript. O grupo estimou que a aplicação deve pelo menos alcançar umas **3000 linhas de código** úteis, descartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo.
+
+    S = 3000 LoC ou S = 3 KLoC
+
+#### Estimativa de Esforço
+
+    E = a x S^b x fae
+
+    E = 3.00 x 3^1.12 * (0,99)
+
+    E = 10,16 pessoas/mes
+
+Pesos atribuidos a cada atributo através de uma reunião em grupo para a convergência em cada esforço de cada atributo:
+
+<table>
+    <thead>
+        <tr bgcolor="#6c6f73">
+            <th>Direcionadores de Custo</th>
+            <th>Muito Baixo</th>
+            <th>Baixo</th>
+            <th>Normal</th>
+            <th>Elevado</th>
+            <th>Muito Elevado</th>
+            <th>Extremamente Elevado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTOS DO PRODUTO</td>
+        </tr>
+        <tr>
+            <td>Confiabilidade exigida do software</td>
+            <td>0.75</td>
+            <td>0.88</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">1.15</td>
+            <td>1.40</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tamanho do banco de dados</td>
+            <td>-</td>
+            <td>0.94</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>1.08</td>
+            <td>1.16</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Complexidade do produto</td>
+            <td>0.70</td>
+            <td>0.85</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">1.15</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTOS DO HARDWARE</td>
+        </tr>
+        <tr>
+            <td>Restrições ao tempo de execução</td>
+            <td>-</td>
+            <td>-</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>1.11</td>
+            <td>1.30</td>
+            <td>1.66</td>
+        </tr>
+        <tr>
+            <td>Restrições de memória</td>
+            <td>-</td>
+            <td>-</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>1.06</td>
+            <td>1.21</td>
+            <td>1.56</td>
+        </tr>
+        <tr>
+            <td>Volatilidade do ambiente de máquina</td>
+            <td>-</td>
+            <td bgcolor="#1980b0">0.87</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tempo de turnaround (tempo para completar o ciclo) exigido</td>
+            <td>-</td>
+            <td>0.87</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>1.07</td>
+            <td>1.15</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTOS DE PESSOAL</td>
+        </tr>
+        <tr>
+            <td>Capacidade do analista</td>
+            <td>1.46</td>
+            <td>1.19</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>0.86</td>
+            <td>0.71</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Experiência em aplicações</td>
+            <td>1.29</td>
+            <td>1.13</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Capacidade do programador</td>
+            <td>1.42</td>
+            <td>1.17</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">0.86</td>
+            <td>0.70</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Experiência em Máquina Virtual</td>
+            <td>1.21</td>
+            <td bgcolor="#1980b0">1.10</td>
+            <td>1.00</td>
+            <td>0.90</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Experiência com a linguagem de programação</td>
+            <td>1.14</td>
+            <td>1.07</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>0.95</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTO DE PROJETO</td>
+        </tr>
+        <tr>
+            <td>Uso de práticas modernas de programação</td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Uso de ferramentas de software</td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">0.91</td>
+            <td>0.83</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Cronograma exigido de desenvolvimento</td>
+            <td>1.23</td>
+            <td>1.08</td>
+            <td>1.00</td>
+            <td>1.04</td>
+            <td bgcolor="#1980b0">1.10</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Estimativa de Tempo:
+
+Utiliza o resultado calculado do esforço para calcular o tempo, pois estão diretamente relacionados, também utiliza o coeficiente **c = 2.50** e **d = 0.35** da tabela:
+
+    T = c x E^d
+
+    T = 2.50 x 10.16^0.35
+
+    T = 5.62 meses
+
 ## Referências
 
-[1] Meller, Maristela Corrêa. **Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte.** 2002.
+[1] Meller, Maristela Corrêa. **Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte.** 2002. Disponível em: <https://repositorio.ufsc.br/xmlui/handle/123456789/82351>
