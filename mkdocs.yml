@@ -40,6 +40,7 @@ nav:
       - Elicitação :
         - Protótipo: dinamica_seminario_I/Elicitacao/prototipo.md
         - Questionário: dinamica_seminario_I/Elicitacao/questionario.md
+      - Benchmarking: dinamica_seminario_I/benchmarking.md
   - Iniciativas Extras:
     - Extensões: samples.md
     - Documento de Visão: documento_visao.md
