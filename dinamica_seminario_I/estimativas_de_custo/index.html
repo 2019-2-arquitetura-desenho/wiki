@@ -556,6 +556,40 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#resultados" title="Resultados" class="md-nav__link">
+    Resultados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estimativa-de-quantidade-de-linhas-de-codigos" title="Estimativa de Quantidade de Linhas de Códigos" class="md-nav__link">
+    Estimativa de Quantidade de Linhas de Códigos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimativa-de-esforco" title="Estimativa de Esforço" class="md-nav__link">
+    Estimativa de Esforço
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimativa-de-tempo" title="Estimativa de Tempo:" class="md-nav__link">
+    Estimativa de Tempo:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -838,7 +872,8 @@ desenvolvimento.</p>
 </table>
 
 <h4 id="calculo-da-estimativa-do-esforco">Calculo da Estimativa do Esforço</h4>
-<p>O modelo COCOMO Intermediário usa a seguinte equação para a estimativa do esforço:</p>
+<p>O resultado do esforço representa o valor de <strong>Pessoas/Mês</strong>
+O modelo COCOMO Intermediário usa a seguinte equação para a estimativa do esforço:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="n">a</span> <span class="n">x</span> <span class="n">S</span><span class="o">^</span><span class="n">b</span> <span class="n">x</span> <span class="n">fae</span>
 </pre></div>
 </td></tr></table>
@@ -851,7 +886,44 @@ desenvolvimento.</p>
 <li><strong>b:</strong> é um expoente fornecido pela Tabela.</li>
 <li><strong>fae:</strong> é o Fator de Ajustamento do Esforço (multiplicação de cada um dos Multiplicadores de Esforço fornecidos pela Tabela).</li>
 </ul>
+<p>Tabela para os valores dos coeficientes "a" e "b" de acordo com o tipo do projeto, a mesma tabela utilizada no COCOMO básico:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Projeto de Software</th>
+<th align="left">a</th>
+<th align="center">b</th>
+<th align="center">c</th>
+<th align="center">d</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Orgânico</td>
+<td align="left">2.40</td>
+<td align="center">1.05</td>
+<td align="center">2.50</td>
+<td align="center">0.38</td>
+</tr>
+<tr>
+<td align="center">Semidestacado</td>
+<td align="left">3.00</td>
+<td align="center">1.12</td>
+<td align="center">2.50</td>
+<td align="center">0.35</td>
+</tr>
+<tr>
+<td align="center">Embutido</td>
+<td align="left">3.60</td>
+<td align="center">1.20</td>
+<td align="center">2.50</td>
+<td align="center">0.32</td>
+</tr>
+</tbody>
+</table>
+<p>Como dito na introdução, nosso projeto é do tipo Semidestacado, portanto os valores serão <strong>a = 3.00</strong> e <strong>b = 1.12</strong>.</p>
 <h4 id="calculo-da-estimativa-do-tempo">Calculo da Estimativa do Tempo</h4>
+<p>Representa a <strong>quantidade de meses prevista para a conclusão do projeto</strong>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="k">c</span> <span class="n">x</span> <span class="n">E</span><span class="o">^</span><span class="n">d</span>
 </pre></div>
 </td></tr></table>
@@ -866,8 +938,206 @@ desenvolvimento.</p>
 <li><strong>c:</strong> é um coeficiente fornecido pela Tabela.</li>
 <li><strong>d:</strong> é um expoente fornecido pela Tabela.</li>
 </ul>
+<h3 id="resultados">Resultados</h3>
+<h4 id="estimativa-de-quantidade-de-linhas-de-codigos">Estimativa de Quantidade de Linhas de Códigos</h4>
+<p>O Projeto possui certa complexidade, porém levando em consideração o uso de frameworks para a agilidade e padronização de código, também considerando a linguagem de programação que será utilizada no backend, o Python com Django, que possuí uma sintaxe bastante simples, enquanto no front end será utilizado algum framework baseado em JavaScript. O grupo estimou que a aplicação deve pelo menos alcançar umas <strong>3000 linhas de código</strong> úteis, descartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">S</span> <span class="o">=</span> <span class="mi">3000</span> <span class="n">LoC</span> <span class="n">ou</span> <span class="n">S</span> <span class="o">=</span> <span class="mi">3</span> <span class="n">KLoC</span>
+</pre></div>
+</td></tr></table>
+
+<h4 id="estimativa-de-esforco">Estimativa de Esforço</h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="n">a</span> <span class="n">x</span> <span class="n">S</span><span class="o">^</span><span class="n">b</span> <span class="n">x</span> <span class="n">fae</span>
+
+<span class="n">E</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">00</span> <span class="n">x</span> <span class="mi">3</span><span class="o">^</span><span class="mi">1</span><span class="p">.</span><span class="mi">12</span> <span class="o">*</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">99</span><span class="p">)</span>
+
+<span class="n">E</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span><span class="mi">16</span> <span class="n">pessoas</span><span class="o">/</span><span class="n">mes</span>
+</pre></div>
+</td></tr></table>
+
+<p>Pesos atribuidos a cada atributo através de uma reunião em grupo para a convergência em cada esforço de cada atributo:</p>
+<table>
+    <thead>
+        <tr bgcolor="#6c6f73">
+            <th>Direcionadores de Custo</th>
+            <th>Muito Baixo</th>
+            <th>Baixo</th>
+            <th>Normal</th>
+            <th>Elevado</th>
+            <th>Muito Elevado</th>
+            <th>Extremamente Elevado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTOS DO PRODUTO</td>
+        </tr>
+        <tr>
+            <td>Confiabilidade exigida do software</td>
+            <td>0.75</td>
+            <td>0.88</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">1.15</td>
+            <td>1.40</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tamanho do banco de dados</td>
+            <td>-</td>
+            <td>0.94</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>1.08</td>
+            <td>1.16</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Complexidade do produto</td>
+            <td>0.70</td>
+            <td>0.85</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">1.15</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTOS DO HARDWARE</td>
+        </tr>
+        <tr>
+            <td>Restrições ao tempo de execução</td>
+            <td>-</td>
+            <td>-</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>1.11</td>
+            <td>1.30</td>
+            <td>1.66</td>
+        </tr>
+        <tr>
+            <td>Restrições de memória</td>
+            <td>-</td>
+            <td>-</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>1.06</td>
+            <td>1.21</td>
+            <td>1.56</td>
+        </tr>
+        <tr>
+            <td>Volatilidade do ambiente de máquina</td>
+            <td>-</td>
+            <td bgcolor="#1980b0">0.87</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tempo de turnaround (tempo para completar o ciclo) exigido</td>
+            <td>-</td>
+            <td>0.87</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>1.07</td>
+            <td>1.15</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTOS DE PESSOAL</td>
+        </tr>
+        <tr>
+            <td>Capacidade do analista</td>
+            <td>1.46</td>
+            <td>1.19</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>0.86</td>
+            <td>0.71</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Experiência em aplicações</td>
+            <td>1.29</td>
+            <td>1.13</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Capacidade do programador</td>
+            <td>1.42</td>
+            <td>1.17</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">0.86</td>
+            <td>0.70</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Experiência em Máquina Virtual</td>
+            <td>1.21</td>
+            <td bgcolor="#1980b0">1.10</td>
+            <td>1.00</td>
+            <td>0.90</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Experiência com a linguagem de programação</td>
+            <td>1.14</td>
+            <td>1.07</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>0.95</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td bgcolor="#9ea0a3" align="center" colspan=7>ATRIBUTO DE PROJETO</td>
+        </tr>
+        <tr>
+            <td>Uso de práticas modernas de programação</td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td bgcolor="#1980b0">1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Uso de ferramentas de software</td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td bgcolor="#1980b0">0.91</td>
+            <td>0.83</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Cronograma exigido de desenvolvimento</td>
+            <td>1.23</td>
+            <td>1.08</td>
+            <td>1.00</td>
+            <td>1.04</td>
+            <td bgcolor="#1980b0">1.10</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4 id="estimativa-de-tempo">Estimativa de Tempo:</h4>
+<p>Utiliza o resultado calculado do esforço para calcular o tempo, pois estão diretamente relacionados, também utiliza o coeficiente <strong>c = 2.50</strong> e <strong>d = 0.35</strong> da tabela:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="k">c</span> <span class="n">x</span> <span class="n">E</span><span class="o">^</span><span class="n">d</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="p">.</span><span class="mi">50</span> <span class="n">x</span> <span class="mi">10</span><span class="p">.</span><span class="mi">16</span><span class="o">^</span><span class="mi">0</span><span class="p">.</span><span class="mi">35</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="mi">5</span><span class="p">.</span><span class="mi">62</span> <span class="n">meses</span>
+</pre></div>
+</td></tr></table>
+
 <h2 id="referencias">Referências</h2>
-<p>[1] Meller, Maristela Corrêa. <strong>Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte.</strong> 2002.</p>
+<p>[1] Meller, Maristela Corrêa. <strong>Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte.</strong> 2002. Disponível em: <a href="https://repositorio.ufsc.br/xmlui/handle/123456789/82351">https://repositorio.ufsc.br/xmlui/handle/123456789/82351</a></p>
                 
                   
                 
