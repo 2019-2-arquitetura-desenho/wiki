@@ -7,7 +7,12 @@
 | 20/08/19 | 0.1 | Criação do Questionário| [Welison Regis](https://github.com/WelisonR) e [Ivan Dobbin](https://github.com/darmsDD) |
 | 20/08/19 | 0.2 | Perguntas do tronco base foram adicionadas| [Ivan Dobbin](https://github.com/darmsDD) e [Welison Regis](https://github.com/WelisonR)  |
 | 20/08/19 | 0.3 | Adição das Ramificações e SubRamificações|[Ivan Dobbin](https://github.com/darmsDD)|
+| 20/08/19 | 0.4 | Adição da Introdução |[Ivan Dobbin](https://github.com/darmsDD)|
 
+## Introdução
+O objetivo deste questionário é tentar entender um pouco melhor quais as opiniões e ideias do nosso público-alvo sobre o processo de inscrição de monitoria atual. Isto nos auxiliará no desenvolvimento de nosso projeto.
+
+O questionário pode ser acessado clicando [aqui](https://docs.google.com/forms/d/e/1FAIpQLScnBKHHecpRDmU-6K3ySTHocxq06AF_ZFT641ulImqecIC-xA/viewform?usp=sf_link).  
 ## Perguntas do Tronco Comum
 
 !!! question "Como você avalia o atual processo de inscrição em monitoria? Informe um inteiro na escala de 1 a 7, sendo 1 indicativo de um processo muito ruim e 7 um processo perfeito."
