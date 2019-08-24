@@ -1,5 +1,7 @@
 # Estimativas de Custo
 
+## Histórico de revisão
+
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
 | 22/08/19 | 0.1 | Adição de Introdução e Definição | [Lucas Aguiar](https://github.com/Ridersk) |
@@ -489,7 +491,7 @@ Pesos atribuidos a cada atributo através de uma reunião em grupo para a conver
     </tbody>
 </table>
 
-#### Estimativa de Tempo:
+#### Estimativa de Tempo
 
 Utiliza o resultado calculado do esforço para calcular o tempo, pois estão diretamente relacionados, também utiliza o coeficiente **c = 2.50** e **d = 0.35** da tabela:
 
@@ -509,4 +511,4 @@ Para 2,5Kloc
 
 ## Referências
 
-[1] Meller, Maristela Corrêa. **Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte.** 2002. Disponível em: <https://repositorio.ufsc.br/xmlui/handle/123456789/82351>
+[^1] Meller, Maristela Corrêa. **Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte.** 2002. Disponível em: <https://repositorio.ufsc.br/xmlui/handle/123456789/82351>
