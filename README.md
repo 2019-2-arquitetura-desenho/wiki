@@ -1,6 +1,6 @@
-# Desenho e Arquitetura de Software - 2019.2
+# A Monitoria - 2019.2
 
-![Travis CI Build](https://travis-ci.org/2019-2-arquitetura-desenho/wiki.svg?branch=master)
+<a href="https://2019-2-arquitetura-desenho.github.io/wiki/" target="_blank"><img src="https://img.shields.io/badge/A%20Monitoria-2019.2-purple.svg"></a> <a href="https://2019-2-arquitetura-desenho.github.io/wiki/#equipe" target="_blank"> <img src="https://img.shields.io/badge/Grupo-05-blue.svg" alt="Grupo 05"></a> <a href="https://2019-2-arquitetura-desenho.github.io/wiki/" target="_blank"><img src="https://travis-ci.org/2019-2-arquitetura-desenho/wiki.svg?branch=master"></a>
 
 Repositório destinado à disciplina de Desenho e Arquitetura de Software (2019.2). Reserva-se a armazenar e apresentar os artefatos desenvolvidos na disciplina, assim como materiais correlatos.
 
