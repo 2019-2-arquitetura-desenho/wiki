@@ -4,6 +4,7 @@
 |:----:|:------:|:---------:|:--------:|
 | 28/08/19 | 0.1 | Criação da análise do questionário| [Ivan Dobbin](https://github.com/darmsDD) |
 | 28/08/19 | 0.2 | Adição dos gráficos para a análise do questionário| [Ivan Dobbin](https://github.com/darmsDD) |
+| 28/08/19 | 0.3 | Adição da análise do tronco comum do questionário | [Welison Regis](https://github.com/WelisonR) |
 
 
 ## Introdução
@@ -13,12 +14,28 @@ Esta análise foi feita com o intuito de entender quais foram as opniões de nos
 
 ### Tronco comum
 
+#### Questão 01 - Pergunta
 ![TroncoComum1](../assets/img/questionario/troncoComum1.png)
+
+#### Questão 01 - Análise
+
+Conforme pode-se notar, a questão obteve **36 respostas**. Observa-se que o público-alvo entende que o **processo seletivo atual de monitoria é razoável**, pois aproximadamente **70% das notas concentram-se no intervalo de [3, 5]**. Além disso, apenas 13,9% dos entrevistados consideram que o processo seletivo de monitores é perfeito, o que evidencia que há muito a melhorar em muitos aspectos do processo.
+
+#### Questão 02 - Pergunta
 
 ![TroncoComum2](../assets/img/questionario/troncoComum2.png)
 
+#### Questão 02 - Análise
+
+Sobre os aspectos negativos sobre o atual processo seletivo de monitores, pode-se notar razões comuns entre os entrevistados. Pela análise do gráfico, entende-se que o **"processo é lento, devagar. Monitores só são disponibilizados depois de 2 semanas"**. Além disso, elenca-se como outro fator negativo o fato da **"necessidade de preenchimento de informações repetidas vezes, todos os semestres"**.
+
+#### Questão 03 - Pergunta
+
 ![TroncoComum3](../assets/img/questionario/troncoComum3.png)
 
+#### Questão 03 - Análise
+
+De acordo com o gráfico, há uma preferência maior pela disponibilidade da aplicação de processo seletivo em monitoria em ambas as plataformas, isto é, **mobile e desktop**. Porém, é possível notar também que, ao confrontar a preferência entre as plataformas, a **aplicação desenvolvida em ambiente web possui maior preferência**.
 
 ### Ramificação Usuário que não deseja utilizar aplicativo nem website
 
