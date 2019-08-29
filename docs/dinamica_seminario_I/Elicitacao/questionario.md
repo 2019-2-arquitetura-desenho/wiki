@@ -17,7 +17,7 @@
 O objetivo deste questionário é tentar entender um pouco melhor quais as opiniões e ideias do nosso público-alvo sobre o processo de inscrição de monitoria atual. Isto nos auxiliará no desenvolvimento de nosso projeto.
 
 !!! info "Acesse o questionário"
-        Acesse o questionário clicando [aqui](https://docs.google.com/forms/d/e/1FAIpQLScnBKHHecpRDmU-6K3ySTHocxq06AF_ZFT641ulImqecIC-xA/viewform?usp=sf_link).
+        Acesse o formulário do questionário clicando [aqui](https://docs.google.com/forms/d/e/1FAIpQLScnBKHHecpRDmU-6K3ySTHocxq06AF_ZFT641ulImqecIC-xA/viewform?usp=sf_link).
 
         **As respostas e a análise do questionário podem ser visualizas** [**aqui**](analise_questionario.md).
 
