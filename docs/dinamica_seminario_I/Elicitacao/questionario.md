@@ -6,7 +6,7 @@
 |:----:|:------:|:---------:|:--------:|
 | 20/08/19 | 0.1 | Criação do Questionário| [Welison Regis](https://github.com/WelisonR) e [Ivan Dobbin](https://github.com/darmsDD) |
 | 20/08/19 | 0.2 | Perguntas do tronco base foram adicionadas| [Ivan Dobbin](https://github.com/darmsDD) e [Welison Regis](https://github.com/WelisonR)  |
-| 20/08/19 | 0.3 | Adição das Ramificações e SubRamificações||
+| 20/08/19 | 0.3 | Adição das Ramificações e SubRamificações|[Ivan Dobbin](https://github.com/darmsDD)|
 | 20/08/19 | 0.4 | Adição da Introdução |[Ivan Dobbin](https://github.com/darmsDD)|
 | 23/08/19 | 0.5 | Correção estética nos questionários |[Gustavo Lima](https://github.com/gustavolima00)|
 | 28/08/19 | 0.6 |Adição da análise do tronco comum do questionário | [Welison Regis](https://github.com/WelisonR) |
