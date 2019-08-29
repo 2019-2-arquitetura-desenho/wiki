@@ -5,10 +5,14 @@
 | 28/08/19 | 0.1 | Criação da análise do questionário| [Ivan Dobbin](https://github.com/darmsDD) |
 | 28/08/19 | 0.2 | Adição dos gráficos para a análise do questionário| [Ivan Dobbin](https://github.com/darmsDD) |
 | 28/08/19 | 0.3 | Adição da análise do tronco comum do questionário | [Welison Regis](https://github.com/WelisonR) |
+| 28/08/19 | 0.4 | Adição da introdução | [Welison Regis](https://github.com/WelisonR) |
 
 
 ## Introdução
-Esta análise foi feita com o intuito de entender quais foram as opniões de nosso público alvo e assim poder se necessário realizar mudanças na ideia do projeto.
+Esta análise foi feita com o intuito de entender quais foram as opiniões de nosso público-alvo de forma a melhor compreender o atual nível de satisfação com o processo seletivo de monitores realizado na Faculdade do Gama (UnB-FGa). A atual análise servirá de respaldo também para visualizar as necessidades, preferências e reclamações daqueles envolvidos no atual processo seletivo para assim ser possível adaptar e melhorar tais aspectos na aplicação a ser desenvolvida pelo grupo.
+
+!!! info "Questionário original"
+    As perguntas do questionário podem ser visualizadas [aqui](questionario.md).
 
 ## Análise
 
