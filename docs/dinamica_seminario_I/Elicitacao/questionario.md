@@ -11,10 +11,11 @@
 | 23/08/19 | 0.5 | Correção estética nos questionários |[Gustavo Lima](https://github.com/gustavolima00)|
 | 28/08/19 | 0.6 |Adição da análise do tronco comum do questionário | [Welison Regis](https://github.com/WelisonR) |
 | 28/08/19 | 0.7 |Adição da análise das ramificações e subramificações do questionário | [Ivan Dobbin](https://github.com/darmsDD)|
-
+| 29/08/19 | 0.8 |Alteração introdução |  [Welison Regis](https://github.com/WelisonR) e [Ivan Dobbin](https://github.com/darmsDD)|
 
 ## Introdução
 O objetivo deste questionário é tentar entender um pouco melhor quais as opiniões e ideias do nosso público-alvo sobre o processo de inscrição de monitoria atual. Isto nos auxiliará no desenvolvimento de nosso projeto.
+A análise das perguntas foi feita com o intuito de entender quais foram as opiniões de nosso público-alvo de forma a melhor compreender o atual nível de satisfação com o processo seletivo de monitores realizado na Faculdade do Gama (UnB-FGa). A atual análise servirá de respaldo também para visualizar as necessidades, preferências e reclamações daqueles envolvidos no atual processo seletivo para assim ser possível adaptar e melhorar tais aspectos na aplicação a ser desenvolvida pelo grupo.
 
 !!! info "Acesse o questionário"
         Acesse o formulário do questionário clicando [aqui](https://docs.google.com/forms/d/e/1FAIpQLScnBKHHecpRDmU-6K3ySTHocxq06AF_ZFT641ulImqecIC-xA/viewform?usp=sf_link).
@@ -249,5 +250,23 @@ O objetivo deste questionário é tentar entender um pouco melhor quais as opini
 ***
 ***
 ***
+
+??? note "Análise da questão final comum a todos"
+    13 respostas
+
+    | Respostas|
+    |:-----------:|
+    |melhorar a divulgaçao de inicio da seleçao, menos exposiçao do aluno, informar apenas o nome dos monitores para o professor, acho q só|
+    |Não demorar para sair o resultado|
+    |Não|
+    |Processo demorado demais|
+    |Demora de lançar as inscrições e resultados|
+    |Alguns monitores não aparecem para dar apoio, outros nem mesmo sabem a matéria direito.|
+    |Atualmente melhorou bastante em relação a antes.|
+    |Todo semestre é um link diferente. Eu não tenho ideia se eu estou próximo ou distante de conseguir a vaga.|
+    |O fato de mostrar a pontuação de todos os aprovados é muito ruim.|
+    |O processo quase não lida com o professor, sendo que diversas vezes o professor sabe que o aluno esta preparado mas tem que passar por toda uma burocracia desnecessária pra conseguir a vaga|
+    |Deve averiguar se o monitor entende minimamente conceitos críticos das matérias. Além de ser capaz de transmitir seus conhecimentos, e se tem algum nível de organização para poder responder e marcar monitorias.|
+    |O pior problema em minha opinião é a falta de esclarecimento acerca de quantas vagas existem pra monitorar uma dada disciplina, bem como a falta da possibilidade de visualizar a atual fila de inscritos para monitorar essa disciplina, ordenada por quem tem mais chances de conseguir a vaga.|
 
 
