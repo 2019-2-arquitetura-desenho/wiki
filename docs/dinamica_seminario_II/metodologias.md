@@ -6,6 +6,7 @@
 |:----:|:------:|:---------:|:--------:|
 | 22/08/19 | 0.1 |  Criação do documento, indicação de tópicos e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 22/08/19 | 0.2 | scrum | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 22/08/19 | 0.2 | kanban | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
@@ -28,7 +29,7 @@ Ao final de um Sprint, a equipe apresenta as funcionalidades implementadas em um
 
 ![Scrum](../assets/img/scrum.png)
 
-#### Elementos utilizados no projeto
+#### Elementos utilizados no projeto - Scrum
 
 - Sprints: Time Box dentro do qual um conjunto de atividades deve ser executado;
 
@@ -38,11 +39,22 @@ Ao final de um Sprint, a equipe apresenta as funcionalidades implementadas em um
 
 - Sprint Planning/Retrospective/Review: reunião no início de uma sprint com o objetivo de organizar o que será feito na sprint e analisar o que foi alcançado na sprint anterior.
 
-### Kanban?
+### Kanban
 
-...
+Kanban é uma metodologia relacionada com a utilização de cartões (post-it e outros) para indicar o andamento dos fluxos de produção.
+
+Nesses cartões são colocadas indicações sobre uma determinada tarefa, por exemplo, “para executar”, “em andamento” ou “finalizado”.
+
+A utilização de um sistema Kanban permite um controle detalhado de produção com informações sobre quando, quanto e o que produzir.
+
+![Kanban](../assets/img/kanban.jpg)
+
+#### Elementos utilizados no projeto - Kanban
+
+O gurpo decidiu utilizar o plug-in ZenHub. Essa ferramenta facilita a visualização do progresso das tarefas e é falcilmente integrada ao backlog por meio das issues criadas ao longo do projeto.
 
 ### XP?
+
 
 ...
 
