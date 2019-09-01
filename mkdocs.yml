@@ -43,6 +43,7 @@ nav:
       - Benchmarking: dinamica_seminario_I/benchmarking.md
       - Estimativas de Custo: dinamica_seminario_I/estimativas_de_custo.md
     - Dinâmica e seminário II:
+      - Backlog do Produto : dinamica_seminario_II/backlog_do_produto.md
       - Metodologia: dinamica_seminario_II/metodologias.md
   - Iniciativas Extras:
     - Extensões: samples.md
