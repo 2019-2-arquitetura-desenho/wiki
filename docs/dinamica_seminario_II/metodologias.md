@@ -6,7 +6,8 @@
 |:----:|:------:|:---------:|:--------:|
 | 22/08/19 | 0.1 |  Criação do documento, indicação de tópicos e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 22/08/19 | 0.2 | scrum | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 22/08/19 | 0.2 | kanban | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 22/08/19 | 0.3 | kanban | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 22/08/19 | 0.4 | burndown e velocity | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
@@ -62,9 +63,17 @@ O gurpo decidiu utilizar o plug-in ZenHub. Essa ferramenta facilita a visualiza�
 
 ### Reuniões/Gravações
 
-### Burndown?
+### Burndown
 
-### Velocity?
+Um gráfico de burndown é uma representação gráfica do trabalho a ser feito versus tempo. O trabalho restante (ou backlog) é geralmente no eixo vertical, com o tempo no eixo horizontal. É útil para prever quando todo o trabalho será concluído, frequentemente usado em metodologias ágeis de desenvolvimento de software, como o Scrum.
+
+![Burndown](../assets/img/burndown.png)
+
+### Velocity
+
+O velocity é uma medida que evidência a velocidade do time para um projeto Scrum. Esse número é calculado e atualizado após a entrega de cada sprint e baseia-se na média dos pontos entregues das sprints concluídas. O time usa essa informação para saber até quantos pontos de história eles conseguem produzir por sprint.
+
+![Velocity](../assets/img/velocity.jpg)
 
 ### Quadro de Conhecimento?
 
