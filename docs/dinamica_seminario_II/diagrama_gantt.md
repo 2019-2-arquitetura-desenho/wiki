@@ -12,10 +12,14 @@ O diagrama de Gantt é um artefato visual para controlar cronogramasa de projeto
 
 ## Metodologia
 Nós utilizaremos o diagrama com o objetivo citado em cima, com o foco em conciliar diferentes partes do projeto que necessitam caminhar com a mesma velocidade para não se perder, sendo elas: 
-- Backend
-- Fronted
-- Web Crawler
-- Artefatos
+  
+- Backend  
+  
+- Frontend  
+  
+- Web Crawler  
+  
+- Artefatos  
 
 O documento será evoluído conforme o andamento do projeto e a percepção do grupo sobre a necessidade de adiantar e adiar prazos em certas partes.
 
