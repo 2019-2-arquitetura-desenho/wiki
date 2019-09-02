@@ -76,31 +76,31 @@ Os nomes das branchs devem ser criados em inglês e devem ser curtos e claros.
 
 * Nome da branch prefixada com __feature__ acompanhado com a issue relacionada:
 
-    feature/x-branch_name
+        feature/x-branch_name
 
 ##### Para refatoração de código
 
 * Branchs com o objetivo de realizar alterações em funcionalidades já implementadas devem ser prefixadas com __refactor__ acompanhado com a issue:
 
-    refactor/x-branch_name
+        refactor/x-branch_name
 
 ##### Para correção de código
 
 * Branchs com o objetivo de consertar algum problema técnico relacionado a uma ou algumas funcionalidades devem ser prefixadas com __bugfix__ acompanhado com a issue relacionda:
 
-    bugfix/x-branch_name
+        bugfix/x-branch_name
 
 ##### Para problemas críticos em produção
 
 * Branchs com o objetico de corrigir alguma falha grave relacionadas a funcionalidades que já estão em produção devem ser prefixadas com __hotfix__ acompanhado com a issue relacionada:
 
-    hotfix/x-branch_name
+        hotfix/x-branch_name
 
 ##### Para lançamento de versão
 
 * Branchs com o objetivo de realizar o lançamento da versão do código para produção
 
-    release/stable-x.x
+        release/stable-x.x
 
 Onde x.x é o número da versão
 
@@ -114,7 +114,7 @@ Onde x.x é o número da versão
 
 * As issues devem ser acompanhadas de uma lista de critérios de aceitação que garantem que o ao implementar o objetivo será atendido, tanto em termos de funcionalidade, usabilidade, design e qualidade de código;
 
-    US - Nome da Issue
+        US - Nome da Issue
 
 #### Para histórias técnicas
 
