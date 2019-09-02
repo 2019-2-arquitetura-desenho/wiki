@@ -48,6 +48,7 @@ nav:
       - Diagrama de Gantt: dinamica_seminario_II/diagrama_gantt.md
       - Diagrama BPMN : dinamica_seminario_II/diagrama_bpmn.md
       - Plano de Gerenciamento de Configuração: dinamica_seminario_II/gerenciamento_configuracao.md
+      - Plano de Gerenciamento de Riscos: dinamica_seminario_II/controle_riscos.md
   - Iniciativas Extras:
     - Extensões: samples.md
     - Documento de Visão: documento_visao.md
