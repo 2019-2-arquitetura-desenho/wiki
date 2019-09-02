@@ -6,7 +6,7 @@
 | :------: | :----: | :-------------------: | :----------------------------------------: |
 | 01/09/19 | 0.1 | Criação do documento | [Lucas Aguiar](https://github.com/Ridersk) |
 | 01/09/19 | 0.2 | Adição dos Item de Configuração e Ferramentas | [Lucas Aguiar](https://github.com/Ridersk) |
-| 01/09/19 | 0.2 | Adição do Item Gerenciamento de Repositórios de Código | [Lucas Aguiar](https://github.com/Ridersk) |
+| 01/09/19 | 0.3 | Adição do Item Gerenciamento de Repositórios de Código | [Lucas Aguiar](https://github.com/Ridersk) |
 
 ## 1 - Introdução
 
