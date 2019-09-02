@@ -5,7 +5,8 @@
 |   Data   | Versão |       Descrição       |                 Autor(es)                  |
 | :------: | :----: | :-------------------: | :----------------------------------------: |
 | 01/09/19 | 0.1 | Criação do documento | [Lucas Aguiar](https://github.com/Ridersk) |
-| 01/09/19 | 0.2 | Adição de Item de Configuração e Ferramentas | [Lucas Aguiar](https://github.com/Ridersk) |
+| 01/09/19 | 0.2 | Adição dos Item de Configuração e Ferramentas | [Lucas Aguiar](https://github.com/Ridersk) |
+| 01/09/19 | 0.2 | Adição do Item Gerenciamento de Repositórios de Código | [Lucas Aguiar](https://github.com/Ridersk) |
 
 ## 1 - Introdução
 
@@ -35,6 +36,108 @@ Docker é uma tecnologia de software que fornece contêineres, através de  uma 
 O Docker será utilizado para a configuração automatizada tanto no git-page da documentação quanto para a configuração automatizada do ambiente de desenvolvimento utilizado do back-end e do front-end da aplicação.
 
 ## 4 - Gerenciamento de Repositórios de Código
+
+### 4.1 - Política de Commits
+
+A descrição dos commits deve ser especificada em inglês e ser curta e objetiva, representando qual o objetivo do commit. A mensagem deve estar acompanhada do número da issue relacionada, como no exemplo abaixo:
+
+    git commit -m'#X my message'
+
+Onde X representa o número da issue relacionada.
+
+#### 4.1.2 - Pareamento
+
+Para commits realizados em pareamento o commit deve vir acompanhado da mensagem: Co-authored-by: CoAuthorName <coauthoremail@mail.com>. Para tal deve-se seguir os seguintes passos:
+
+1. git commit -s
+2. Inserir a descrição do commit na primeira linha
+3. Na linha seguinte inserir a mensagem Co-authored-by: CoAuthorName <coauthoremail@mail.com>, com os respectivos dados do co-autor.
+
+### 4.2 - Política de Branches
+
+#### 4.2.1 - Branch master
+
+A branch master é a branch estável do projeto, onde estará o código de produção. Commits e pushes para essa branch estarão bloqueados. Somente serão aceitos pull requests para essa branch oriundos da branch devel.
+
+#### 4.2.2 - Branch devel
+
+A branch devel será a branch de desenvolvimento, na qual será unificado novas funcionalidades e correções no código visando gerar uma nova versão estável.
+As branchs de desenvolvimento das funcionalidades deverão ser criadas sempre a partir da branch devel. Uma vez que as funcionalidades estejam concluídas deve ser aberto o Pull Request para a branch devel.
+
+#### 4.2.3 - Nomenclatura de Branches
+
+Sempre que uma equipe de desenvolvimento for começar a trabalhar em algum Caso de Uso ou História de Usuário, deve-se criar a branch a partir da branch devel, com o padrão definido abaixo:
+
+##### Geral
+
+Os nomes das branchs devem ser criados em inglês e devem ser curtos e claros.
+
+##### Para Features
+
+* Nome da branch prefixada com __feature__ acompanhado com a issue relacionada:
+
+    feature/x-branch_name
+
+##### Para refatoração de código
+
+* Branchs com o objetivo de realizar alterações em funcionalidades já implementadas devem ser prefixadas com __refactor__ acompanhado com a issue:
+
+    refactor/x-branch_name
+
+##### Para correção de código
+
+* Branchs com o objetivo de consertar algum problema técnico relacionado a uma ou algumas funcionalidades devem ser prefixadas com __bugfix__ acompanhado com a issue relacionda:
+
+    bugfix/x-branch_name
+
+##### Para problemas críticos em produção
+
+* Branchs com o objetico de corrigir alguma falha grave relacionadas a funcionalidades que já estão em produção devem ser prefixadas com __hotfix__ acompanhado com a issue relacionada:
+
+    hotfix/x-branch_name
+
+##### Para lançamento de versão
+
+* Branchs com o objetivo de realizar o lançamento da versão do código para produção
+
+    release/stable-x.x
+
+Onde x.x é o número da versão
+
+### 4.3 - Política de Issues
+
+* As issues devem possuir um nome simples, em portugês e que descreva claramente os principais objetivos
+* A descrição deve ser o mais detalhada possível, para melhor acompanhamento e entendimento de todo o processo e objetivos da issue.
+* As issues devem ser identificadas com as labels referentes. Isso ajuda o nosso trabalho na hora de mapear quais são as demandas de cada área do projeto.
+
+#### Para novas funcionalidades
+
+* As issues devem ser acompanhadas de uma lista de critérios de aceitação que garantem que o ao implementar o objetivo será atendido, tanto em termos de funcionalidade, usabilidade, design e qualidade de código;
+
+    US - Nome da Issue
+
+#### Para histórias técnicas
+
+    TS - Nome da Issue
+
+### 4.4 - Políticas de Pull Requests
+
+* Pull Requests originados de branchs classificadas como feature, documentation e bugfix devem ser abertos para a branch devel.
+
+#### Pull Requests em progresso
+
+Pull Requests que ainda não estão prontos para serem aceitos devem conter a sinalização WIP - Work in Progress logo no início do nome. Exemplo:
+
+    WIP: my pull request
+
+#### Condições para aprovação do Pull Request
+
+Para que o pull request seja aceito na branch devel, deve seguir as seguintes condições:
+
+* Funcionalidade, correção ou refatoração completa;
+* Build de integração aceito;
+* Manter a cobertura do código há uma porcentagem __definida__;
+* Estar de acordo com as métricas de qualidade de código descritas no plano de qualidade da issue.
 
 ## 5 - Gerenciamento de Repositórios de Documentação
 
