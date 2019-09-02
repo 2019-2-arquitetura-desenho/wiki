@@ -624,6 +624,33 @@
     3 - Ferramentas
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-git-github" class="md-nav__link">
+    3.1 - Git / GitHub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-travis-ci" class="md-nav__link">
+    3.2 - Travis CI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-docker" class="md-nav__link">
+    3.3 - Docker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -675,14 +702,50 @@
                 
                 <h1 id="plano-de-gerenciamento-de-configuracao">PLANO DE GERENCIAMENTO DE CONFIGURAÇÃO</h1>
 <h2 id="historico-de-revisao">Histórico de Revisão</h2>
-<p>| 22/08/19 | 0.1 | Criação do documento | <a href="https://github.com/Ridersk">Lucas Aguiar</a> |</p>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">01/09/19</td>
+<td align="center">0.1</td>
+<td align="center">Criação do documento</td>
+<td align="center"><a href="https://github.com/Ridersk">Lucas Aguiar</a></td>
+</tr>
+<tr>
+<td align="center">01/09/19</td>
+<td align="center">0.2</td>
+<td align="center">Adição de Item de Configuração e Ferramentas</td>
+<td align="center"><a href="https://github.com/Ridersk">Lucas Aguiar</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="1-introducao">1 - Introdução</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nv">Neste</span> <span class="nv">documento</span>, <span class="nv">ser</span>á <span class="nv">abordado</span> <span class="nv">sobre</span> <span class="nv">o</span> <span class="nv">planejamento</span> <span class="nv">dos</span> <span class="nv">principais</span> <span class="nv">aspectos</span> <span class="nv">relacionados</span> <span class="nv">a</span> <span class="nv">padroniza</span>çã<span class="nv">o</span> <span class="nv">de</span> <span class="nv">atividades</span> <span class="nv">comuns</span> <span class="nv">ao</span> <span class="nv">gerenciamento</span> <span class="nv">das</span> <span class="nv">conigura</span>çõ<span class="nv">es</span> <span class="nv">durante</span> <span class="nv">todo</span> <span class="nv">o</span> <span class="nv">desenvolvimento</span> <span class="nv">e</span> <span class="nv">manuten</span>çã<span class="nv">o</span> <span class="k">do</span> <span class="nv">projeto</span>.
-</pre></div>
-</td></tr></table>
-
+<p>Neste documento, será abordado sobre o planejamento dos principais aspectos relacionados a padronização de atividades comuns ao gerenciamento das conigurações durante todo o desenvolvimento e manutenção do projeto.</p>
 <h2 id="2-item-de-configuracao">2 - Item de Configuração</h2>
+<p>Itens de Configuração são qualquer componente ou ativo de serviço que precise ser gerenciado de forma a entregar um serviço de TI. As informações sobre cada item de configuração são registradas em um registro de configuração no sistema de gerenciamento de configuração e é mantido por todo o seu ciclo de vida pelo gerenciamento de configuração e ativo de serviço. Os itens de configuração estão sob o controle do gerenciamento de mudança. Neste projeto será considerado principal os itens de documentação e também a implementação do próprio projeto através de código.</p>
+<ul>
+<li>
+<p><strong>Documentos:</strong> Arquivos em texto contendo planejamentos, gerenciamento do projeto, relatórios de reunião, descrição do produto e projeto, levantamento e análise de requisitos etc.</p>
+</li>
+<li>
+<p><strong>Código:</strong> Artefato composto por um conjunto de arquivos de texto, contendo código de uma ou mais linguagens de programação ou marcação.</p>
+</li>
+</ul>
 <h2 id="3-ferramentas">3 - Ferramentas</h2>
+<h3 id="31-git-github">3.1 - Git / GitHub</h3>
+<p>O Git será utilizado para o controle versões tanto de arquivos de documentação quanto os arquivos de código para a a implementação do projeto. Será utilizado em conjunto com o GitHub para facilitar o acompanhamento e compartilhamento de todos os arquivos referentes ao projeto com a equipe.</p>
+<h3 id="32-travis-ci">3.2 - Travis CI</h3>
+<p>A ferramenta Travis CI será utilizada no projeto para realizar a integração contínua em todos os repositórios referentes ao projeto, tanto o repositório de documentação e principalmente os repositórios de código fonte, para facilitar o deploy da aplicação.</p>
+<h3 id="33-docker">3.3 - Docker</h3>
+<p>Docker é uma tecnologia de software que fornece contêineres, através de  uma camada adicional de abstração e automação de virtualização de nível de sistema operacional. O docker é uma alternativa de virtualização em que o kernel da máquina hospedeira é compartilhado com a máquina virtualizada ou o software em operação, portanto um desenvolvedor pode agregar a seu software a possibilidade de levar as bibliotecas e outras dependências do seu programa junto ao software com menos perda de desempenho do que a virtualização do hardware de um servidor completo.
+O Docker será utilizado para a configuração automatizada tanto no git-page da documentação quanto para a configuração automatizada do ambiente de desenvolvimento utilizado do back-end e do front-end da aplicação.</p>
 <h2 id="4-gerenciamento-de-repositorios-de-codigo">4 - Gerenciamento de Repositórios de Código</h2>
 <h2 id="5-gerenciamento-de-repositorios-de-documentacao">5 - Gerenciamento de Repositórios de Documentação</h2>
 <h2 id="6-monitoramento-e-controle">6 - Monitoramento e Controle</h2>
