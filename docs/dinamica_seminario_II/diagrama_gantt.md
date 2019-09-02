@@ -26,7 +26,7 @@ O documento será evoluído conforme o andamento do projeto e a percepção do g
 ## Diagrama
 ### versão 1.0
 
-![Gantt](../assets/img/Diagrama de Gantt.png)
+![Gantt](assets/img/Diagrama de Gantt.png)
 
 
 ## Referências 

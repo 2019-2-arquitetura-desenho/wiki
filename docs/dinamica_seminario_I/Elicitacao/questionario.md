@@ -20,7 +20,7 @@ A análise das perguntas foi feita com o intuito de entender quais foram as opin
 !!! info "Acesse o questionário"
         Acesse o formulário do questionário clicando [aqui](https://docs.google.com/forms/d/e/1FAIpQLScnBKHHecpRDmU-6K3ySTHocxq06AF_ZFT641ulImqecIC-xA/viewform?usp=sf_link).
 
-        **As respostas e a análise do questionário podem ser visualizas** [**aqui**](analise_questionario.md).
+        **As respostas e a análise do questionário podem ser visualizadas nesse documento**.
 
 ## Perguntas do Tronco Comum
 

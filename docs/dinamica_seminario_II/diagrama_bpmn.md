@@ -15,8 +15,8 @@ Aqui estão listados diagramas modelados com o auxílio do software modelador Bi
 
 ### Diagrama Geral
 
-![Diagrama Geral do Processo](assets/img/bpmn_processo_geral.jpg)
+![Diagrama Geral do Processo](assets/img/bpmn/processo_geral.jpg)
 
 ## Decisão do tema 
 
-![](assets/img/bpmn_decisao_tema.jpg)
+![Decisão do tema](assets/img/bpmn/decisao_tema.jpg)

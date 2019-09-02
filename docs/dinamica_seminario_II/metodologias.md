@@ -28,7 +28,7 @@ Durante os dias de uma sprint, a equipe faz uma breve reunião (normalmente de m
 
 Ao final de um Sprint, a equipe apresenta as funcionalidades implementadas em uma **Sprint Review Meeting**. Finalmente, faz-se uma **Sprint Retrospective** e a equipe parte para o planejamento do próximo Sprint. Assim reinicia-se o ciclo.
 
-![Scrum](../assets/img/scrum.png)
+![Scrum](assets/img/metodologia/scrum.png)
 
 
 ### Kanban
@@ -39,7 +39,7 @@ Nesses cartões são colocadas indicações sobre uma determinada tarefa, por ex
 
 A utilização de um sistema Kanban permite um controle detalhado de produção com informações sobre quando, quanto e o que produzir.
 
-![Kanban](../assets/img/kanban.jpg)
+![Kanban](assets/img/metodologia/kanban.jpg)
 
 ### Extreme Programming (XP)
 
@@ -56,19 +56,19 @@ As práticas são conduzidas respeitando alguns **princípios**: princípio da c
 
 Um gráfico de burndown é uma representação gráfica do trabalho a ser feito versus tempo. O trabalho restante (ou backlog) é geralmente no eixo vertical, com o tempo no eixo horizontal. É útil para prever quando todo o trabalho será concluído, frequentemente usado em metodologias ágeis de desenvolvimento de software, como o Scrum.
 
-![Burndown](../assets/img/burndown.png)
+![Burndown](assets/img/metodologia/burndown.png)
 
 ### Velocity
 
 O velocity é uma medida que evidência a velocidade do time para um projeto Scrum. Esse número é calculado e atualizado após a entrega de cada sprint e baseia-se na média dos pontos entregues das sprints concluídas. O time usa essa informação para saber até quantos pontos de história eles conseguem produzir por sprint.
 
-![Velocity](../assets/img/velocity.jpg)
+![Velocity](assets/img/metodologia/velocity.jpg)
 
 ### Quadro de Conhecimento
 
 O quadro de conhecimento guarda informações referentes ao conhecimento técnico de cada membro em relação às tecnologias envolvidas no projeto. Este quadro permite acompanhar a evolução de cada membro nas respectivas tecnologias, assim como acompanhar a circulação do conhecimento ao longo das sprints.
 
-<!-- ![Quadro de conhecimento](../assets/img/quadro_conhecimento.jpg) -->
+<!-- ![Quadro de conhecimento](assets/img/quadro_conhecimento.jpg) -->
 
 ## Metologia Montada
 
