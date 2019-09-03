@@ -168,5 +168,102 @@ Criar funcionalidades que validem as informações dos usuários.
 | **Critérios de aceitação:** | - |
 
 
+| US13| Feed de notícias |
+|--------:|:-|
+| **Épico** | [Noticias](###EP02)|
+|  **Descrição** |Eu como usuário desejo ver um feed de notícias|
+| **Priorização:** |C |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+| US13| Ranking |
+|--------:|:-|
+| **Épico** | [Noticias](###EP02)|
+|  **Descrição** |Eu como usuário desejo ver um ranking em tempo real sobre a minha posição para conseguir a vaga de monitor para determinada matéria |
+| **Priorização:** |C |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+
+| US14| Resultado |
+|--------:|:-|
+| **Épico** | [Noticias](###EP02)|
+|  **Descrição** |Eu como usuário desejo ser informado sobre o resultado da minha inscrição |
+| **Priorização:** |M |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+
+| US15| Painel de matérias para dar monitoria |
+|--------:|:-|
+| **Épico** | [Inscrição](###EP03)|
+|  **Descrição** |Eu como usuário aluno desejo ver as disciplinas que posso monitorar com suas informações(disciplina,horário,dia,turma) |
+| **Priorização:** |M |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+| US16 | Prioridade de escolha de matéria |
+|--------:|:-|
+| **Épico** | [Inscrição](###EP03)|
+|  **Descrição** |Eu como usuário aluno desejo escolher com prioridades diferentes as matérias que desejo monitorar |
+| **Priorização:** |M |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+| US17 | Indicar aluno |
+|--------:|:-|
+| **Épico** | [Inscrição](###EP03)|
+|  **Descrição** |Eu como usuário professor desejo escolher que alunos irei indicar para as matérias que leciono |
+| **Priorização:** |M |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+
+| US18 | *Visualizar a quantidade de vagas por matéria para a relação aluno|
+|--------:|:-|
+| **Épico** | [Inscrição](###EP03)|
+|  **Descrição** |Eu como usuário aluno desejo ver a quantidade de vagas por matéria que posso atuar |
+| **Priorização:** |S |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+| US19 | *Visualizar a quantidade de vagas por matéria para a relação professor|
+|--------:|:-|
+| **Épico** | [Inscrição](###EP03)|
+|  **Descrição** |Eu como usuário professor desejo ver a quantidade de vagas por matéria que eu leciono |
+| **Priorização:** |S |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
