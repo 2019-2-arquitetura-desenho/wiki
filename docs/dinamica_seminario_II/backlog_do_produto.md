@@ -7,8 +7,9 @@
 | 01/09/19 | 0.1 | Criação do documento | [Ivan Dobbin]((https://github.com/darmsDD)) e [João Rodrigues](https://github.com/rjoao)|
 | 01/09/19 | 0.2 | Introdução, metodologia e épicos foram inseridos | [Ivan Dobbin]((https://github.com/darmsDD)) e [João Rodrigues](https://github.com/rjoao)|
 | 02/09/19 | 0.3 | Adição das primeiras histórias de usuário| [Ivan Dobbin]((https://github.com/darmsDD)) e [João Rodrigues](https://github.com/rjoao)|
-| 03/09/19 | 0.4 | Finalização as histórias perfil e autenticação| [Ivan Dobbin]((https://github.com/darmsDD))|
-
+| 03/09/19 | 0.4 | Adição das histórias perfil e autenticação| [Ivan Dobbin]((https://github.com/darmsDD))|
+| 03/09/19 | 0.5 | Adição das histórias notícias e inscrição| [Ivan Dobbin]((https://github.com/darmsDD))|
+| 03/09/19 | 0.6 | Adição da história ajuda| [Ivan Dobbin]((https://github.com/darmsDD))|
 
 ## Introdução
 O atual documento tem por objetivo apresentar os épicos, as histórias de usuário (US) e o product backlog da plataforma A Monitoria. O backlog é composto por US's às quais são resolvidas em um período de tempo (sprint) e que pertencem a um contexto maior, no caso os épicos.
@@ -245,10 +246,75 @@ Criar funcionalidades que validem as informações dos usuários.
 |--------:|:-|
 | **Épico** | [Inscrição](###EP03)|
 |  **Descrição** |Eu como usuário professor desejo ver a quantidade de vagas por matéria que eu leciono |
-| **Priorização:** |S |
+| **Priorização:** |M |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
 | **Critérios de aceitação:** | - |
+
+
+| US20 | Período de inscrição|
+|--------:|:-|
+| **Épico** | [Ajuda](###EP04)|
+|  **Descrição** |Eu como usuário professor ou usuário aluno desejo ser mostrado quando se inicia e quando termina o período de inscrição, para poder me planejar bem.|
+| **Priorização:** |M |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+| US21 | Qualificação dos monitores|
+|--------:|:-|
+| **Épico** | [Ajuda](###EP04)|
+|  **Descrição** |Eu como usuário professor desejo ver os requerimentos para a inscrição em monitoria, para saber as qualificações dos meus monitores|
+| **Priorização:** |M |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+| US22 | Requerimento para monitores|
+|--------:|:-|
+| **Épico** | [Ajuda](###EP04)|
+|  **Descrição** |Eu como usuário aluno desejo ver os requerimentos para a inscrição em monitoria, para saber se posso realizá-la ou não.|
+| **Priorização:** |M |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+| US23 | Tutorial|
+|--------:|:-|
+| **Épico** | [Ajuda](###EP04)|
+|  **Descrição** |Eu como usuário professor ou usuário aluno desejo receber um tutorial para aprender a utilizar a plataforma.|
+| **Priorização:** |W |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+| US24 | Ler FAQS|
+|--------:|:-|
+| **Épico** | [Ajuda](###EP04)|
+|  **Descrição** |Eu como usuário desejo poder ler FAQS, para esclarecer dúvidas.|
+| **Priorização:** |C |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+| US25 | Editar FAQS|
+|--------:|:-|
+| **Épico** | [Ajuda](###EP04)|
+|  **Descrição** |Eu como administrador posso editar FAQS, para responder dúvidas.|
+| **Priorização:** |C |
+| **Pontos:** |  |
+| **Elicitação:** |[questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) e [cadastro](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/)|
+| **Critérios de aceitação:** | - |
+
+
+
+
+
+
 
 
 
