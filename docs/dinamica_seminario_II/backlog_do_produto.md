@@ -11,6 +11,8 @@
 | 03/09/19 | 0.5 | Adição das histórias notícias e inscrição| [Ivan Dobbin]((https://github.com/darmsDD))|
 | 03/09/19 | 0.6 | Adição das histórias de  ajuda| [Ivan Dobbin]((https://github.com/darmsDD))|
 | 04/09/19 | 0.7 | Início da adição dos critérios de aceitação| [Ivan Dobbin]((https://github.com/darmsDD))|
+| 05/09/19 | 0.8 | Finalização da adição dos critérios de aceitação| [Ivan Dobbin]((https://github.com/darmsDD))|
+
 
 ## Introdução
 O atual documento tem por objetivo apresentar os épicos, as histórias de usuário (US) e o product backlog da plataforma A Monitoria. O backlog é composto por US's às quais são resolvidas em um período de tempo (sprint) e que pertencem a um contexto maior, no caso os épicos.
@@ -178,139 +180,139 @@ Criar funcionalidades que validem as informações dos usuários.
 | **Priorização:** |C |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Criar um painel  que mostre aos usuários notícias recentes |
 
 
-| US13| Ranking |
+| US14| Ranking |
 |--------:|:-|
 | **Épico** | [Noticias](###EP02)|
 |  **Descrição** |Eu como usuário desejo ver um ranking em tempo real sobre a minha posição para conseguir a vaga de monitor para determinada matéria |
 | **Priorização:** |C |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Mostrar para o usuário uma tabela com um ranking das matérias que ele desejou monitorar e sua posição nela.|
 
 
 
-| US14| Resultado |
+| US15| Resultado |
 |--------:|:-|
 | **Épico** | [Noticias](###EP02)|
 |  **Descrição** |Eu como usuário desejo ser informado sobre o resultado da minha inscrição |
 | **Priorização:** |M |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Mostrar para o usuário em uma mensagem simples qual a matéria, se foi aprovado, que irá monitorar e o horário dela. |
 
 
 
-| US15| Painel de matérias para dar monitoria |
+| US16| Painel de matérias para dar monitoria |
 |--------:|:-|
 | **Épico** | [Inscrição](###EP03)|
 |  **Descrição** |Eu como usuário aluno desejo ver as disciplinas que posso monitorar com suas informações(disciplina,horário,dia,turma) |
 | **Priorização:** |M |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Criar uma interface que mostre de maneira clara as matérias que um aluno pode monitorar |
 
 
-| US16 | Prioridade de escolha de matéria |
+| US17 | Prioridade de escolha de matéria |
 |--------:|:-|
 | **Épico** | [Inscrição](###EP03)|
 |  **Descrição** |Eu como usuário aluno desejo escolher com prioridades diferentes as matérias que desejo monitorar |
 | **Priorização:** |M |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Permitir ao usuário escolher a prioridade das matérias a partir de alguns escolhas|
 
 
-| US17 | Indicar aluno |
+| US18 | Indicar aluno |
 |--------:|:-|
 | **Épico** | [Inscrição](###EP03)|
 |  **Descrição** |Eu como usuário professor desejo escolher que alunos irei indicar para as matérias que leciono |
 | **Priorização:** |M |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | O usuário professor deve ser capaz de indicar alunos para monitoria de matérias que ele leciona |
 
 
 
-| US18 | *Visualizar a quantidade de vagas por matéria para a relação aluno|
+| US19 | *Visualizar a quantidade de vagas por matéria para a relação aluno|
 |--------:|:-|
 | **Épico** | [Inscrição](###EP03)|
 |  **Descrição** |Eu como usuário aluno desejo ver a quantidade de vagas por matéria que posso atuar |
 | **Priorização:** |S |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | O usuário aluno tem que ser capaz de ver a quantidade de vagas por matéria que ele pode monitorar|
 
 
-| US19 | *Visualizar a quantidade de vagas por matéria para a relação professor|
+| US20 | *Visualizar a quantidade de vagas por matéria para a relação professor|
 |--------:|:-|
 | **Épico** | [Inscrição](###EP03)|
 |  **Descrição** |Eu como usuário professor desejo ver a quantidade de vagas por matéria que eu leciono |
 | **Priorização:** |M |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | O usuário professor deve ser capaz de ver a quantidade de vagas que existe para monitores de matérias que ele leciona |
 
 
-| US20 | Período de inscrição|
+| US21 | Período de inscrição|
 |--------:|:-|
 | **Épico** | [Ajuda](###EP04)|
 |  **Descrição** |Eu como usuário professor ou usuário aluno desejo ser mostrado quando se inicia e quando termina o período de inscrição, para poder me planejar bem.|
 | **Priorização:** |M |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Todos os usuários devem conseguir ver um aviso ou mensagem lhes informando do período de inscrição |
 
 
-| US21 | Qualificação dos monitores|
+| US22 | Qualificação dos monitores|
 |--------:|:-|
 | **Épico** | [Ajuda](###EP04)|
 |  **Descrição** |Eu como usuário professor desejo ver os requerimentos para a inscrição em monitoria, para saber as qualificações dos meus monitores|
 | **Priorização:** |M |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Os usuários professores devem ver através de uma lista as qualificações necessárias para ser um monitor. |
 
 
-| US22 | Requerimento para monitores|
+| US23 | Requerimento para monitores|
 |--------:|:-|
 | **Épico** | [Ajuda](###EP04)|
 |  **Descrição** |Eu como usuário aluno desejo ver os requerimentos para a inscrição em monitoria, para saber se posso realizá-la ou não.|
 | **Priorização:** |M |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Os usuários alunos devem ser capazes de ver quais os requerimentos necessários para poder dar monitoria |
 
-| US23 | Tutorial|
+| US24 | Tutorial|
 |--------:|:-|
 | **Épico** | [Ajuda](###EP04)|
 |  **Descrição** |Eu como usuário professor ou usuário aluno desejo receber um tutorial para aprender a utilizar a plataforma.|
 | **Priorização:** |W |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Mostrar a todos os usuários as principais funcionalidades da plataforma passo a passo guiando eles. |
 
 
-| US24 | Ler FAQS|
+| US25 | Ler FAQS|
 |--------:|:-|
 | **Épico** | [Ajuda](###EP04)|
 |  **Descrição** |Eu como usuário desejo poder ler FAQS, para esclarecer dúvidas.|
 | **Priorização:** |C |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Permitir que o usuário leia as perguntas mais frequentes e suas soluções |
 
 
-| US25 | Editar FAQS|
+| US26 | Editar FAQS|
 |--------:|:-|
 | **Épico** | [Ajuda](###EP04)|
 |  **Descrição** |Eu como administrador posso editar FAQS, para responder dúvidas.|
 | **Priorização:** |C |
 | **Pontos:** |  |
 | **Elicitação:** |[questionario](/../dinamica_seminario_I/Elicitacao/questionario/) e [prototipo](/../dinamica_seminario_I/Elicitacao/prototipo/)|
-| **Critérios de aceitação:** | - |
+| **Critérios de aceitação:** | Permitir que os administradores adicionem mais perguntas ao FAQ ou que alterem perguntas previamente adicionadas. |
 
 
 
