@@ -10,7 +10,7 @@
 
 ## 1. Introdução
 
-A Identidade Visual representa a familiarização das pessoas com o projeto. As cores presentes em uma logo ou em um aplicativo influenciam diretamente no humor e aceitação dos que as vêem. 
+A Identidade Visual representa a familiarização das pessoas com o projeto. As cores presentes em uma logo ou em um aplicativo influenciam diretamente no humor e aceitação dos que as vêem.
 
 ## 2. Paleta de Cores
 
