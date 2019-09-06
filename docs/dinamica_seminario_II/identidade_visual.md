@@ -18,11 +18,15 @@ As cores da nossa paleta foi montada na plataforma [coolors](https://coolors.co/
 
 ![Paleta](./assets/img/colors/palette.png)
 
+### Análise das cores principais
+
+Aqui fizemos uma rápida análise com uma mostra gráfica das cores, antes de explicarmos o uso delas mais detalhadamente.
+
+![Analise](./assets/img/colors/analise.png)
+
 ## 3. Cores e Emoções
 
 Cada cor pode transmitir uma emoção direta para o alvo que a vê. Como a proposta do projeto é relacionada ao campo educacional, a equipe optou por selecionar cores voltadas a segurança e sabedoria, além de possibilitarem o usuário a utilizar a plataforma por um maior periodo de tempo sem cansar muito sua vista.
-
-![Guia](./assets/img/colors/guia-emocional.jpg)
 
 ## 4. Motivos da escolha de cada cor
 
