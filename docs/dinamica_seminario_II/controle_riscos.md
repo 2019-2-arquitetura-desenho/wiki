@@ -3,8 +3,8 @@
 ## Histórico de Revisão
 | Data | Versão | Descrição | Autor(es) |
 | :--: | :----: | :-------: | :-------: |
-| 22/08/19 | 0.1 | Criação do documento, indicação de tópicos e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) | 
-| 01/09/19 | 1.0 | Adição da Descrição dos Itens da Estrutura analítica de Risco |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) | 
+| 22/08/19 | 0.1 | Criação do documento, indicação de tópicos e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 01/09/19 | 1.0 | Adição da Descrição dos Itens da Estrutura analítica de Risco |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 | 01/09/19 | 1.1 | Adição da Análise quantitativa dos riscos |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 | 05/09/19 | 2.0 | Adição das Matrizes de impacto |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 
@@ -109,7 +109,40 @@ A análise quantitativa dos riscos será feita através da matriz de probabilida
 | Baixo uso da aplicação, devido à sazonalidade com que o processo ocorre | Alto | Muito Alta | - | - | 20 |
 
 
-## Caminho Crítico com PERT
+## Caminho Crítico com PERT/CPM
+
+### Tabela
+
+| Atividade | Descrição | Precedentes | Duração |
+| :-------: | :-------: | :---------: | :-----: |
+| A | Diagrama BPMN | - | 1 |
+| B | Modelos Estáticos UML | A | 2 |
+| C | Modelos Dinâmicos UML | A | 2 |
+| D | Padrões GoFs | E | 4 |
+| E | Padrões Emergentes | B, C | 1 |
+| F | Documento de Arquitetura | D | 3 |
+| G | Documento de Visão | - | 1 |
+| H | Protótipo | - | 1 |
+| I | Modelar Banco de Dados | - | 1 |
+| J | Conectar Banco de Dados | I | 1 |
+| K | Aplicar Padrões de Requisição com Arquitetura REST | J | 1 |
+| L | Armazenar Informações do Cadastro do Usuário | J | 1 |
+| M | Extração de Informções do PDF | K | 2 |
+| N | Criação de Super Usuário | J | 1 |
+| O | Definição de Regras de Monitoria | G | 1 |
+| P | Aplicação da Formula | O | 1 |
+| Q | Desenvolver Extração do Nome, IRA e Matérias Cursadas | M | 3 |
+| R | Tela de Login | - | 2 |
+| S | Tela de Ajuda ao Aluno | R | 1 |
+| T | Menu Lateral | R | 1 |
+| U | Alterar Cadastro | R | 1 |
+| V | Enviar PDF | T | 2 |
+| W | Tela com Matérias Disponíveis para Inscrição | T | 2 |
+| X | Tela de Resultado da Monitoria em Tempo Real | W | 2 |
+| Y | Professor Selecionar Alunos para Resultado | X | 1 |
+| Z | Desenvolver Extração de Matérias, Turmas e Horários | - | 2 |
+| AA | Exportar Dados para o back-end em Formato Compatível | Z | 1 |
+| BB | Revisão dos Artefatos | A, B, C, D, F | 1 |
 
 ### Diagrama
 
