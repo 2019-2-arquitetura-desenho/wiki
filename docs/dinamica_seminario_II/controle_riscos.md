@@ -150,6 +150,8 @@ A análise quantitativa dos riscos será feita através da matriz de probabilida
 
 ### Análise
 
+De acordo com o diagrama acima é possivel visualizar que o caminho crítico do projeto está relacionado com os artefatos que são os fundamentos de um desenvolvimento saudavel de um projeto. Com isso é fácil notar que o atraso dos artefatos acarretaria no atraso do projeto, devendo ter uma maior prioridade.
+
 ## Referências
 
 
