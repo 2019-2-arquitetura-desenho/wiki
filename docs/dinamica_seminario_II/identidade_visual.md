@@ -9,6 +9,7 @@
 | 05/09/19 | 0.3 | Método de geração da paleta | [João Rossi](https://github.com/bielrossi15) |
 | 05/09/19 | 0.4 | Análise de cores | [João Rossi](https://github.com/bielrossi15) |
 
+
 ## 1. Introdução
 
 A Identidade Visual representa a familiarização das pessoas com o projeto. As cores presentes em uma logo ou em um aplicativo influenciam diretamente no humor e aceitação dos que as vêem.
