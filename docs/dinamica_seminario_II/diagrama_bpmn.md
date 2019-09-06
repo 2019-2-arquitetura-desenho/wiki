@@ -10,6 +10,8 @@
 | 02/09/19 | 0.4 | Adicão do diagrama geral do processo de trabalho v2 | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 04/09/19 | 0.5 | Adição do diagrama de Elicitar Requisitos | [Lucas Aguiar](https://github.com/Ridersk) |
 | 05/09/2019 | 0.6 | Adição do diagrama da sprint | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 05/09/2019 | 0.7 | Adição do diagrama do processo de criação do backlog | [Gustavo Lima](https://github.com/gustavolima00) e [Ivan Dobbin](https://github.com/darmsDD)|
+| 05/09/2019 | 0.8 | Adição do diagrama de conceber visão do produto | [Gustavo Lima](https://github.com/gustavolima00) e [Ivan Dobbin](https://github.com/darmsDD)|
 
 ## Introdução
 
@@ -42,3 +44,11 @@ Aqui estão listados diagramas modelados com o auxílio do software modelador Bi
 ## Sprints
 
 ![Realizar sprints](assets/img/bpmn/sprint.jpg)
+
+## Processo de criação do Backlog
+
+![criação backlog](assets/img/bpmn/processo_criacao_backlog.jpg)
+
+## Conceber visão do produto
+
+![visão produto](assets/img/bpmn/conceber_visao_do_produto.jpg)
