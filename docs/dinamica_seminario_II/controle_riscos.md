@@ -4,12 +4,12 @@
 | Data | Versão | Descrição | Autor(es) |
 | :--: | :----: | :-------: | :-------: |
 | 22/08/19 | 0.1 | Criação do documento, indicação de tópicos e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 01/09/19 | 1.0 | Adição da Descrição dos Itens da Estrutura analítica de Risco |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
-| 01/09/19 | 1.1 | Adição da Análise quantitativa dos riscos |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
-| 05/09/19 | 2.0 | Adição das Matrizes de impacto |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
-| 05/09/19 | 3.0 | Adição da tabela para o PERT/CPM |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
-| 05/09/19 | 3.1 | Adição do diagrama PERT/CPM |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
-| 05/09/19 | 2.0 | Adição da análise do Diagrama PERT/CPM |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 01/09/19 | 0.2 | Adição da Descrição dos Itens da Estrutura analítica de Risco |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 01/09/19 | 0.3 | Adição da Análise quantitativa dos riscos |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 05/09/19 | 0.4 | Adição das Matrizes de impacto |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 05/09/19 | 0.5 | Adição da tabela para o PERT/CPM |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 05/09/19 | 0.6 | Adição do diagrama PERT/CPM |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 05/09/19 | 1.0 | Adição da análise do Diagrama PERT/CPM |  [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 
 ## Introdução
 
