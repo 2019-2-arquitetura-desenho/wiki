@@ -4,11 +4,11 @@
 
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
-| 22/08/19 | 0.1 |  Criação do documento, indicação de tópicos e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 22/08/19 | 0.2 | Adiciona scrum | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 22/08/19 | 0.3 | Adiciona kanban | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 22/08/19 | 0.4 | Adiciona burndown e velocity | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 22/08/19 | 0.5 | Adiciona qudro de conhecimento e metodologia montada | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 01/09/19 | 0.1 |  Criação do documento, indicação de tópicos e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 01/09/19 | 0.2 | Adiciona scrum | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 01/09/19 | 0.3 | Adiciona kanban | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 01/09/19 | 0.4 | Adiciona burndown e velocity | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 01/09/19 | 0.5 | Adiciona qudro de conhecimento e metodologia montada | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
