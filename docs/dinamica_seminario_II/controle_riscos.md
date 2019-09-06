@@ -132,7 +132,7 @@ A análise quantitativa dos riscos será feita através da matriz de probabilida
 | O | Definição de Regras de Monitoria | G | 1 |
 | P | Aplicação da Formula | O | 1 |
 | Q | Desenvolver Extração do Nome, IRA e Matérias Cursadas | M | 3 |
-| R | Tela de Login | - | 2 |
+| R | Tela de Login | H | 2 |
 | S | Tela de Ajuda ao Aluno | R | 1 |
 | T | Menu Lateral | R | 1 |
 | U | Alterar Cadastro | R | 1 |
@@ -142,13 +142,11 @@ A análise quantitativa dos riscos será feita através da matriz de probabilida
 | Y | Professor Selecionar Alunos para Resultado | X | 1 |
 | Z | Desenvolver Extração de Matérias, Turmas e Horários | - | 2 |
 | AA | Exportar Dados para o back-end em Formato Compatível | Z | 1 |
-| BB | Revisão dos Artefatos | A, B, C, D, F | 1 |
+| BB | Revisão dos Artefatos | F | 1 |
 
 ### Diagrama
 
-[comment]: # "Pesquisar sobre PERT/CPM e realizar um diagrama (grafo)."
-[comment]: # "Possível ferramenta: https://www.lucidchart.com/pages/pt/caminho-critico-e-graficos-pert"
-[comment]: # "Vai depender do backlog/diagrama de gantt."
+![PERT/CPM](./assets/img/PERT-CPM.png)
 
 ### Análise
 
@@ -160,3 +158,5 @@ A análise quantitativa dos riscos será feita através da matriz de probabilida
 [^3]: https://danielettinger.com/2011/06/14/gerenciando-os-riscos-do-projeto-com-a-matriz-de-probabilidade-e-impacto/
 [^4]: https://github.com/Desenho-Grupo2/PlanUp/wiki/Plano-de-Gerenciamento-de-Riscos
 [^5]: https://www.lucidchart.com/pages/pt/caminho-critico-e-graficos-pert
+[^6]: https://www.youtube.com/watch?v=0EWnD4StjMQ
+[^7]: https://www.youtube.com/watch?v=7IGoH6M41V8
