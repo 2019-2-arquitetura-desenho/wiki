@@ -85,9 +85,9 @@ A análise quantitativa dos riscos será feita através da matriz de probabilida
 ### Riscos técnicos
 | Risco | Impacto | Probabilidade | Prevenção | Resposta | Prioridade |
 | :---: | :-----: | :-----------: | :-------: | :------: | :--------: |
-| Dificuldade de Identificar requisitos | Muito Alto | Baixa | Utilizar técnicas para elicitar requisitos | Refinar e replanejar obtenção de requisitos | 10 |
+| Dificuldade de Identificar requisitos | Muito Alto | Baixa | Utilizar diversas técnicas para elicitar requisitos | Refinar e replanejar obtenção de requisitos | 10 |
 | Baixo dominio das tecnologias | Médio | Baixa | Realizar estudos indivuais sobre as tecnologias a serem usadas. | Pareamento visando troca de conhecimento | 6 |
-| Atraso na conclusão das atividades | Alto | Baixa |Mensurar o nivel de conhecimento da tecnologia | Revisão da forma de planejamento das atividades | 8 |
+| Atraso na conclusão das atividades | Alto | Baixa |Mensurar previamente o nivel de conhecimento individual dos membros sobre as tecnologias usadas, evitando sobrecarga | Revisão da forma de planejamento das atividades | 8 |
 
 ### Riscos de Qualidade
 | Risco | Impacto | Probabilidade | Prevenção | Resposta | Prioridade |
@@ -99,7 +99,7 @@ A análise quantitativa dos riscos será feita através da matriz de probabilida
 | Risco | Impacto | Probabilidade | Prevenção | Resposta | Prioridade |
 | :---: | :-----: | :-----------: | :-------: | :------: | :--------: |
 | Escopo mal definido | Muito Alto | Baixa | Adequar o escopo para o tempo dispónivel | Redefinir Escopo | 10 |
-| Cronograma inviável | Muito Alto | Baixa | Adequar os prazos e atividades a um escopo viável Refatorar o Cronograma | 10 |
+| Cronograma inviável | Muito Alto | Baixa | Adequar os prazos e atividades a um escopo viável | Refatorar o Cronograma | 10 |
 | Problemas no autogerenciamento da equipe | Muito Alto | Media | Membros da equipe devem estar cientes de seu papel dentro da equipe, e a importância do seu comprometimento | Cobrança mútua por parte da equipe | 15 |
 
 ### Riscos Externos
@@ -121,9 +121,9 @@ A análise quantitativa dos riscos será feita através da matriz de probabilida
 
 ## Referências
 
-Gerenciando ricos atraves de matrizes. Disponível em https://danielettinger.com/2011/06/14/gerenciando-os-riscos-do-projeto-com-a-matriz-de-probabilidade-e-impacto/
 
 [^1]: https://desenhosoftware-2018-2.github.io/wiki/gerenciamentoRiscos
 [^2]: https://desenhosoftware-2018-2.github.io/wiki/monitoramentoRiscos
-[^3]: https://github.com/Desenho-Grupo2/PlanUp/wiki/Plano-de-Gerenciamento-de-Riscos
-[^4]: https://www.lucidchart.com/pages/pt/caminho-critico-e-graficos-pert
+[^3]: https://danielettinger.com/2011/06/14/gerenciando-os-riscos-do-projeto-com-a-matriz-de-probabilidade-e-impacto/
+[^4]: https://github.com/Desenho-Grupo2/PlanUp/wiki/Plano-de-Gerenciamento-de-Riscos
+[^5]: https://www.lucidchart.com/pages/pt/caminho-critico-e-graficos-pert
