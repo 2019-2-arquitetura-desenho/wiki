@@ -8,7 +8,8 @@
 | 01/09/19 | 0.2 | Adiciona scrum | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 01/09/19 | 0.3 | Adiciona kanban | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 01/09/19 | 0.4 | Adiciona burndown e velocity | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 01/09/19 | 0.5 | Adiciona qudro de conhecimento e metodologia montada | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 01/09/19 | 0.5 | Adiciona quadro de conhecimento e metodologia montada | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 05/09/19 | 0.6 | Adiciona BPMN de sprint |  [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
@@ -54,13 +55,13 @@ As práticas são conduzidas respeitando alguns **princípios**: princípio da c
 
 ### Burndown
 
-Um gráfico de burndown é uma representação gráfica do trabalho a ser feito versus tempo. O trabalho restante (ou backlog) é geralmente no eixo vertical, com o tempo no eixo horizontal. É útil para prever quando todo o trabalho será concluído, frequentemente usado em metodologias ágeis de desenvolvimento de software, como o Scrum.
+Um gráfico de burndown é uma representação gráfica do **trabalho a ser feito versus tempo**. O trabalho restante (ou backlog) é geralmente no eixo vertical, com o tempo no eixo horizontal. É útil para prever quando todo o trabalho será concluído, frequentemente usado em metodologias ágeis de desenvolvimento de software, como o Scrum.
 
 ![Burndown](assets/img/metodologia/burndown.png)
 
 ### Velocity
 
-O velocity é uma medida que evidência a velocidade do time para um projeto Scrum. Esse número é calculado e atualizado após a entrega de cada sprint e baseia-se na média dos pontos entregues das sprints concluídas. O time usa essa informação para saber até quantos pontos de história eles conseguem produzir por sprint.
+O velocity é uma medida que evidência a **velocidade do time para um projeto Scrum**. Esse número é calculado e atualizado após a entrega de cada sprint e baseia-se na média dos pontos entregues das sprints concluídas. O time usa essa informação para saber até quantos pontos de história eles conseguem produzir por sprint.
 
 ![Velocity](assets/img/metodologia/velocity.jpg)
 
@@ -128,6 +129,12 @@ São utilizadas as seguintes ferramentas para comunicação:
 - **Google Drive:** para rastrear e guardar artefatos;
 - **Issues no github:** como forma de organização;
 - **bot no discord:** para informar o andamento das issues do repositório.
+
+### Diagramação BPMN da sprint
+
+De acordo com as metodologias definidas e os papéis desempenhados, pode-se desenhar em diagramação BPMN como será o fluxo das atividades do projeto no contexto das sprints, conforme abaixo:
+
+![BPMN de Sprint](assets/img/bpmn/sprint.jpg)
 
 ## Referências
 
