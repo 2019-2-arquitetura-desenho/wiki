@@ -10,6 +10,8 @@
 | 01/09/19 | 0.4 | Adiciona burndown e velocity | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 01/09/19 | 0.5 | Adiciona quadro de conhecimento e metodologia montada | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 05/09/19 | 0.6 | Adiciona BPMN de sprint |  [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 05/09/19 | 0.7 | Adiciona quadro de conhecimento e arruma referências | [Welison Regis](https://github.com/WelisonR) |
+| 05/09/19 | 1.0 | Gera primeira versão do documento | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
@@ -69,7 +71,7 @@ O velocity é uma medida que evidência a **velocidade do time para um projeto S
 
 O quadro de conhecimento guarda informações referentes ao conhecimento técnico de cada membro em relação às tecnologias envolvidas no projeto. Este quadro permite acompanhar a evolução de cada membro nas respectivas tecnologias, assim como acompanhar a circulação do conhecimento ao longo das sprints.
 
-<!-- ![Quadro de conhecimento](assets/img/quadro_conhecimento.jpg) -->
+![Quadro de conhecimento](assets/img/metodologia/quadro_conhecimento.jpg)
 
 ## Metologia Montada
 
@@ -138,8 +140,8 @@ De acordo com as metodologias definidas e os papéis desempenhados, pode-se dese
 
 ## Referências
 
-[^1]: https://www.desenvolvimentoagil.com.br/scrum/
-[^2]: https://www.scrum.org/resources/what-is-scrum?gclid=Cj0KCQjw2K3rBRDiARIsAOFSW_52fpXNGTq1mgnD-SDUrsZ0msMVA6TIuqZ2fTb-6EXorIoPA_65L6waAkcXEALw_wcB
+[^1]: DESENVOLVIMENTO ÁGIL. Scrum. [S. l.], 2014. Disponível [aqui](https://www.desenvolvimentoagil.com.br/scrum/). Acesso em: 4 set. 2019.
+[^2]: SCRUM.ORG. What is Scrum?: A Better Way Of Building Products. [S. l.]: Scrum.org, 2019. Disponível [aqui](https://www.scrum.org/resources/what-is-scrum?gclid=Cj0KCQjw2K3rBRDiARIsAOFSW_52fpXNGTq1mgnD-SDUrsZ0msMVA6TIuqZ2fTb-6EXorIoPA_65L6waAkcXEALw_wcB). Acesso em: 3 set. 2019.
 
 <!-- [^1]: https://translate-me.github.io/docs/metodologia/
 [^2]: https://ads-unigrade-2019-1.github.io/Wiki/dinamica02/metodologia/
