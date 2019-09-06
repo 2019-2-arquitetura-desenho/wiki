@@ -165,3 +165,5 @@ De acordo com o diagrama acima é possivel visualizar que o caminho crítico do 
 [^5]: https://www.lucidchart.com/pages/pt/caminho-critico-e-graficos-pert
 [^6]: https://www.youtube.com/watch?v=0EWnD4StjMQ
 [^7]: https://www.youtube.com/watch?v=7IGoH6M41V8
+[^8]: https://br.ccm.net/contents/583-o-metodo-pert
+[^9]: https://pt.wikipedia.org/wiki/PERT
