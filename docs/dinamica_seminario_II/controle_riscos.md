@@ -47,13 +47,13 @@ O objetivo deste documento é explicitar como acontecerá o gerenciamento de ris
 A análise quantitativa dos riscos será feita através da matriz de probabilidade e impacto, cada risco é classificado de acordo com a sua probabilidade de ocorrência e impacto em um objetivo, se ele realmente ocorrer. A organização deve determinar que combinações de probabilidade e impacto resultam em uma classificação de alto risco, risco moderado e baixo risco.
 
 ### Probabilidade
-| Probabilidade | Intervalo(%) | Peso |
-| :-----------: | :----------: | :--: |
-| Muito Baixa |	0 - 20 | 1 |
-| Baixa	| 21 - 40 |	2 |
-| Média | 41 - 60 |	3 |
-| Alta | 61 - 80 | 4 |
-| Muito Alta | 81 - 100 | 5 |
+| Probabilidade | Peso |
+| :-----------: | :--: |
+| Muito Baixa | 1 |
+| Baixa	| 2 |
+| Média | 3 |
+| Alta | 4 |
+| Muito Alta | 5 |
 
 ### Impacto
 | Impacto | Descrição | Peso |
@@ -87,7 +87,7 @@ A análise quantitativa dos riscos será feita através da matriz de probabilida
 | :---: | :-----: | :-----------: | :-------: | :------: | :--------: |
 | Dificuldade de Identificar requisitos | Muito Alto | Baixa | Utilizar diversas técnicas para elicitar requisitos | Refinar e replanejar obtenção de requisitos | 10 |
 | Baixo dominio das tecnologias | Médio | Baixa | Realizar estudos indivuais sobre as tecnologias a serem usadas. | Pareamento visando troca de conhecimento | 6 |
-| Atraso na conclusão das atividades | Alto | Baixa |Mensurar previamente o nivel de conhecimento individual dos membros sobre as tecnologias usadas, evitando sobrecarga | Revisão da forma de planejamento das atividades | 8 |
+| Atraso na conclusão das atividades | Alto | Média |Mensurar previamente o nivel de conhecimento individual dos membros sobre as tecnologias usadas, evitando sobrecarga | Revisão da forma de planejamento das atividades | 12 |
 
 ### Riscos de Qualidade
 | Risco | Impacto | Probabilidade | Prevenção | Resposta | Prioridade |
