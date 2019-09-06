@@ -4,18 +4,18 @@
 
 |   Data   | Versão |       Descrição       |                 Autor(es)                  |
 | :------: | :----: | :-------------------: | :----------------------------------------: |
-| 01/09/19 |  0.1   | Criação do documento, dos épicos e das histórias | [Ivan Dobbin]((https://github.com/darmsDD)) e [João Rodrigues](https://github.com/rjoao) |
-| 01/09/19 |  0.2   | Adição da Introdução, Metodologia e Épicos | [Ivan Dobbin]((https://github.com/darmsDD)) e [João Rodrigues](https://github.com/rjoao) |
-| 02/09/19 |  0.3   | Adição de histórias de usuário | [Ivan Dobbin]((https://github.com/darmsDD)) e [João Rodrigues](https://github.com/rjoao) |
-| 03/09/19 |  0.4   | Adição de histórias de perfil e autenticação | [Ivan Dobbin](https://github.com/darmsDD) |
-| 03/09/19 |  0.5   | Adição de histórias de notícias e inscrição | [Ivan Dobbin](https://github.com/darmsDD) |
-| 03/09/19 |  0.6   | Adição de histórias de ajuda | [Ivan Dobbin](https://github.com/darmsDD) |
-| 04/09/19 |  0.7   | Início da adição dos critérios de aceitação | [Ivan Dobbin](https://github.com/darmsDD) |
-| 05/09/19 |  0.8   | Finalização da adição dos critérios de aceitação | [Ivan Dobbin](https://github.com/darmsDD) |
-| 05/09/19 |  0.9   | Mudando *elicitação* para *origem* e ajeitando links | [Ivan Dobbin](https://github.com/darmsDD) |
-| 05/09/19 |  0.9.1 | Adição de justificativa em descrição de história de usuário | [João Rodrigues](https://github.com/rjoao) |
-| 05/09/19 |  0.9.2 | Adição de pontuação de história de usuário | [João Rodrigues](https://github.com/rjoao) |
-| 05/09/19 |  0.9.3 | Adição de referẽncias | [João Rodrigues](https://github.com/rjoao) |
+| 01/09/19 |  0.10   | Criação do documento, dos épicos e das histórias | [Ivan Dobbin]((https://github.com/darmsDD)) e [João Rodrigues](https://github.com/rjoao) |
+| 01/09/19 |  0.20   | Adição da Introdução, Metodologia e Épicos | [Ivan Dobbin]((https://github.com/darmsDD)) e [João Rodrigues](https://github.com/rjoao) |
+| 02/09/19 |  0.30   | Adição de histórias de usuário | [Ivan Dobbin]((https://github.com/darmsDD)) e [João Rodrigues](https://github.com/rjoao) |
+| 03/09/19 |  0.40   | Adição de histórias de perfil e autenticação | [Ivan Dobbin](https://github.com/darmsDD) |
+| 03/09/19 |  0.50   | Adição de histórias de notícias e inscrição | [Ivan Dobbin](https://github.com/darmsDD) |
+| 03/09/19 |  0.60   | Adição de histórias de ajuda | [Ivan Dobbin](https://github.com/darmsDD) |
+| 04/09/19 |  0.70   | Início da adição dos critérios de aceitação | [Ivan Dobbin](https://github.com/darmsDD) |
+| 05/09/19 |  0.80   | Finalização da adição dos critérios de aceitação | [Ivan Dobbin](https://github.com/darmsDD) |
+| 05/09/19 |  0.90   | Mudando *elicitação* para *origem* e ajeitando links | [Ivan Dobbin](https://github.com/darmsDD) |
+| 05/09/19 |  0.91 | Adição de justificativa em descrição de história de usuário | [João Rodrigues](https://github.com/rjoao) |
+| 05/09/19 |  0.92 | Adição de pontuação de história de usuário | [João Rodrigues](https://github.com/rjoao) |
+| 05/09/19 |  0.93 | Adição de referẽncias | [João Rodrigues](https://github.com/rjoao) |
 | 06/09/19 |  1.0   | Finaliza a primeira versão do documento | [João Rodrigues](https://github.com/rjoao) |
 
 
