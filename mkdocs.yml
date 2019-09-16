@@ -50,6 +50,8 @@ nav:
       - Plano de Gerenciamento de Configuração: dinamica_seminario_II/gerenciamento_configuracao.md
       - Plano de Gerenciamento de Riscos: dinamica_seminario_II/controle_riscos.md
       - Identidade Visual: dinamica_seminario_II/identidade_visual.md
+    - Dinâmica e seminário III:
+      - Diagrama de Sequencia: dinamica_seminario_III/diagrama_seq.md
   - Iniciativas Extras:
     - Extensões: samples.md
     - Documento de Visão: documento_visao.md
