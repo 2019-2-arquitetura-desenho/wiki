@@ -51,6 +51,7 @@ nav:
       - Plano de Gerenciamento de Riscos: dinamica_seminario_II/controle_riscos.md
       - Identidade Visual: dinamica_seminario_II/identidade_visual.md
     - Dinâmica e seminário III:
+      - Diagrama de Pacotes: dinamica_seminario_III/diagrama_pacotes.md
       - Diagrama de Atividades : dinamica_seminario_III/diagrama_de_atividades.md
       - Diagrama de Sequencia: dinamica_seminario_III/diagrama_seq.md
       - Diagrama de Estados: dinamica_seminario_III/diagrama_de_estados.md
