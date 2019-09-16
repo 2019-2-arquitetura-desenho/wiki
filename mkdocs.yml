@@ -52,6 +52,7 @@ nav:
       - Identidade Visual: dinamica_seminario_II/identidade_visual.md
     - Dinâmica e seminário III:
       - Diagrama de Atividades : dinamica_seminario_III/diagrama_de_atividades.md
+      - Diagrama de Sequencia: dinamica_seminario_III/diagrama_seq.md
   - Iniciativas Extras:
     - Extensões: samples.md
     - Documento de Visão: documento_visao.md
