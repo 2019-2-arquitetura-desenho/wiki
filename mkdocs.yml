@@ -14,7 +14,7 @@ copyright: 'Copyright &copy; 2019 A Monitoria'
 # Theme settings
 theme:
   logo: assets/img/logo/logo_icon.png
-  # favicon: 
+  # favicon:
   font:
     text: Roboto
     code: Roboto Mono
@@ -50,6 +50,8 @@ nav:
       - Plano de Gerenciamento de Configuração: dinamica_seminario_II/gerenciamento_configuracao.md
       - Plano de Gerenciamento de Riscos: dinamica_seminario_II/controle_riscos.md
       - Identidade Visual: dinamica_seminario_II/identidade_visual.md
+    - Dinâmica e seminário III:
+      - Diagrama de Atividades : dinamica_seminario_III/diagrama_de_atividades.md
   - Iniciativas Extras:
     - Extensões: samples.md
     - Documento de Visão: documento_visao.md
