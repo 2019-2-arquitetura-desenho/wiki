@@ -8,4 +8,10 @@
 
 ## Diagrama Geral
 
-![Diagrama de Geral](./assets/img/diagrama_geral_pacotes.png)
+### Versão 1.0
+
+![Diagrama de Geral](./assets/img/diagrama_geral_pacotes_v1.png)
+
+### Versão 1.1
+
+![Diagrama de Geral - v1.1](./assets/img/diagrama_geral_pacotes_v1_1.png)
