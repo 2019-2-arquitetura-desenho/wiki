@@ -5,7 +5,7 @@
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
 | 19/09/19 | 0.1 | Adição de introdução e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 19/09/19 | 0.2 | Adição do diagrama de classe geral do backend | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 19/09/19 | 0.2 | Adição do diagrama de classe geral do backend | [Lieverton Silva](https://github.com/lievertom), [Welison Regis](https://github.com/WelisonR) e [Lucas Maciel](https://github.com/Ridersk) |
 
 ## Introdução
 
