@@ -4,7 +4,8 @@
 
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
-| 16/09/19 | 0.1 | Adição de introdução e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 19/09/19 | 0.1 | Adição de introdução e referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 19/09/19 | 0.2 | Adição do diagrama de classe geral do backend | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
@@ -13,7 +14,7 @@ Para o desenvolvimento dos diagramas de classes, utilizou-se a ferramenta [Astah
 
 ## Diagrama Geral - Backend
 
-
+![Diagrama Geral - Backend](./assets/img/diagrama_classes/class_diagram.jpg);
 
 ## Referências
 
