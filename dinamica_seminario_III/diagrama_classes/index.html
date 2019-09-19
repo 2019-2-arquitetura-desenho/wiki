@@ -42,7 +42,7 @@
     
     
       
-        <title>DIAGRAMA DE CLASSES - A Monitoria</title>
+        <title>Diagrama de Classe - A Monitoria</title>
       
     
     
@@ -119,7 +119,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                DIAGRAMA DE CLASSES
+                Diagrama de Classe
               
             </span>
           
@@ -187,7 +187,9 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -270,10 +272,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
     
     <label class="md-nav__link" for="nav-1">
       Dinâmicas e Seminários
@@ -565,10 +569,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3" checked>
     
     <label class="md-nav__link" for="nav-1-3">
       Dinâmica e seminário III
@@ -589,6 +595,77 @@
     <a href="../diagrama_pacotes/" title="Diagrama de Pacotes" class="md-nav__link">
       Diagrama de Pacotes
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Diagrama de Classe
+      </label>
+    
+    <a href="./" title="Diagrama de Classe" class="md-nav__link md-nav__link--active">
+      Diagrama de Classe
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisao" class="md-nav__link">
+    Histórico de revisão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagrama-geral-backend" class="md-nav__link">
+    Diagrama Geral - Backend
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -766,10 +843,16 @@
 </thead>
 <tbody>
 <tr>
-<td align="center">16/09/19</td>
+<td align="center">19/09/19</td>
 <td align="center">0.1</td>
 <td align="center">Adição de introdução e referências</td>
 <td align="center"><a href="https://github.com/lievertom">Lieverton Silva</a> e <a href="https://github.com/WelisonR">Welison Regis</a></td>
+</tr>
+<tr>
+<td align="center">19/09/19</td>
+<td align="center">0.2</td>
+<td align="center">Adição do diagrama de classe geral do backend</td>
+<td align="center"><a href="https://github.com/lievertom">Lieverton Silva</a>, <a href="https://github.com/WelisonR">Welison Regis</a> e <a href="https://github.com/Ridersk">Lucas Maciel</a></td>
 </tr>
 </tbody>
 </table>
@@ -777,6 +860,7 @@
 <p>O diagrama de classes é um diagrama estático de estrutura UML que apresenta a organização do sistema projetado no nível de classes e interfaces, mostra seus recursos, restrições e relacionamentos - associações, generalizações, dependências, etc. Nesse diagrama, procura-se formular as classes, seus atributos (propriedades) e métodos.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
 Para o desenvolvimento dos diagramas de classes, utilizou-se a ferramenta <a href="http://astah.net/editions/uml-new">Astah UML</a>. O presente diagrama possui estrito relacionamento com outros diagramas, especialmente com o <a href="../diagrama_pacotes/">diagrama de pacotes</a>.</p>
 <h2 id="diagrama-geral-backend">Diagrama Geral - Backend</h2>
+<p><img alt="Diagrama Geral - Backend" src="../assets/img/diagrama_classes/class_diagram.jpg" />;</p>
 <h2 id="referencias">Referências</h2>
 <div class="footnote">
 <hr />
@@ -805,6 +889,41 @@ Para o desenvolvimento dos diagramas de classes, utilizou-se a ferramenta <a hre
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../diagrama_pacotes/" title="Diagrama de Pacotes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Diagrama de Pacotes
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../diagrama_de_atividades/" title="Diagrama de Atividades" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Diagrama de Atividades
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
