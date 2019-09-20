@@ -16,3 +16,12 @@ O diagrama de atividades é um diagrama UML utilizado para modelar o aspecto com
 
 ## Diagrama de Atividades do Professor V1.0
 ![Diagrama de Atividades Professor](assets/img/diagrama_atividades_professor.png)
+
+## Referências
+
+
+[^1]: https://translate-me.github.io/docs/desenho_de_software/uml/uml_dinamicos/#24-diagrama-de-atividades
+[^2]: https://pt.wikipedia.org/wiki/Diagrama_de_atividade
+[^3]: https://www.ibm.com/support/knowledgecenter/pt-br/SS8PJ7_9.6.0/com.ibm.xtools.modeler.doc/topics/cactd.html
+[^4]: https://www.youtube.com/watch?v=vReuK7_tYWc
+
