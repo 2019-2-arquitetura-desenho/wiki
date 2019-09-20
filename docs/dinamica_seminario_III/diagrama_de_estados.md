@@ -7,7 +7,7 @@
 | 16/09/19 | 0.2 | Adição do diagrama do processo de inscrição para aluno| [Ivan Dobbin]((https://github.com/darmsDD)) e [Gustavo Lima](https://github.com/gustavolima00) |
 | 16/09/19 | 0.3 | Adição da Introdução | [Ivan Dobbin]((https://github.com/darmsDD)) |
 | 19/09/19 | 0.4 | Adição da versão 2.0 do diagrama do processo de inscrição para aluno | [Ivan Dobbin]((https://github.com/darmsDD)) |
-
+| 19/09/19 | 0.5 | Adição do diagrama de ranking | [Gustavo Lima](https://github.com/gustavolima00) |
 
 
 ## Introdução
@@ -25,4 +25,8 @@ Esse diagrama tenta representar os vários estados por qual um objeto pode passa
 
 ![Diagrama de Estados](assets/img/diagrama_estados/aluno_v2.jpg)
 
+
+### Diagrama de ranking
+
+![Diagrama de ranking](assets/img/diagrama_estados/ranking_v1.jpg)
 
