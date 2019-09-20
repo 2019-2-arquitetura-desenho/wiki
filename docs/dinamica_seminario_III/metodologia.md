@@ -52,6 +52,7 @@ O grupo decidiu fazer um diagrama de classe com o objetivo citado acima, definir
 ![Diagrama de classes](./assets/img/diagrama_classe_ex.jpg)
 
 **Elementos Utilizados**
+
 - Classes
   
 - Objetos
@@ -81,6 +82,7 @@ O grupo utilizou o diagrama de atividades para principalmente descrever, de uma 
 ![Diagrama de Atividade](./assets/img/diagrama_de_atividade_exemplo.png)
 
 **Elementos Utilizados**
+
 - Atividades
   
 - Ações
