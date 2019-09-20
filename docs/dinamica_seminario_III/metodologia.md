@@ -20,16 +20,21 @@ Os diagramas da **Unified Model Language** (UML) representam sistemas de softwar
 ### Diagramas UML Estáticos
 Os diagramas estáticos da UML tem como foco a apresentação de características estruturais do sistema, enfatizando certas partes que o compõe. Por ser um tipo de diagrama com o foco estrutural, normalmente ele possui um nível mais baixo, mas não sendo necessariamente de baixo nível, definindo nome de classes, estruturas, assinaturas de métodos e pacotes.
 
-**Exemplos**
+**Exemplos**  
+
 - Diagrama de Classe;
+
 - Diagrama de Casos de Uso;
   
 ### Diagramas UML Dinâmicos
 Os diagramas dinâmicos da UML tem uma ênfase diferente, focando na parte comportamental do sistema, como ele vai agir em certas circunstâncias. Alguns chegam a ser de mais alto nível, mas podemos ver de todos os tipos. Parecido com o estático, ele nos mostra os objetos necessários para a construção do sistema e a comunicação entre eles por meio de métodos e suas mensagens.
 
 **Exemplos**
+
 - Diagrama de Sequência;
+
 - Diagrama de Estado;
+
 - Diagrama de Atividade;
 
 ## Diagramas Escolhidos pelo Grupo 
@@ -48,11 +53,17 @@ O grupo decidiu fazer um diagrama de classe com o objetivo citado acima, definir
 
 **Elementos Utilizados**
 - Classes
+  
 - Objetos
+
 - Pacotes
+
 - Sinais
+
 - Enumerações
+
 - Artefatos
+
 - Tipos de Dados
 
 ### [Diagrama de Estados](./diagrama_de_atividades.md)
@@ -71,9 +82,13 @@ O grupo utilizou o diagrama de atividades para principalmente descrever, de uma 
 
 **Elementos Utilizados**
 - Atividades
+  
 - Ações
+  
 - Nós de Controle
+  
 - Nós de Objeto
+
 - Linhas de Atividade
 
 ### [Diagrama de Estados](./diagrama_de_estados.md)
@@ -119,8 +134,11 @@ O grupo utilizou o diagrama de sequência para definir, como dito previamente na
 ![Diagrama de Sequencia](./assets/img/diagrama_seq_ex.png)
 
 **Elementos Utilizados**
+
 - Linhas de Vida
+  
 - Mensagens
+
 - Interação
 
 ## Referências
