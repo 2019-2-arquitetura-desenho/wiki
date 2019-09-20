@@ -18,6 +18,10 @@ Esse documento tem por objetivo apresentar os diagramas de sequência da platafo
 Os diagramas de sequência são os diagramas dinâmicos mais relevantes na UML e na fase de projeto de software. Um diagrama de sequẽncia, exceto exceções, representa as interações entre os objetos que compõem uma plataforma.
 
 
+## Diagrama de Sequência - Cadastro de Usuário Aluno
+![Diagrama de Sequência de Cadastro de Usuário Aluno](./assets/img/diagrama_sequencia_cadastro_usuario_aluno.png)
+
+
 ## Diagrama de Sequência - Login de Usuário Aluno
 
 ### Versão 1.0
