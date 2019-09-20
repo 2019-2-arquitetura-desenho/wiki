@@ -6,6 +6,7 @@
 |:----:|:------:|:---------:|:--------:|
 | 19/09/19 | 0.1 |  Criação do documento, indicação de tópicos e referências | [Joao Rossi](https://github.com/bielrossi15) |
 | 19/09/19 | 0.2 |  Adição do diagrama de pacotes | [Joao Rossi](https://github.com/bielrossi15) |
+| 19/09/19 | 0.3 |  Adição do diagrama de sequência | [Joao Rossi](https://github.com/bielrossi15) |
 
 ## Introdução
 
@@ -107,12 +108,20 @@ O grupo utilizou do diagrama para ter um diagrama estrutural mais macro do proje
 
 **Descrição**
 
+O diagrama de sequência é um diagrama da UML que ilustra a sequência de mensagens entre objetos de uma certa interação. Mostra as mensagens transmitidas entre certos objetos, assim como as estruturas de controle entre os mesmos, por final, pode-se dizer que ele representa interações entre os objetos do sistema.
+
 **Uso do Grupo**
+
+O grupo utilizou o diagrama de sequência para definir, como dito previamente na descrição, como o sistema vai realizar a comunicação entre certos objetos dentro dele mesmo, para facilitar o entendimento da troca de mensagens e interações no nível de objeto.
 
 **Visualização**
 
+![Diagrama de Sequencia](./assets/img/diagrama_seq_ex.png)
 
-
+**Elementos Utilizados**
+- Linhas de Vida
+- Mensagens
+- Interação
 
 ## Referências
 [^1]: https://www.ibm.com/support/knowledgecenter/pt-br/SS5JSH_9.1.1/com.ibm.xtools.modeler.doc/topics/c_models_and_diagrams.html
@@ -124,3 +133,7 @@ O grupo utilizou do diagrama para ter um diagrama estrutural mais macro do proje
 [^3]: https://www.ibm.com/support/knowledgecenter/pt-br/SS8PJ7_9.6.0/com.ibm.xtools.modeler.doc/topics/cactd.html
 
 [^4]: http://micreiros.com/diagramas-comportamentais-da-uml-diagrama-de-estados/
+
+[^5]: http://micreiros.com/diagrama-de-pacotes/
+
+[^5]: https://www.ibm.com/support/knowledgecenter/pt-br/SSCLKU_7.5.5/com.ibm.xtools.sequence.doc/topics/cseqd_v.html
