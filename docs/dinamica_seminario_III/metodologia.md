@@ -130,10 +130,10 @@ O grupo utilizou o diagrama de sequência para definir, como dito previamente na
 
 [^3]: https://www.ibm.com/support/knowledgecenter/pt-br/SS8PJ7_9.6.0/com.ibm.xtools.modeler.doc/topics/cclassd.html
 
-[^3]: https://www.ibm.com/support/knowledgecenter/pt-br/SS8PJ7_9.6.0/com.ibm.xtools.modeler.doc/topics/cactd.html
+[^4]: https://www.ibm.com/support/knowledgecenter/pt-br/SS8PJ7_9.6.0/com.ibm.xtools.modeler.doc/topics/cactd.html
 
-[^4]: http://micreiros.com/diagramas-comportamentais-da-uml-diagrama-de-estados/
+[^5]: http://micreiros.com/diagramas-comportamentais-da-uml-diagrama-de-estados/
 
-[^5]: http://micreiros.com/diagrama-de-pacotes/
+[^6]: http://micreiros.com/diagrama-de-pacotes/
 
-[^5]: https://www.ibm.com/support/knowledgecenter/pt-br/SSCLKU_7.5.5/com.ibm.xtools.sequence.doc/topics/cseqd_v.html
+[^7]: https://www.ibm.com/support/knowledgecenter/pt-br/SSCLKU_7.5.5/com.ibm.xtools.sequence.doc/topics/cseqd_v.html
