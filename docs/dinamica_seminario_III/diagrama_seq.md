@@ -13,6 +13,11 @@
 Esse documento tem por objetivo apresentar os diagramas de sequência da plataforma A Monitoria, ou seja, apresentar as interações entre seus objetos.
 
 
+## Metodologia
+
+Os diagramas de sequência são os diagramas dinâmicos mais relevantes na UML e na fase de projeto de software. Um diagrama de sequẽncia, exceto exceções, representa as interações entre os objetos que compõem uma plataforma.
+
+
 ### Diagrama de login V1
 ![Diagrama de login](./assets/img/DiagramaDeLogin.png)
 
