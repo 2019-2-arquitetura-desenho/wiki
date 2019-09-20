@@ -5,7 +5,7 @@
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
 | 19/09/19 | 0.1 |  Criação do documento, indicação de tópicos e referências | [Joao Rossi](https://github.com/bielrossi15) |
-
+| 19/09/19 | 0.2 |  Adição do diagrama de pacotes | [Joao Rossi](https://github.com/bielrossi15) |
 
 ## Introdução
 
@@ -93,9 +93,15 @@ O grupo utilizou o diagrama de estados de uma maneira mais específica do que ao
 
 **Descrição**
 
+Diagrama de pacotes, ou diagrama de módulos, é um diagrama definido pela UML como um diagrama que divide o sistema em pacotes e pedaços em agrupamentos lógicos e mostrando as dependências que eles possuem entre sí.
+
 **Uso do Grupo**
 
+O grupo utilizou do diagrama para ter um diagrama estrutural mais macro do projeto, diferente do diagrama de classe, que é mais baixo nível, podemos utilizar o diagrama de pacote pra entender o funcionamento do sistema de um jeito diferente.
+
 **Visualização**
+
+![Diagrama de Pacotes](./assets/img/diagrama_pacotes_ex.png)
 
 ### [Diagrama de Sequência](./diagrama_seq.md)
 
