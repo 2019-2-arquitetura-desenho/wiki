@@ -2,10 +2,11 @@
 
 ## Histórico de revisão
 
-| Data | Versão | Descrição | Autor(es)|
-|:----:|:------:|:---------:|:--------:|
-| 16/08/19 | 0.1 | Adição do diagrama de usuário | [Paulo Vitor](https://github.com/PauloVitorRocha) |
-| 16/08/19 | 0.2 | Adição do diagrama de usuário | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rodrigues](https://github.com/rjoao) |
+|   Data   | Versão | Descrição | Autor(es)|
+| :------: | :----: | :-------: | :------: |
+| 16/08/19 |   0.1  | Adição do diagrama de sequência - login de usuário aluno | [Paulo Vitor](https://github.com/PauloVitorRocha) |
+| 19/08/19 |   0.2  | Adição da segunda versão do diagrama de sequẽncia - login de usuário aluno | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rodrigues](https://github.com/rjoao) |
+| 19/08/19 |   0.3  | Adição do diagrama de sequência - cadastro de usuário aluno | [João Rodrigues](https://github.com/rjoao) |
 
 
 ## Introdução
