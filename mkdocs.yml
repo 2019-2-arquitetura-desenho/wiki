@@ -52,11 +52,11 @@ nav:
       - Identidade Visual: dinamica_seminario_II/identidade_visual.md
     - Dinâmica e seminário III:
       - Metodologia: dinamica_seminario_III/metodologia.md
-      - Diagrama de Pacotes: dinamica_seminario_III/diagrama_pacotes.md
-      - Diagrama de Classe: dinamica_seminario_III/diagrama_classes.md
-      - Diagrama de Atividades : dinamica_seminario_III/diagrama_de_atividades.md
-      - Diagrama de Sequencia: dinamica_seminario_III/diagrama_seq.md
-      - Diagrama de Estados: dinamica_seminario_III/diagrama_de_estados.md
+      - Diagramas de Pacotes: dinamica_seminario_III/diagrama_pacotes.md
+      - Diagramas de Classe: dinamica_seminario_III/diagrama_classes.md
+      - Diagramas de Atividades : dinamica_seminario_III/diagrama_de_atividades.md
+      - Diagramas de Sequência: dinamica_seminario_III/diagrama_seq.md
+      - Diagramas de Estados: dinamica_seminario_III/diagrama_de_estados.md
   - Iniciativas Extras:
     - Extensões: samples.md
     - Documento de Visão: documento_visao.md
