@@ -23,3 +23,9 @@ Os diagramas de sequência são os diagramas dinâmicos mais relevantes na UML e
 
 ### Diagrama de login V2
 ![Diagrama de login V2](./assets/img/Diagrama_de_sequencia_Login.png)
+
+
+## Referências
+
+**[1]** SERRANO, Milene. **Arquitetura e Desenho de Software - Aula 10 (Aula Modelagem UML Dinâmica). 2º/2019**. Material apresentado para a disciplina de Arquitetura e Desenho de Software no curso de Engenharia de Software da UnB, FGA.
+
