@@ -6,8 +6,9 @@
 |:----:|:------:|:---------:|:--------:|
 | 16/09/19 | 0.1 | Adição do diagrama geral | [Lucas Maciel](https://github.com/Ridersk) |
 | 17/09/19 | 0.2 | Atualização diagrama geral 1.1 | [Lucas Maciel](https://github.com/Ridersk) |
-| 17/09/19 | 0.2 | Atualização diagrama geral 1.2 | [Lucas Maciel](https://github.com/Ridersk) |
-| 17/09/19 | 0.3 | Adição da Introdução e Referências | [Lucas Maciel](https://github.com/Ridersk) |
+| 17/09/19 | 0.3 | Atualização diagrama geral 1.2 | [Lucas Maciel](https://github.com/Ridersk) |
+| 17/09/19 | 0.4 | Adição da Introdução e Referências | [Lucas Maciel](https://github.com/Ridersk) |
+| 21/09/19 | 1.0 | Atualização diagrama geral 2.0 | [Lucas Maciel](https://github.com/Ridersk) |
 
 ## Introdução
 
@@ -28,6 +29,10 @@ organizar elementos semanticamente relacionados em grupos". Um pacote possui vá
 ### Versão 1.2
 
 ![Diagrama de Geral - v1.2](./assets/img/diagrama_geral_pacotes_v1_2.png)
+
+### Versão 2.0
+
+![Diagrama de Geral - v2.0](./assets/img/diagrama_geral_pacotes_v2.png)
 
 ## Referências
 
