@@ -49,3 +49,39 @@ Baseado nas necessidades do grupo e do projeto, decidiu-se fazer os seguintes di
 | Atividade | Responsável |
 |:---------:|:-----------:|
 | Protótipo | Gustavo, Rafael |
+
+### Decisões da Segunda Reunião
+
+## Pontos principais para o começo do desenvolvimento
+*   Definir: repositório, ambiente, CI/CD.
+*   Estudar: deploy do serviço.
+
+## Atividades
+
+As escolhas das atividades foram baseadas nas experiências dos membros sobre as tecnologias e, procurou-se também, fazer o balanceamento de conhecimento.
+| Atividade | Responsável |
+|:---------:|:-----------:|
+| Definir ambiente de desenvolvimento do crawler | Welison e Lieverton |
+| Realizar o crawler das ofertas do MW e montar a API | Welison e Lieverton |
+| Definir ambiente de desenvolvimento da api | Gustavo e João Matheus |
+| Definir ambiente de desenvolvimento do frontend | Lucas e Ivan |
+| Realizar o crawler das ofertas do MW | Paulo e Biel |
+| Script de extração de informações iniciais sobre a pessoa | Paulo e Biel |
+| Fazer backend de login da aplicação | Gustavo, Leonardo e André |
+| Fazer a homepage da aplicação no React | Rafael e Lucas |
+| Modelar diagrama de classes para o crawler | Welison e Lieverton |
+
+## Observações
+
+*   Devem ser observados os padrões de commit no documento de gerenciamento e confiaguração, disponível na dinâmica 2.
+*   Deve haver issue, épico e milestone relacionada a atividade.
+
+# Dúvidas e Reflexões (decisões do grupo):
+*   Quais os métodos para entrar na aplicação serão utilizadas pelo grupo? Google e Facebook são válidos?
+    *   Fica como extra.
+*   Como deve ser a entrada do professor no sistema? Aquele botão no protótipo faz sentido?
+    *   Não.
+*   Na aba de procurar monitoria, seria uma boa ter uma aba de sugestões de monitoria (baseado no histórico) e outra com todas as monitorias?
+    *   Não.
+*   Seria melhor uma home page com os dados da atual "página inicial" do protótipo? Essa tela daria acesso ao login também.
+    *   Sim.
