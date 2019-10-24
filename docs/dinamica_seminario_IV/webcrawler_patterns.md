@@ -5,7 +5,7 @@
 |   Data   | Versão | Descrição | Autor(es)|
 | :------: | :----: | :-------: | :------: |
 | 23/09/2019 | 0.1 | Adiciona introdução sobre o módulo Web Crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 23/09/2019 | 0.2 | Adiciona descrição sobre template method usado | Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 23/09/2019 | 0.2 | Adiciona descrição e diagrama sobre template method usado | Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 
 ## Introdução
@@ -19,7 +19,7 @@ No repositório do [Crawler de Ofertas](https://github.com/2019-2-arquitetura-de
 *   **API**: fornece uma interface para obtenção das ofertas do campus UnB-Gama.
 
 
-## Template
+## Template Method
 
 O Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi fundamental no projeto no submódulo "Transformers", pois possibilitou que os dados capturados pelo Crawler sejam tratados de maneira padronizada de forma a facilitar o armazenamento das ofertas (json) em um formato compreensível pelo banco de dados.
 
@@ -45,6 +45,9 @@ Conforme exposto abaixo em um exemplo de uma disciplina, percebe-se que o json s
 ## Solução Implementada
 
 Decidiu-se por utilizar o template method visto que a exportação das ofertas deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.
+
+**Modelagem do template method**:
+![Modelagem do template method implementado](assets/img/template_model.jpg)
 
 ### Transformer Abstrata
 
