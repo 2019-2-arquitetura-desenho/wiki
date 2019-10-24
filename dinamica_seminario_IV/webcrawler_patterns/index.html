@@ -729,8 +729,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    Template
+  <a href="#template-method" class="md-nav__link">
+    Template Method
   </a>
   
     <nav class="md-nav">
@@ -879,8 +879,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    Template
+  <a href="#template-method" class="md-nav__link">
+    Template Method
   </a>
   
     <nav class="md-nav">
@@ -965,7 +965,7 @@
 <tr>
 <td align="center">23/09/2019</td>
 <td align="center">0.2</td>
-<td align="center">Adiciona descrição sobre template method usado</td>
+<td align="center">Adiciona descrição e diagrama sobre template method usado</td>
 <td align="center">Lieverton Silva](<a href="https://github.com/lievertom">https://github.com/lievertom</a>) e <a href="https://github.com/WelisonR">Welison Regis</a></td>
 </tr>
 </tbody>
@@ -979,7 +979,7 @@ No repositório do <a href="https://github.com/2019-2-arquitetura-desenho/monito
 <li><strong>Savers</strong>: exporta os dados obtidos pelo Crawler para o formato json a fim de ser carregado no banco de dados.</li>
 <li><strong>API</strong>: fornece uma interface para obtenção das ofertas do campus UnB-Gama.</li>
 </ul>
-<h2 id="template">Template</h2>
+<h2 id="template-method">Template Method</h2>
 <p>O Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi fundamental no projeto no submódulo "Transformers", pois possibilitou que os dados capturados pelo Crawler sejam tratados de maneira padronizada de forma a facilitar o armazenamento das ofertas (json) em um formato compreensível pelo banco de dados.</p>
 <h3 id="problema">Problema</h3>
 <p>Conforme exposto abaixo em um exemplo de uma disciplina, percebe-se que o json segue uma <strong>estrutura em que se deve definir a "model", a chave primária da tupla e seus respectivos campos que são personalizados</strong>:</p>
@@ -1011,6 +1011,8 @@ No repositório do <a href="https://github.com/2019-2-arquitetura-desenho/monito
 
 <h2 id="solucao-implementada">Solução Implementada</h2>
 <p>Decidiu-se por utilizar o template method visto que a exportação das ofertas deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.</p>
+<p><strong>Modelagem do template method</strong>:
+<img alt="Modelagem do template method implementado" src="../assets/img/template_model.jpg" /></p>
 <h3 id="transformer-abstrata">Transformer Abstrata</h3>
 <p>Inicialmente, define-se uma <strong>classe abstrata</strong> que será responsável por definir os processos de conversão dos objetos em json:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
