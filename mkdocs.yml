@@ -57,6 +57,8 @@ nav:
       - Diagramas de Atividades : dinamica_seminario_III/diagrama_de_atividades.md
       - Diagramas de Sequência: dinamica_seminario_III/diagrama_seq.md
       - Diagramas de Estados: dinamica_seminario_III/diagrama_de_estados.md
+    - Dinâmica e seminário IV:
+      - GRAPS e GOFs - WebCrawler: dinamica_seminario_IV/webcrawler_patterns.md
   - Iniciativas Extras:
     - Extensões: samples.md
     - Documento de Visão: documento_visao.md
