@@ -58,6 +58,7 @@ nav:
       - Diagramas de Sequência: dinamica_seminario_III/diagrama_seq.md
       - Diagramas de Estados: dinamica_seminario_III/diagrama_de_estados.md
     - Dinâmica e seminário IV:
+      - Padrões e GOFs - Front-end: dinamica_seminario_IV/front-end_patterns.md 
       - GRAPS e GOFs - WebCrawler: dinamica_seminario_IV/webcrawler_patterns.md
   - Iniciativas Extras:
     - Extensões: samples.md
