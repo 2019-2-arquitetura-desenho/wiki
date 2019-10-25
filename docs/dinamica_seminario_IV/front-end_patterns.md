@@ -5,7 +5,7 @@
 | Data | Versão | Descrição | Autor(es) |
 | :--: | :----: | :-------: | :-------: |
 | 24/10/2019 | 0.1 | Adiciona Prop Drilling Pattern | [João Rodrigues](https://github.com/rjoao) |
-
+| 24/10/2019 | 0.2 | Adiciona HOC | [Lucas Aguiar](https://github.com/Ridersk) |
 
 ## 1. Prop Drilling Pattern
 
