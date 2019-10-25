@@ -6,9 +6,9 @@
 | :------: | :----: | :-------: | :------: |
 | 23/10/2019 | 0.1 | Adiciona introdução sobre o módulo Web Crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 23/10/2019 | 0.2 | Adiciona descrição e diagrama sobre template method usado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 23/10/2019 | 0.3 | Adiciona descrição sobre padrão fachada utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 23/10/2019 | 0.4 | Adiciona descrição sobre padrão builder utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-
+| 23/10/2019 | 0.3 | Adiciona descrição sobre padrão builder utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 24/10/2019 | 0.4 | Adiciona descrição e diagrama sobre padrão fachada utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 24/10/2019 | 1.0 | Atualiza referências e gera primeira versão do documento | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
@@ -31,6 +31,9 @@ Decorrente das inúmeras tarefas realizadas pelo Web Crawler e pela API, gera-se
 ### Solução Implementada
 
 Estudou-se algumas soluções em relação a padrões para resolver o problema acima e, pode-se notar que o padrão fachada era o que apresentava uma solução de forma a não gerar demasiada quantidade de código ou estruturas complexas. Além disso, sua estrutura possibilitou **simplificar o sistema em subsistemas, o que o tornou mais reutilizável e simples de se customizar**.
+
+**Modelagem do Facade**:
+![Modelagem do Facade](assets/img/crawler_patterns/facade_pattern.jpg)
 
 Portanto, implementou-se uma fachada que possui delega as responsabilidade para três módulos, conforme abaixo.
 
@@ -65,7 +68,7 @@ Devido a complexidade da criação do objeto é necessária a divisão do objeto
 O código desenvolvido foi baseado na aplicação MWScanner, disponível abertamente no GitHub. Adaptou-se o código e desenvolveu-se as necessidades do nosso projeto tendo como base o projeto citado.
 
 **Modelagem do Builder**:
-![Modelagem do builder implementado](assets/img/builder_model.png)
+![Modelagem do builder implementado](assets/img/crawler_patterns/builder_model.png)
 
 Abaixo, segue um exemplo de implementação do builder:
 
@@ -155,7 +158,7 @@ Conforme exposto abaixo em um exemplo de uma disciplina, percebe-se que o json s
 Decidiu-se por utilizar o template method visto que a exportação das ofertas deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.
 
 **Modelagem do template method**:
-![Modelagem do template method implementado](assets/img/template_model.jpg)
+![Modelagem do template method implementado](assets/img/crawler_patterns/template_model.jpg)
 
 #### Transformer Abstrata
 
@@ -222,3 +225,8 @@ class DisciplineClassTransformer(JsonTransformer):
 
         DisciplineClassTransformer.disciplines_class.append(self.map_discipline_class)
 ```
+
+## Referências
+
+[^1]: SERRANO, Milene. **Desenho - Aulas 16, 17, 18 e 19. 2º/2019**. Material apresentado para a disciplina de Desenho e Arquitetura de Software no curso de Engenharia de Software da UnB, FGA.
+[^2]: REFACTORING, GURU. **Behavioral Design Patterns: Behavioral design patterns are concerned with algorithms and the assignment of responsibilities between objects**. Russia. 2019. Disponível: <https://refactoring.guru/design-patterns/behavioral-patterns>. Acesso em: 20 out. 2019.
