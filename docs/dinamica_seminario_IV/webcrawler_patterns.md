@@ -6,8 +6,8 @@
 | :------: | :----: | :-------: | :------: |
 | 23/10/2019 | 0.1 | Adiciona introdução sobre o módulo Web Crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 23/10/2019 | 0.2 | Adiciona descrição e diagrama sobre template method usado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 23/10/2019 | 0.3 | Adiciona descrição sobre padrão fachada utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 23/10/2019 | 0.4 | Adiciona descrição sobre padrão builder utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 23/10/2019 | 0.3 | Adiciona descrição sobre padrão builder utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 24/10/2019 | 0.4 | Adiciona descrição e diagrama sobre padrão fachada utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 
 ## Introdução
@@ -31,6 +31,9 @@ Decorrente das inúmeras tarefas realizadas pelo Web Crawler e pela API, gera-se
 ### Solução Implementada
 
 Estudou-se algumas soluções em relação a padrões para resolver o problema acima e, pode-se notar que o padrão fachada era o que apresentava uma solução de forma a não gerar demasiada quantidade de código ou estruturas complexas. Além disso, sua estrutura possibilitou **simplificar o sistema em subsistemas, o que o tornou mais reutilizável e simples de se customizar**.
+
+**Modelagem do Facade**:
+![Modelagem do Facade](assets/img/crawler_patterns/facade_pattern.jpg)
 
 Portanto, implementou-se uma fachada que possui delega as responsabilidade para três módulos, conforme abaixo.
 
@@ -65,7 +68,7 @@ Devido a complexidade da criação do objeto é necessária a divisão do objeto
 Como o objeto é dividido em partes, decidiu-se por utilizar o padrão Builder para criar o objeto passo a paaso.
 
 **Modelagem do Builder**:
-![Modelagem do builder implementado](assets/img/builder_model.png)
+![Modelagem do builder implementado](assets/img/crawler_patterns/builder_model.png)
 
 Abaixo, segue um exemplo de implementação do builder:
 
@@ -155,7 +158,7 @@ Conforme exposto abaixo em um exemplo de uma disciplina, percebe-se que o json s
 Decidiu-se por utilizar o template method visto que a exportação das ofertas deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.
 
 **Modelagem do template method**:
-![Modelagem do template method implementado](assets/img/template_model.jpg)
+![Modelagem do template method implementado](assets/img/crawler_patterns/template_model.jpg)
 
 #### Transformer Abstrata
 
