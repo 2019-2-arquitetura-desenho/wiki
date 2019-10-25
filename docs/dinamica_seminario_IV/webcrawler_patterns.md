@@ -1,4 +1,4 @@
-# GRASP e GOFs
+# Padrões e GOFs
 
 ## Histórico de revisão
 
@@ -6,6 +6,7 @@
 | :------: | :----: | :-------: | :------: |
 | 23/10/2019 | 0.1 | Adiciona introdução sobre o módulo Web Crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 23/10/2019 | 0.2 | Adiciona descrição e diagrama sobre template method usado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 23/10/2019 | 0.3 | Adiciona descrição sobre padrão fachada utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 
 ## Introdução
@@ -18,10 +19,41 @@ No repositório do [Crawler de Ofertas](https://github.com/2019-2-arquitetura-de
 *   **Savers**: exporta os dados obtidos pelo Crawler para o formato json a fim de ser carregado no banco de dados.
 *   **API**: fornece uma interface para obtenção das ofertas do campus UnB-Gama.
 
+## Facade
+
+Fachada é um padrão de design estrutural que fornece uma interface simplificada para uma biblioteca, uma estrutura ou qualquer outro conjunto complexo de classes.
+
+### Problema
+
+Decorrente das inúmeras tarefas realizadas pelo Web Crawler e pela API, gera-se certa complexidade na interface da aplicação. Portanto, é necessário a delegação de tarefas de modo a simplificar a interface.
+
+### Solução Implementada
+
+Estudou-se algumas soluções em relação a padrões para resolver o problema acima e, pode-se notar que o padrão fachada era o que apresentava uma solução de forma a não gerar demasiada quantidade de código ou estruturas complexas. Além disso, sua estrutura possibilitou **simplificar o sistema em subsistemas, o que o tornou mais reutilizável e simples de se customizar**.
+
+Portanto, implementou-se uma fachada que possui delega as responsabilidade para três módulos, conforme abaixo.
+
+```python
+from offer_crawler.builders.DepartmentBuilder import DepartmentBuilder
+from offer_crawler.savers.JsonBuilder import JsonBuilder
+from offer_crawler.savers.Saver import Saver
+
+
+class Facade:
+    def __init__(self):
+        self.department = DepartmentBuilder().buildDepartment()
+        JsonBuilder(self.department)
+        Saver()
+
+
+if __name__ == '__main__':
+    Facade()
+
+```
 
 ## Template Method
 
-O Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi fundamental no projeto no submódulo "Transformers", pois possibilitou que os dados capturados pelo Crawler sejam tratados de maneira padronizada de forma a facilitar o armazenamento das ofertas (json) em um formato compreensível pelo banco de dados.
+O **Template Method** é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi fundamental no projeto no submódulo **"Transformers"**, pois possibilitou que os dados capturados pelo Crawler sejam tratados de maneira padronizada de forma a facilitar o armazenamento das ofertas (json) em um formato compreensível pelo banco de dados.
 
 ### Problema
 
@@ -42,14 +74,14 @@ Conforme exposto abaixo em um exemplo de uma disciplina, percebe-se que o json s
 ]
 ```
 
-## Solução Implementada
+### Solução Implementada
 
 Decidiu-se por utilizar o template method visto que a exportação das ofertas deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.
 
 **Modelagem do template method**:
 ![Modelagem do template method implementado](assets/img/template_model.jpg)
 
-### Transformer Abstrata
+#### Transformer Abstrata
 
 Inicialmente, define-se uma **classe abstrata** que será responsável por definir os processos de conversão dos objetos em json:
 
@@ -76,7 +108,7 @@ class JsonTransformer(ABC):
         pass
 ```
 
-### Transformer Concreta
+#### Transformer Concreta
 
 Definida a classe abstrata, utilizou-se as seguintes **classes concretas para transformar os dados em json**: DisciplineTransformer, DisciplineClassTransformer, MeetingTransformer e ProfessorTransformer.
 
