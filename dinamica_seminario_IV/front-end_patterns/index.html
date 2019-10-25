@@ -837,8 +837,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-aplicacao-do-hoc-com-o-redux" class="md-nav__link">
-    2.1 Aplicação do HOC com o Redux
+  <a href="#21-exemplo-uso-de-popups" class="md-nav__link">
+    2.1 Exemplo - Uso de PopUps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-aplicacao-do-hoc-com-o-redux" class="md-nav__link">
+    2.2 Aplicação do HOC com o Redux
   </a>
   
 </li>
@@ -1067,8 +1074,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-aplicacao-do-hoc-com-o-redux" class="md-nav__link">
-    2.1 Aplicação do HOC com o Redux
+  <a href="#21-exemplo-uso-de-popups" class="md-nav__link">
+    2.1 Exemplo - Uso de PopUps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-aplicacao-do-hoc-com-o-redux" class="md-nav__link">
+    2.2 Aplicação do HOC com o Redux
   </a>
   
 </li>
@@ -1121,6 +1135,12 @@
 <td align="center">0.1</td>
 <td align="center">Adiciona Prop Drilling Pattern</td>
 <td align="center"><a href="https://github.com/rjoao">João Rodrigues</a></td>
+</tr>
+<tr>
+<td align="center">24/10/2019</td>
+<td align="center">0.2</td>
+<td align="center">Adiciona HOC</td>
+<td align="center"><a href="https://github.com/Ridersk">Lucas Aguiar</a></td>
 </tr>
 </tbody>
 </table>
@@ -1293,11 +1313,179 @@
 <h2 id="2-high-order-components">2. High Order Components</h2>
 <p>High Order Component é uma função que pega um componente existente e retorna um outro componente, envolvendo-o (wrapper) atribuindo-lhe novas funcionalidades. Ele se originou das Higher-Order Functions. Um HOC é uma técnica avançada no React para reutilizar a lógica do componente, seguindo o mesmo principio do padrão Decorator. Os HOCs não fazem parte da API do React, por si só. Eles são um padrão que emerge da natureza composicional de React.</p>
 <p>Um HOC não modifica o componente de entrada, nem usa herança para copiar seu comportamento. Em vez disso, um HOC compõe o componente original envolvendo-o em um componente de contêiner. Um HOC é uma função pura com zero efeitos colaterais.</p>
-<h3 id="21-aplicacao-do-hoc-com-o-redux">2.1 Aplicação do HOC com o Redux</h3>
+<h3 id="21-exemplo-uso-de-popups">2.1 Exemplo - Uso de PopUps</h3>
+<p>Utilizando a lógica dos HOCs é possivel reutilizar a lógica para abrir ou fechar um popup.</p>
+<p>Criação da HOC</p>
+<p>createPopup.js:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">React</span> <span class="nn">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="n">const</span> <span class="n">createPopup</span> <span class="o">=</span> <span class="n">Popup</span> <span class="o">=&gt;</span> <span class="k">class</span> <span class="nc">extends</span> <span class="n">React</span><span class="o">.</span><span class="n">Component</span><span class="p">{</span>
+   <span class="n">constructor</span><span class="p">(</span><span class="n">props</span><span class="p">){</span>
+      <span class="nb">super</span><span class="p">(</span><span class="n">props</span><span class="p">);</span>
+   <span class="p">}</span>
+
+   <span class="n">closePopupHandler</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="o">//</span> <span class="n">lógica</span> <span class="n">para</span> <span class="n">fechar</span> <span class="n">o</span> <span class="n">popup</span>
+   <span class="p">}</span>
+
+   <span class="n">render</span><span class="p">(){</span>
+      <span class="k">return</span> <span class="o">&lt;</span><span class="n">Popup</span> <span class="n">closePopup</span><span class="o">=</span><span class="p">{</span><span class="n">this</span><span class="o">.</span><span class="n">closePopupHandler</span><span class="p">}</span> <span class="p">{</span><span class="o">...</span><span class="n">this</span><span class="o">.</span><span class="n">props</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">export</span> <span class="n">default</span> <span class="n">createPopup</span><span class="p">;</span>
+</pre></div>
+</td></tr></table></p>
+<p>PopUp que ganhará a funcionalidade</p>
+<p>SignInPopup:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">React</span> <span class="nn">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kn">import</span> <span class="nn">createPopup</span> <span class="nn">from</span> <span class="s1">&#39;createPopup.js&#39;</span><span class="p">;</span>
+
+<span class="n">const</span> <span class="n">SignInPopup</span> <span class="o">=</span> <span class="p">({</span> <span class="n">closePopup</span><span class="p">,</span> <span class="o">...</span><span class="n">props</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;popup&quot;</span><span class="o">&gt;</span>
+         <span class="o">&lt;</span><span class="n">button</span> <span class="n">onClick</span><span class="o">=</span><span class="p">{</span><span class="n">closePopup</span><span class="p">}</span><span class="o">&gt;</span><span class="n">Fechar</span> <span class="n">Popup</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+         <span class="o">//</span> <span class="n">Resto</span> <span class="n">do</span> <span class="n">JSX</span>
+      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+   <span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">export</span> <span class="n">default</span> <span class="n">createPopup</span><span class="p">(</span><span class="n">SignInPopup</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></p>
+<h3 id="22-aplicacao-do-hoc-com-o-redux">2.2 Aplicação do HOC com o Redux</h3>
 <p>Em nosso projeto, o exemplo mais claro do uso de HOC, vai ser através do uso da biblioteca de Redux para controlar os estados da aplicação.</p>
+<p>O Redux é uma ferramenta de gerenciamento de estados bastante útil ou até mesmo uma necessidade nos aplicativos React à medida que seu estado aumenta de complexidade. O Redux permite gerenciar todo o estado do aplicativo em um objeto, a partir da Store(conjunto de estados da sua aplicação).</p>
+<p><img alt="Redux ciclo" src="../assets/img/front-end_patterns/redux.png" /></p>
+<p>store simples:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="p">{</span> <span class="n">Provider</span> <span class="p">}</span> <span class="kn">from</span> <span class="s1">&#39;react-redux&#39;</span><span class="p">;</span>
+<span class="kn">import</span> <span class="p">{</span> <span class="n">createStore</span> <span class="p">}</span> <span class="kn">from</span> <span class="s1">&#39;redux&#39;</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">rootReducer</span> <span class="nn">from</span> <span class="s1">&#39;./reducers&#39;</span><span class="p">;</span>
+
+<span class="n">let</span> <span class="n">initialStore</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">};</span>
+
+<span class="n">const</span> <span class="n">store</span> <span class="o">=</span> <span class="n">createStore</span><span class="p">(</span><span class="n">rootReducer</span><span class="p">,</span> <span class="n">initialStore</span><span class="p">);</span>
+
+<span class="n">ReactDOM</span><span class="o">.</span><span class="n">render</span><span class="p">(</span>
+  <span class="o">&lt;</span><span class="n">Provider</span> <span class="n">store</span><span class="o">=</span><span class="p">{</span><span class="n">store</span><span class="p">}</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">App</span> <span class="o">/&gt;</span>
+  <span class="o">&lt;/</span><span class="n">Provider</span><span class="o">&gt;</span><span class="p">,</span> 
+<span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">&#39;root&#39;</span><span class="p">));</span>
+</pre></div>
+</td></tr></table></p>
+<p>component:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="p">{</span> <span class="n">connect</span> <span class="p">}</span> <span class="kn">from</span> <span class="s1">&#39;react-redux&#39;</span><span class="p">;</span>
+
+<span class="o">//</span><span class="n">Presentational</span> <span class="n">component</span>
+<span class="k">class</span> <span class="nc">MyComponent</span> <span class="n">extends</span> <span class="n">Component</span> <span class="p">{</span>
+
+    <span class="n">render</span><span class="p">()</span> <span class="p">{</span>
+        <span class="o">//...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="o">//</span><span class="n">state</span> <span class="n">to</span> <span class="n">props</span> 
+<span class="n">const</span> <span class="n">mapStateToProps</span> <span class="o">=</span> <span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">ownProps</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="k">return</span><span class="p">({</span>
+        <span class="n">itemState</span><span class="p">:</span> <span class="n">state</span><span class="o">.</span><span class="n">someValue</span><span class="p">,</span>
+    <span class="p">});</span>
+<span class="p">};</span>
+
+<span class="o">//</span><span class="n">dispatch</span> <span class="n">actions</span> <span class="n">to</span> <span class="n">props</span>
+<span class="n">const</span> <span class="n">mapDispatchToProps</span> <span class="o">=</span> <span class="p">(</span><span class="n">dispatch</span><span class="p">,</span> <span class="n">ownProps</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span><span class="p">({</span>
+        <span class="n">handleAction</span><span class="p">:</span> <span class="n">arg</span> <span class="o">=&gt;</span> <span class="n">dispatch</span><span class="p">(</span><span class="n">setMyAction</span><span class="p">(</span><span class="n">arg</span><span class="p">)),</span>
+    <span class="p">});</span>
+<span class="p">};</span>
+
+<span class="o">//</span><span class="n">Container</span> <span class="n">component</span>
+<span class="n">export</span> <span class="n">const</span> <span class="n">MyComponentContainer</span> <span class="o">=</span> <span class="n">connect</span><span class="p">(</span>
+    <span class="n">mapStateToProps</span><span class="p">,</span>
+    <span class="n">mapDispatchToProps</span>
+<span class="p">)(</span><span class="n">MyComponent</span><span class="p">);</span>
+
+<span class="n">export</span> <span class="n">default</span> <span class="n">MyComponentContainer</span>
+</pre></div>
+</td></tr></table></p>
 <h2 id="referencias">Referências</h2>
 <p>POWELL, Micah. <strong>React State Management Patterns</strong>. Disponível em: <a href="https://itnext.io/react-state-management-patterns-908325dbb8f3">https://itnext.io/react-state-management-patterns-908325dbb8f3</a> Acesso em: 24 de Outubro de 2019.</p>
 <p>Maruta, Rafael. <strong>10 obstáculos frequentes encontrados pelos novos tripulantes do React</strong>. Disponível em: <a href="https://medium.com/reactbrasil/10-obst%C3%A1culos-frequentes-encontrados-pelos-novos-tripulantes-do-react-7672c4facf58">https://medium.com/reactbrasil/10-obst%C3%A1culos-frequentes-encontrados-pelos-novos-tripulantes-do-react-7672c4facf58</a></p>
+<p><strong>Higher-Order Components no React</strong>. Disponível em: <a href="https://mathmesquita.me/2017/03/01/higher-order-components-no-react.html">https://mathmesquita.me/2017/03/01/higher-order-components-no-react.html</a></p>
+<p><strong>Redux for React: A Simple Introduction</strong>. Disponível em: <a href="https://medium.com/@rossbulat/redux-for-react-a-simple-introduction-b1f9dcbda8f4">https://medium.com/@rossbulat/redux-for-react-a-simple-introduction-b1f9dcbda8f4</a></p>
                 
                   
                 
