@@ -1103,13 +1103,13 @@
 <tr>
 <td align="center">23/10/2019</td>
 <td align="center">0.3</td>
-<td align="center">Adiciona descrição sobre padrão fachada utilizado</td>
+<td align="center">Adiciona descrição sobre padrão builder utilizado</td>
 <td align="center"><a href="https://github.com/lievertom">Lieverton Silva</a> e <a href="https://github.com/WelisonR">Welison Regis</a></td>
 </tr>
 <tr>
-<td align="center">23/10/2019</td>
+<td align="center">24/10/2019</td>
 <td align="center">0.4</td>
-<td align="center">Adiciona descrição sobre padrão builder utilizado</td>
+<td align="center">Adiciona descrição e diagrama sobre padrão fachada utilizado</td>
 <td align="center"><a href="https://github.com/lievertom">Lieverton Silva</a> e <a href="https://github.com/WelisonR">Welison Regis</a></td>
 </tr>
 </tbody>
@@ -1129,6 +1129,8 @@ No repositório do <a href="https://github.com/2019-2-arquitetura-desenho/monito
 <p>Decorrente das inúmeras tarefas realizadas pelo Web Crawler e pela API, gera-se certa complexidade na interface da aplicação. Portanto, é necessário a delegação de tarefas de modo a simplificar a interface.</p>
 <h3 id="solucao-implementada">Solução Implementada</h3>
 <p>Estudou-se algumas soluções em relação a padrões para resolver o problema acima e, pode-se notar que o padrão fachada era o que apresentava uma solução de forma a não gerar demasiada quantidade de código ou estruturas complexas. Além disso, sua estrutura possibilitou <strong>simplificar o sistema em subsistemas, o que o tornou mais reutilizável e simples de se customizar</strong>.</p>
+<p><strong>Modelagem do Facade</strong>:
+<img alt="Modelagem do Facade" src="../assets/img/crawler_patterns/facade_pattern.jpg" /></p>
 <p>Portanto, implementou-se uma fachada que possui delega as responsabilidade para três módulos, conforme abaixo.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1167,7 +1169,7 @@ No repositório do <a href="https://github.com/2019-2-arquitetura-desenho/monito
 <h3 id="solucao-implementada_1">Solução Implementada</h3>
 <p>Como o objeto é dividido em partes, decidiu-se por utilizar o padrão Builder para criar o objeto passo a paaso.</p>
 <p><strong>Modelagem do Builder</strong>:
-<img alt="Modelagem do builder implementado" src="../assets/img/builder_model.png" /></p>
+<img alt="Modelagem do builder implementado" src="../assets/img/crawler_patterns/builder_model.png" /></p>
 <p>Abaixo, segue um exemplo de implementação do builder:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1314,7 +1316,7 @@ No repositório do <a href="https://github.com/2019-2-arquitetura-desenho/monito
 <h3 id="solucao-implementada_2">Solução Implementada</h3>
 <p>Decidiu-se por utilizar o template method visto que a exportação das ofertas deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.</p>
 <p><strong>Modelagem do template method</strong>:
-<img alt="Modelagem do template method implementado" src="../assets/img/template_model.jpg" /></p>
+<img alt="Modelagem do template method implementado" src="../assets/img/crawler_patterns/template_model.jpg" /></p>
 <h4 id="transformer-abstrata">Transformer Abstrata</h4>
 <p>Inicialmente, define-se uma <strong>classe abstrata</strong> que será responsável por definir os processos de conversão dos objetos em json:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
