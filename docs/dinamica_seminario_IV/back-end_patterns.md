@@ -6,9 +6,13 @@
 | :------: | :----: | :-------: | :------: |
 | 23/10/2019 | 0.1 | Adiciona introdução sobre o módulo Backend | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 | 24/10/2019 | 0.2 | Adiciona introdução sobre o PDF reader e template-method | [Paulo Vitor](https://github.com/paulovitorrocha) e  [João Gabriel Rossi](https://github.com/bielrossi15) |
+| 23/10/2019 | 0.3 | Adicionado diagrama de classe para o Tempalte Method | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 
+## Template-method
 
-## PDF-Reader
+O Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi utilizado no projeto nas funções de extração de informação do PDF de forma a manter a estrutura definida na superclasse intacta.
+
+### PDF-Reader
 
 O **PDF-Reader** do projeto é uma feature do módulo da aplicação [A Monitoria](https://github.com/2019-2-arquitetura-desenho/wiki/) responsável por extrair e salvar no banco de dados as informações referentes ao processo de monitoria como **Índice de Rendimento Acadêmico**, **Matrícula** e **Matérias passíveis de monitoria**, presentes no PDF do histórico escolar. Esse módulo é de suma importância para o projeto, pois, possibilitará apresentar as matérias que o aluno poderá realizar monitoria, assim como permitirá que seja disponibilizado um ranking em tempo real a partir da fórmula da monitoria.
 No repositório da [Monitoria API](https://github.com/2019-2-arquitetura-desenho/monitoria-api/tree/feature/pdf-reader) aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nas seguintes funções do PDF-Reader:
@@ -21,18 +25,13 @@ No repositório da [Monitoria API](https://github.com/2019-2-arquitetura-desenho
 
 ### Problema
 
-
+Caso opte-se por implementar outro metodo de leitura de arquivo para extração dos dados, seria necessária uma grande reformulação no código. Com o tempalte method basta declarar uma classe que implementa a interface declarada.
 
 ### Solução Implementada
 
 Decidiu-se por utilizar o template method visto que a extração das informações deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.
 
 ![Template method class diagram](./assets/img/back-end_patterns/template_metho_diagram.png)
-
-## Template-method
-
-O Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi utilizado no projeto nas funções de extração de informação do PDF de forma a manter a estrutura definida na superclasse intacta.
-
 
 ## Padrões usados por padrão no Django
 
