@@ -7,6 +7,7 @@
 | 23/10/2019 | 0.1 | Adiciona introdução sobre o módulo Web Crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 23/10/2019 | 0.2 | Adiciona descrição e diagrama sobre template method usado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 23/10/2019 | 0.3 | Adiciona descrição sobre padrão fachada utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 23/10/2019 | 0.4 | Adiciona descrição sobre padrão builder utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 
 ## Introdução
@@ -49,6 +50,81 @@ class Facade:
 if __name__ == '__main__':
     Facade()
 
+```
+
+## Builder
+
+O Builder é um padrão de design criacional que permite construir objetos complexos passo a passo.
+
+### Problema
+
+Devido a complexidade da criação do objeto é necessária a divisão do objeto em partes.
+
+### Solução Implementada
+
+Como o objeto é dividido em partes, decidiu-se por utilizar o padrão Builder para criar o objeto passo a paaso.
+
+**Modelagem do Builder**:
+![Modelagem do builder implementado](assets/img/builder_model.png)
+
+Abaixo, segue um exemplo de implementação do builder:
+
+```
+from bs4 import BeautifulSoup
+
+from offer_crawler import BASE_URL
+from offer_crawler.Mixins import TableReaderMixin, UrlLoaderMixin
+from offer_crawler.Department import Department
+from offer_crawler.builders.DisciplinesBuilder import DisciplinesBuilder
+from multiprocessing.dummy import Pool as ThreadPool
+
+
+class DepartmentBuilder(TableReaderMixin, UrlLoaderMixin):
+
+    def getDisciplineListURL(self, code):
+        return BASE_URL + 'graduacao/oferta_dis.aspx?cod={}'.format(code)
+
+    def buildFromHtml(self, code, name):
+
+        response = self.getFromUrl(self.getDisciplineListURL(code))
+
+        if response.status_code != 200:
+            return
+
+        raw_html = BeautifulSoup(response.content, 'html.parser')
+        table_data = self.readDatatableTableFromHTML(raw_html)
+
+        disciplines = []
+
+        if table_data is not None:
+
+            def createCourses(data):
+
+                discipline = DisciplinesBuilder().buildDiscipline(
+                    data['Código'], data['Denominação'], code)
+
+                disciplines.append(
+                    discipline
+                )
+
+                return discipline
+
+            pool = ThreadPool(16)
+            c = pool.map(createCourses, table_data)
+            pool.close()
+            pool.join()
+
+        print('[Department {}] Finished'.format(name))
+        return disciplines
+
+    def buildDepartment(self, code=650, name= 'UNB - FACULDADE DO GAMA'):
+
+        disciplines = self.buildFromHtml(code, name)
+
+        department = Department()
+        department.setDisciplines(disciplines)
+
+        return department
 ```
 
 ## Template Method
