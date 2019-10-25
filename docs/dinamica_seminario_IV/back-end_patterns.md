@@ -19,4 +19,16 @@ Esse é o porque de ambos os dados representandos por um modelo e a informação
 
 ![Diagrama Active Record](./assets/img/back-end_patterns/active_record.png)
 
+### Padrões comportamentais
+
+| GoF | Componente Django | Noção |
+| :--: | :--: | :--: |
+| Command | Http Request | Encapsula uma solicitação em um objeto |
+| Observer | Signals | Quando um objeto muda de estado, todos os demais são associados a ele são notificados e atualizados automaticamente |
+| Template Method | Visualizacao baseada em classes | Etapas de um algoritmo podem ser redefinidas por subclasses sem alterar a estrutura do algoritmo |
+
+### Padrão estrutural
+
+O serializer é uma importante estrutura do Django, que permite a  conversão de dados complexos como querysets e instâncias de modelo, em objetos python nativos, que podem ser facilmente transformados em outros tipos como JSON.
+
 
