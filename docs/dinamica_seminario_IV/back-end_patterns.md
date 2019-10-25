@@ -4,9 +4,10 @@
 
 |   Data   | Versão | Descrição | Autor(es)|
 | :------: | :----: | :-------: | :------: |
-| 23/10/2019 | 0.1 | Adiciona introdução sobre o módulo Backend | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 24/10/2019 | 0.1 | Adiciona introdução sobre o módulo Backend | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 | 24/10/2019 | 0.2 | Adiciona introdução sobre o PDF reader e template-method | [Paulo Vitor](https://github.com/paulovitorrocha) e  [João Gabriel Rossi](https://github.com/bielrossi15) |
-| 23/10/2019 | 0.3 | Adicionado diagrama de classe e trecho de codigo para o Tempalte Method | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 24/10/2019 | 0.3 | Adicionado diagrama de classe e trecho de codigo para o Tempalte Method | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 24/10/2019 | 0.4 | Adicionando referencias bibliograficas | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 
 ## Template-method
 
@@ -83,3 +84,9 @@ Esse é o porque de ambos os dados representandos por um modelo e a informação
 ### Padrão estrutural
 
 O serializer é uma importante estrutura do Django, que permite a  conversão de dados complexos como querysets e instâncias de modelo, em objetos python nativos, que podem ser facilmente transformados em outros tipos como JSON.
+
+## Referências
+
+**Django Design Patterns and Best Practices**. Disponível em: <https://subscription.packtpub.com/book/web_development/9781788831345/1/ch01lvl1sec13/what-is-a-pattern> Acesso em: 24 de Outubro de 2019.
+**Filosofias de Projeto**. Disponível em: <https://docs.djangoproject.com/pt-br/2.2/misc/design-philosophies/> Acesso em: 24 de Outubro de 2019.
+**Refactoring Guru**. Disponível em: <https://refactoring.guru/design-patterns/template-method> Acesso em: 24 de Outubro de 2019.
