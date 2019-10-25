@@ -756,8 +756,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#template-method" class="md-nav__link">
-    Template Method
+  <a href="#builder" class="md-nav__link">
+    Builder
   </a>
   
     <nav class="md-nav">
@@ -772,6 +772,33 @@
         
           <li class="md-nav__item">
   <a href="#solucao-implementada_1" class="md-nav__link">
+    Solução Implementada
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-method" class="md-nav__link">
+    Template Method
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema_2" class="md-nav__link">
+    Problema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucao-implementada_2" class="md-nav__link">
     Solução Implementada
   </a>
   
@@ -957,8 +984,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#template-method" class="md-nav__link">
-    Template Method
+  <a href="#builder" class="md-nav__link">
+    Builder
   </a>
   
     <nav class="md-nav">
@@ -973,6 +1000,33 @@
         
           <li class="md-nav__item">
   <a href="#solucao-implementada_1" class="md-nav__link">
+    Solução Implementada
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-method" class="md-nav__link">
+    Template Method
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema_2" class="md-nav__link">
+    Problema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucao-implementada_2" class="md-nav__link">
     Solução Implementada
   </a>
   
@@ -1052,6 +1106,12 @@
 <td align="center">Adiciona descrição sobre padrão fachada utilizado</td>
 <td align="center"><a href="https://github.com/lievertom">Lieverton Silva</a> e <a href="https://github.com/WelisonR">Welison Regis</a></td>
 </tr>
+<tr>
+<td align="center">23/10/2019</td>
+<td align="center">0.4</td>
+<td align="center">Adiciona descrição sobre padrão builder utilizado</td>
+<td align="center"><a href="https://github.com/lievertom">Lieverton Silva</a> e <a href="https://github.com/WelisonR">Welison Regis</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="introducao">Introdução</h2>
@@ -1100,9 +1160,130 @@ No repositório do <a href="https://github.com/2019-2-arquitetura-desenho/monito
 </pre></div>
 </td></tr></table>
 
+<h2 id="builder">Builder</h2>
+<p>O Builder é um padrão de design criacional que permite construir objetos complexos passo a passo.</p>
+<h3 id="problema_1">Problema</h3>
+<p>Devido a complexidade da criação do objeto é necessária a divisão do objeto em partes.</p>
+<h3 id="solucao-implementada_1">Solução Implementada</h3>
+<p>Como o objeto é dividido em partes, decidiu-se por utilizar o padrão Builder para criar o objeto passo a paaso.</p>
+<p><strong>Modelagem do Builder</strong>:
+<img alt="Modelagem do builder implementado" src="../assets/img/builder_model.png" /></p>
+<p>Abaixo, segue um exemplo de implementação do builder:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="kn">from</span> <span class="nn">offer_crawler</span> <span class="kn">import</span> <span class="n">BASE_URL</span>
+<span class="kn">from</span> <span class="nn">offer_crawler.Mixins</span> <span class="kn">import</span> <span class="n">TableReaderMixin</span><span class="p">,</span> <span class="n">UrlLoaderMixin</span>
+<span class="kn">from</span> <span class="nn">offer_crawler.Department</span> <span class="kn">import</span> <span class="n">Department</span>
+<span class="kn">from</span> <span class="nn">offer_crawler.builders.DisciplinesBuilder</span> <span class="kn">import</span> <span class="n">DisciplinesBuilder</span>
+<span class="kn">from</span> <span class="nn">multiprocessing.dummy</span> <span class="kn">import</span> <span class="n">Pool</span> <span class="k">as</span> <span class="n">ThreadPool</span>
+
+
+<span class="k">class</span> <span class="nc">DepartmentBuilder</span><span class="p">(</span><span class="n">TableReaderMixin</span><span class="p">,</span> <span class="n">UrlLoaderMixin</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">getDisciplineListURL</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;graduacao/oferta_dis.aspx?cod={}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">buildFromHtml</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getFromUrl</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getDisciplineListURL</span><span class="p">(</span><span class="n">code</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="n">raw_html</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+        <span class="n">table_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">readDatatableTableFromHTML</span><span class="p">(</span><span class="n">raw_html</span><span class="p">)</span>
+
+        <span class="n">disciplines</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">if</span> <span class="n">table_data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+
+            <span class="k">def</span> <span class="nf">createCourses</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+
+                <span class="n">discipline</span> <span class="o">=</span> <span class="n">DisciplinesBuilder</span><span class="p">()</span><span class="o">.</span><span class="n">buildDiscipline</span><span class="p">(</span>
+                    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Código&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Denominação&#39;</span><span class="p">],</span> <span class="n">code</span><span class="p">)</span>
+
+                <span class="n">disciplines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                    <span class="n">discipline</span>
+                <span class="p">)</span>
+
+                <span class="k">return</span> <span class="n">discipline</span>
+
+            <span class="n">pool</span> <span class="o">=</span> <span class="n">ThreadPool</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">createCourses</span><span class="p">,</span> <span class="n">table_data</span><span class="p">)</span>
+            <span class="n">pool</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">pool</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;[Department {}] Finished&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">disciplines</span>
+
+    <span class="k">def</span> <span class="nf">buildDepartment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="o">=</span><span class="mi">650</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span> <span class="s1">&#39;UNB - FACULDADE DO GAMA&#39;</span><span class="p">):</span>
+
+        <span class="n">disciplines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">buildFromHtml</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+        <span class="n">department</span> <span class="o">=</span> <span class="n">Department</span><span class="p">()</span>
+        <span class="n">department</span><span class="o">.</span><span class="n">setDisciplines</span><span class="p">(</span><span class="n">disciplines</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">department</span>
+</pre></div>
+</td></tr></table>
+
 <h2 id="template-method">Template Method</h2>
 <p>O <strong>Template Method</strong> é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi fundamental no projeto no submódulo <strong>"Transformers"</strong>, pois possibilitou que os dados capturados pelo Crawler sejam tratados de maneira padronizada de forma a facilitar o armazenamento das ofertas (json) em um formato compreensível pelo banco de dados.</p>
-<h3 id="problema_1">Problema</h3>
+<h3 id="problema_2">Problema</h3>
 <p>Conforme exposto abaixo em um exemplo de uma disciplina, percebe-se que o json segue uma <strong>estrutura em que se deve definir a "model", a chave primária da tupla e seus respectivos campos que são personalizados</strong>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1130,7 +1311,7 @@ No repositório do <a href="https://github.com/2019-2-arquitetura-desenho/monito
 </pre></div>
 </td></tr></table>
 
-<h3 id="solucao-implementada_1">Solução Implementada</h3>
+<h3 id="solucao-implementada_2">Solução Implementada</h3>
 <p>Decidiu-se por utilizar o template method visto que a exportação das ofertas deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.</p>
 <p><strong>Modelagem do template method</strong>:
 <img alt="Modelagem do template method implementado" src="../assets/img/template_model.jpg" /></p>
