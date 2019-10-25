@@ -1138,8 +1138,8 @@
 <p>O <strong>Web Crawler</strong> do projeto é um módulo da aplicação <a href="https://github.com/2019-2-arquitetura-desenho/wiki/">A Monitoria</a> responsável por capturar e disponibilizar as <strong>ofertas do campus da UnB-Gama</strong> disponíveis no site do Matrícula Web, UnB. Esse módulo é de suma importância para o projeto, pois, possibilitará apresentar a oferta e uma descrição das informações pertinentes aos interesses do usuário para a matrícula em monitoria.
 No repositório do <a href="https://github.com/2019-2-arquitetura-desenho/monitoria-crawler">Crawler de Ofertas</a> aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nos seguintes submódulos do Crawler:</p>
 <ul>
-<li><strong>Builder</strong>: baseado na oferta do Matrícula Web, captura dados sobre disciplinas, turmas, professores e informações corretas em relação ao campus Unb-Gama.</li>
-<li><strong>Transformers</strong>: trata a complexidade dos dados obtidos e manipula-os de maneira a modelar as adequação do banco de dados postgreSQL.</li>
+<li><strong>Builder</strong>: baseado na oferta do Matrícula Web, captura dados sobre disciplinas, turmas, professores e informações correlatas ao campus UnB-Gama.</li>
+<li><strong>Transformers</strong>: trata a complexidade dos dados obtidos e manipula-os de maneira a modelar adequadamente os dados ao modelo de dados do banco postgreSQL.</li>
 <li><strong>Savers</strong>: exporta os dados obtidos pelo Crawler para o formato json a fim de ser carregado no banco de dados.</li>
 <li><strong>API</strong>: fornece uma interface para obtenção das ofertas do campus UnB-Gama.</li>
 </ul>
@@ -1151,7 +1151,7 @@ No repositório do <a href="https://github.com/2019-2-arquitetura-desenho/monito
 <p>Estudou-se algumas soluções em relação a padrões para resolver o problema acima e, pode-se notar que o padrão fachada era o que apresentava uma solução de forma a não gerar demasiada quantidade de código ou estruturas complexas. Além disso, sua estrutura possibilitou <strong>simplificar o sistema em subsistemas, o que o tornou mais reutilizável e simples de se customizar</strong>.</p>
 <p><strong>Modelagem do Facade</strong>:
 <img alt="Modelagem do Facade" src="../assets/img/crawler_patterns/facade_pattern.jpg" /></p>
-<p>Portanto, implementou-se uma fachada que possui delega as responsabilidade para três módulos, conforme abaixo.</p>
+<p>Portanto, implementou-se uma fachada que delega as responsabilidade para três módulos, conforme abaixo.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
