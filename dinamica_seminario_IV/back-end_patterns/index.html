@@ -1023,7 +1023,7 @@
 <tr>
 <td align="center">23/10/2019</td>
 <td align="center">0.3</td>
-<td align="center">Adicionado diagrama de classe para o Tempalte Method</td>
+<td align="center">Adicionado diagrama de classe e trecho de codigo para o Tempalte Method</td>
 <td align="center"><a href="https://github.com/andrelucax">Andre Pinto</a> e  <a href="https://github.com/leomedeiros1">Leonardo Medeiros</a></td>
 </tr>
 </tbody>
@@ -1048,7 +1048,52 @@ No repositório da <a href="https://github.com/2019-2-arquitetura-desenho/monito
 <p>Caso opte-se por implementar outro metodo de leitura de arquivo para extração dos dados, seria necessária uma grande reformulação no código. Com o tempalte method basta declarar uma classe que implementa a interface declarada.</p>
 <h3 id="solucao-implementada">Solução Implementada</h3>
 <p>Decidiu-se por utilizar o template method visto que a extração das informações deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.</p>
+<p><strong>Modelagem do template method</strong></p>
 <p><img alt="Template method class diagram" src="../assets/img/back-end_patterns/template_metho_diagram.png" /></p>
+<p><strong>Interface do tempalte method</strong>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Extractor</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reg_pdf</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reg_pdf</span> <span class="o">=</span> <span class="n">reg_pdf</span>
+
+    <span class="k">def</span> <span class="nf">template_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extractIra</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extractReg</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extractSub</span><span class="p">()</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">extractIra</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">extractReg</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">extractSub</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+</pre></div>
+</td></tr></table></p>
 <h2 id="padroes-usados-por-padrao-no-django">Padrões usados por padrão no Django</h2>
 <h3 id="active-record">Active Record</h3>
 <p>Modelos devem encapsular cada aspecto de um objeto, seguindo o padrão de projeto Active Record de Martin Fowler.</p>
