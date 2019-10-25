@@ -7,6 +7,14 @@
 | 24/10/2019 | 0.1 | Adiciona Prop Drilling Pattern | [João Rodrigues](https://github.com/rjoao) |
 | 24/10/2019 | 0.2 | Adiciona HOC | [Lucas Aguiar](https://github.com/Ridersk) |
 |25/10/2019|0.3|Adiciona Flyweight|[Ivan Dobbin](https://github.com/darmsDD)|
+|25/10/2019|0.3|Adiciona introdução|[Ivan Dobbin](https://github.com/darmsDD)|
+|25/10/2019|0.3|Adiciona divisão entre padrões utilizados e não utilizados|[Ivan Dobbin](https://github.com/darmsDD)|
+
+## Introdução
+Este documento apresenta os padrões de design que serão utilizados no front-end
+e alguns que não foram utilizados e o porque.  
+
+## Padrões Utilizados
 
 ## 1. Prop Drilling Pattern
 
@@ -252,24 +260,25 @@ export const MyComponentContainer = connect(
 export default MyComponentContainer
 ```
 
+## Padrões não utilizados
 
-## 3. Flyweight
+## 1. Flyweight
 É um padrão de projeto que tem como objetivo economizar memória. A ideia 
 principal é compartilhar as partes em comum dos objetos em vez de manter 
 todos os dados de cada objeto nele mesmo. Isso permite que caibam mais objetos
 dentro da RAM.
 
-### 3.1 Problema
+### 1.1 Problema
 Vamos imaginar um jogo, no qual você tem um exército de soldados, cada soldado tem altura,largura,peso,cor,arma,armadura. O problema é que se cada soldado for um objeto, haverá um grande gasto de memória. Como resolver?
 
-### 3.2 Solução
+### 1.2 Solução
 Você percebeu que os soldados sempre tem a mesma altura,peso,largura e armadura, mudando apenas a cor e a arma. A parte de dados constantes é chamada de estado intrínseco(altura,peso,largura,armadura) e a parte e estado extrínseco(cor,arma). A ideia é criar apenas um objeto com os estados intrísecos, e criar n objetos com os estados extrínsecos, que fazem referência aos estados intrísecos. Isso faz com que
 haja menos repetição de dados, salvando muito memória.
 
-### 3.3 Diagrama
+### 1.3 Diagrama
 ![flyweight](./assets/img/front-end_patterns/flyweight.jpg)
 
-### 3.4 Pseudocódigo
+### 1.4 Pseudocódigo
     Exemplo com árvores.
 
       //The flyweight class contains a portion of the state of a
@@ -327,13 +336,13 @@ haja menos repetição de dados, salvando muito memória.
               foreach (tree in trees) do
                   tree.draw(canvas)
 
-### 3.6 Contras
+### 1.5 Contras
 Troca de RAM por ciclos de CPU quando alguma parte da data do contexto precisa
 ser recalculada toda vez que alguém chama o método flyweight.
 
 Fazer isso traz complexidade ao código. 
 
-### 3.7 Problema para o contexto do projeto
+### 1.6 Problema para o contexto do projeto
 Na parte front-end da aplicação não existe casos de repetição tão grandes(10^5)
 que exista a necessidade de aplicar o flyweight. Existem partes que se repetem,
 como por exemplo o container para cada matéria na hora de escolher a monitoria,
