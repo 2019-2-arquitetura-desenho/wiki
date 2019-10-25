@@ -27,6 +27,8 @@ No repositório da [Monitoria API](https://github.com/2019-2-arquitetura-desenho
 
 Decidiu-se por utilizar o template method visto que a extração das informações deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.
 
+![Template method class diagram](./assets/img/back-end_patterns/template_metho_diagram.png)
+
 ## Template-method
 
 O Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi utilizado no projeto nas funções de extração de informação do PDF de forma a manter a estrutura definida na superclasse intacta.
