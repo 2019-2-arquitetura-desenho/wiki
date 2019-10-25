@@ -734,6 +734,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#pdf-reader" class="md-nav__link">
+    PDF-Reader
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema" class="md-nav__link">
+    Problema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucao-implementada" class="md-nav__link">
+    Solução Implementada
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#template-method" class="md-nav__link">
     Template-method
   </a>
@@ -883,6 +910,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#pdf-reader" class="md-nav__link">
+    PDF-Reader
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema" class="md-nav__link">
+    Problema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucao-implementada" class="md-nav__link">
+    Solução Implementada
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#template-method" class="md-nav__link">
     Template-method
   </a>
@@ -960,9 +1014,33 @@
 <td align="center">Adiciona introdução sobre o módulo Backend</td>
 <td align="center"><a href="https://github.com/andrelucax">Andre Pinto</a> e  <a href="https://github.com/leomedeiros1">Leonardo Medeiros</a></td>
 </tr>
+<tr>
+<td align="center">24/10/2019</td>
+<td align="center">0.2</td>
+<td align="center">Adiciona introdução sobre o PDF reader e template-method</td>
+<td align="center"><a href="https://github.com/paulovitorrocha">Paulo Vitor</a> e  <a href="https://github.com/bielrossi15">João Gabriel Rossi</a></td>
+</tr>
 </tbody>
 </table>
+<h2 id="pdf-reader">PDF-Reader</h2>
+<p>O <strong>PDF-Reader</strong> do projeto é uma feature do módulo da aplicação <a href="https://github.com/2019-2-arquitetura-desenho/wiki/">A Monitoria</a> responsável por extrair e salvar no banco de dados as informações referentes ao processo de monitoria como <strong>Índice de Rendimento Acadêmico</strong>, <strong>Matrícula</strong> e <strong>Matérias passíveis de monitoria</strong>, presentes no PDF do histórico escolar. Esse módulo é de suma importância para o projeto, pois, possibilitará apresentar as matérias que o aluno poderá realizar monitoria, assim como permitirá que seja disponibilizado um ranking em tempo real a partir da fórmula da monitoria.
+No repositório da <a href="https://github.com/2019-2-arquitetura-desenho/monitoria-api/tree/feature/pdf-reader">Monitoria API</a> aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nas seguintes funções do PDF-Reader:</p>
+<ul>
+<li>
+<p><strong>ExtractIra</strong>: função que extrai o Índice de Rendimento Acadêmico do PDF.</p>
+</li>
+<li>
+<p><strong>ExtractReg</strong>: função que extrai o número de matrícula do PDF.</p>
+</li>
+<li>
+<p><strong>ExtractSub</strong>: função que extrai as matérias passíveis de monitoria do PDF.</p>
+</li>
+</ul>
+<h3 id="problema">Problema</h3>
+<h3 id="solucao-implementada">Solução Implementada</h3>
+<p>Decidiu-se por utilizar o template method visto que a extração das informações deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.</p>
 <h2 id="template-method">Template-method</h2>
+<p>O Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi utilizado no projeto nas funções de extração de informação do PDF de forma a manter a estrutura definida na superclasse intacta.</p>
 <h2 id="padroes-usados-por-padrao-no-django">Padrões usados por padrão no Django</h2>
 <h3 id="active-record">Active Record</h3>
 <p>Modelos devem encapsular cada aspecto de um objeto, seguindo o padrão de projeto Active Record de Martin Fowler.</p>
