@@ -856,6 +856,61 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#3-flyweight" class="md-nav__link">
+    3. Flyweight
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-problema" class="md-nav__link">
+    3.1 Problema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-solucao" class="md-nav__link">
+    3.2 Solução
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-diagrama" class="md-nav__link">
+    3.3 Diagrama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-pseudocodigo" class="md-nav__link">
+    3.4 Pseudocódigo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-contras" class="md-nav__link">
+    3.6 Contras
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-problema-para-o-contexto-do-projeto" class="md-nav__link">
+    3.7 Problema para o contexto do projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#referencias" class="md-nav__link">
     Referências
   </a>
@@ -1093,6 +1148,61 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#3-flyweight" class="md-nav__link">
+    3. Flyweight
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-problema" class="md-nav__link">
+    3.1 Problema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-solucao" class="md-nav__link">
+    3.2 Solução
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-diagrama" class="md-nav__link">
+    3.3 Diagrama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-pseudocodigo" class="md-nav__link">
+    3.4 Pseudocódigo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-contras" class="md-nav__link">
+    3.6 Contras
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-problema-para-o-contexto-do-projeto" class="md-nav__link">
+    3.7 Problema para o contexto do projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#referencias" class="md-nav__link">
     Referências
   </a>
@@ -1141,6 +1251,12 @@
 <td align="center">0.2</td>
 <td align="center">Adiciona HOC</td>
 <td align="center"><a href="https://github.com/Ridersk">Lucas Aguiar</a></td>
+</tr>
+<tr>
+<td align="center">25/10/2019</td>
+<td align="center">0.3</td>
+<td align="center">Adiciona Flyweight</td>
+<td align="center"><a href="https://github.com/darmsDD">Ivan Dobbin</a></td>
 </tr>
 </tbody>
 </table>
@@ -1481,11 +1597,148 @@
 <span class="n">export</span> <span class="n">default</span> <span class="n">MyComponentContainer</span>
 </pre></div>
 </td></tr></table></p>
+<h2 id="3-flyweight">3. Flyweight</h2>
+<p>É um padrão de projeto que tem como objetivo economizar memória. A ideia 
+principal é compartilhar as partes em comum dos objetos em vez de manter 
+todos os dados de cada objeto nele mesmo. Isso permite que caibam mais objetos
+dentro da RAM.</p>
+<h3 id="31-problema">3.1 Problema</h3>
+<p>Vamos imaginar um jogo, no qual você tem um exército de soldados, cada soldado tem altura,largura,peso,cor,arma,armadura. O problema é que se cada soldado for um objeto, haverá um grande gasto de memória. Como resolver?</p>
+<h3 id="32-solucao">3.2 Solução</h3>
+<p>Você percebeu que os soldados sempre tem a mesma altura,peso,largura e armadura, mudando apenas a cor e a arma. A parte de dados constantes é chamada de estado intrínseco(altura,peso,largura,armadura) e a parte e estado extrínseco(cor,arma). A ideia é criar apenas um objeto com os estados intrísecos, e criar n objetos com os estados extrínsecos, que fazem referência aos estados intrísecos. Isso faz com que
+haja menos repetição de dados, salvando muito memória.</p>
+<h3 id="33-diagrama">3.3 Diagrama</h3>
+<p><img alt="flyweight" src="../assets/img/front-end_patterns/flyweight.jpg" /></p>
+<h3 id="34-pseudocodigo">3.4 Pseudocódigo</h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nv">Exemplo</span> <span class="nv">com</span> á<span class="nv">rvores</span>.
+
+  <span class="o">//</span><span class="nv">The</span> <span class="nv">flyweight</span> <span class="nv">class</span> <span class="nv">contains</span> <span class="nv">a</span> <span class="nv">portion</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">state</span> <span class="nv">of</span> <span class="nv">a</span>
+  <span class="o">//</span> <span class="nv">tree</span>. <span class="nv">These</span> <span class="nv">fields</span> <span class="nv">store</span> <span class="nv">values</span> <span class="nv">that</span> <span class="nv">are</span> <span class="nv">unique</span> <span class="k">for</span> <span class="nv">each</span>
+  <span class="o">//</span> <span class="nv">particular</span> <span class="nv">tree</span>. <span class="k">For</span> <span class="nv">instance</span>, <span class="nv">you</span> <span class="nv">won</span><span class="s1">&#39;</span><span class="s">t find here the tree</span>
+  <span class="o">//</span> <span class="nv">coordinates</span>. <span class="nv">But</span> <span class="nv">the</span> <span class="nv">texture</span> <span class="nv">and</span> <span class="nv">colors</span> <span class="nv">shared</span> <span class="nv">between</span> <span class="nv">many</span>
+  <span class="o">//</span> <span class="nv">trees</span> <span class="nv">are</span> <span class="nv">here</span>. <span class="nv">Since</span> <span class="nv">this</span> <span class="nv">data</span> <span class="nv">is</span> <span class="nv">usually</span> <span class="nv">BIG</span>, <span class="nv">you</span><span class="s1">&#39;</span><span class="s">d waste a</span>
+  <span class="o">//</span> <span class="nv">lot</span> <span class="nv">of</span> <span class="nv">memory</span> <span class="nv">by</span> <span class="nv">keeping</span> <span class="nv">it</span> <span class="nv">in</span> <span class="nv">each</span> <span class="nv">tree</span> <span class="nv">object</span>. <span class="nv">Instead</span>, <span class="nv">we</span>
+  <span class="o">//</span> <span class="nv">can</span> <span class="nv">extract</span> <span class="nv">texture</span>, <span class="nv">color</span> <span class="nv">and</span> <span class="nv">other</span> <span class="nv">repeating</span> <span class="nv">data</span> <span class="nv">into</span> <span class="nv">a</span>
+  <span class="o">//</span> <span class="nv">separate</span> <span class="nv">object</span> <span class="nv">which</span> <span class="nv">lots</span> <span class="nv">of</span> <span class="nv">individual</span> <span class="nv">tree</span> <span class="nv">objects</span> <span class="nv">can</span>
+  <span class="o">//</span> <span class="nv">reference</span>.
+  <span class="nv">class</span> <span class="nv">TreeType</span> <span class="nv">is</span>
+      <span class="nv">field</span> <span class="nv">name</span>
+      <span class="nv">field</span> <span class="nv">color</span>
+      <span class="nv">field</span> <span class="nv">texture</span>
+      <span class="nv">constructor</span> <span class="nv">TreeType</span><span class="ss">(</span><span class="nv">name</span>, <span class="nv">color</span>, <span class="nv">texture</span><span class="ss">)</span> { ... }
+      <span class="nv">method</span> <span class="nv">draw</span><span class="ss">(</span><span class="nv">canvas</span>, <span class="nv">x</span>, <span class="nv">y</span><span class="ss">)</span> <span class="nv">is</span>
+          <span class="o">//</span> <span class="mi">1</span>. <span class="nv">Create</span> <span class="nv">a</span> <span class="nv">bitmap</span> <span class="nv">of</span> <span class="nv">a</span> <span class="nv">given</span> <span class="nv">type</span>, <span class="nv">color</span> <span class="o">&amp;</span> <span class="nv">texture</span>.
+          <span class="o">//</span> <span class="mi">2</span>. <span class="nv">Draw</span> <span class="nv">the</span> <span class="nv">bitmap</span> <span class="nv">on</span> <span class="nv">the</span> <span class="nv">canvas</span> <span class="nv">at</span> <span class="nv">X</span> <span class="nv">and</span> <span class="nv">Y</span> <span class="nv">coords</span>.
+
+  <span class="o">//</span> <span class="nv">Flyweight</span> <span class="nv">factory</span> <span class="nv">decides</span> <span class="nv">whether</span> <span class="nv">to</span> <span class="nv">re</span><span class="o">-</span><span class="nv">use</span> <span class="nv">existing</span>
+  <span class="o">//</span> <span class="nv">flyweight</span> <span class="nv">or</span> <span class="nv">to</span> <span class="nv">create</span> <span class="nv">a</span> <span class="nv">new</span> <span class="nv">object</span>.
+  <span class="nv">class</span> <span class="nv">TreeFactory</span> <span class="nv">is</span>
+      <span class="nv">static</span> <span class="nv">field</span> <span class="nv">treeTypes</span>: <span class="nv">collection</span> <span class="nv">of</span> <span class="nv">tree</span> <span class="nv">types</span>
+      <span class="nv">static</span> <span class="nv">method</span> <span class="nv">getTreeType</span><span class="ss">(</span><span class="nv">name</span>, <span class="nv">color</span>, <span class="nv">texture</span><span class="ss">)</span> <span class="nv">is</span>
+          <span class="nv">type</span> <span class="o">=</span> <span class="nv">treeTypes</span>.<span class="nv">find</span><span class="ss">(</span><span class="nv">name</span>, <span class="nv">color</span>, <span class="nv">texture</span><span class="ss">)</span>
+          <span class="k">if</span> <span class="ss">(</span><span class="nv">type</span> <span class="o">==</span> <span class="nv">null</span><span class="ss">)</span>
+              <span class="nv">type</span> <span class="o">=</span> <span class="nv">new</span> <span class="nv">TreeType</span><span class="ss">(</span><span class="nv">name</span>, <span class="nv">color</span>, <span class="nv">texture</span><span class="ss">)</span>
+              <span class="nv">treeTypes</span>.<span class="nv">add</span><span class="ss">(</span><span class="nv">type</span><span class="ss">)</span>
+          <span class="k">return</span> <span class="nv">type</span>
+
+  <span class="o">//</span> <span class="nv">The</span> <span class="nv">contextual</span> <span class="nv">object</span> <span class="nv">contains</span> <span class="nv">the</span> <span class="nv">extrinsic</span> <span class="nv">part</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">tree</span>
+  <span class="o">//</span> <span class="nv">state</span>. <span class="nv">An</span> <span class="nv">application</span> <span class="nv">can</span> <span class="nv">create</span> <span class="nv">billions</span> <span class="nv">of</span> <span class="nv">these</span> <span class="nv">since</span> <span class="nv">they</span>
+  <span class="o">//</span> <span class="nv">are</span> <span class="nv">pretty</span> <span class="nv">small</span>: <span class="nv">just</span> <span class="nv">two</span> <span class="nv">integer</span> <span class="nv">coordinates</span> <span class="nv">and</span> <span class="nv">one</span>
+  <span class="o">//</span> <span class="nv">reference</span> <span class="nv">field</span>.
+  <span class="nv">class</span> <span class="nv">Tree</span> <span class="nv">is</span>
+      <span class="nv">field</span> <span class="nv">x</span>,<span class="nv">y</span>
+      <span class="nv">field</span> <span class="nv">type</span>: <span class="nv">TreeType</span>
+      <span class="nv">constructor</span> <span class="nv">Tree</span><span class="ss">(</span><span class="nv">x</span>, <span class="nv">y</span>, <span class="nv">type</span><span class="ss">)</span> { ... }
+      <span class="nv">method</span> <span class="nv">draw</span><span class="ss">(</span><span class="nv">canvas</span><span class="ss">)</span> <span class="nv">is</span>
+          <span class="nv">type</span>.<span class="nv">draw</span><span class="ss">(</span><span class="nv">canvas</span>, <span class="nv">this</span>.<span class="nv">x</span>, <span class="nv">this</span>.<span class="nv">y</span><span class="ss">)</span>
+
+  <span class="o">//</span> <span class="nv">The</span> <span class="nv">Tree</span> <span class="nv">and</span> <span class="nv">the</span> <span class="nv">Forest</span> <span class="nv">classes</span> <span class="nv">are</span> <span class="nv">the</span> <span class="nv">flyweight</span><span class="s1">&#39;</span><span class="s">s clients.</span>
+  <span class="o">//</span> <span class="nv">You</span> <span class="nv">can</span> <span class="nv">merge</span> <span class="nv">them</span> <span class="k">if</span> <span class="nv">you</span> <span class="nv">don</span><span class="s1">&#39;</span><span class="s">t plan to develop the Tree</span>
+  <span class="o">//</span> <span class="nv">class</span> <span class="nv">any</span> <span class="nv">further</span>.
+  <span class="nv">class</span> <span class="nv">Forest</span> <span class="nv">is</span>
+      <span class="nv">field</span> <span class="nv">trees</span>: <span class="nv">collection</span> <span class="nv">of</span> <span class="nv">Trees</span>
+
+      <span class="nv">method</span> <span class="nv">plantTree</span><span class="ss">(</span><span class="nv">x</span>, <span class="nv">y</span>, <span class="nv">name</span>, <span class="nv">color</span>, <span class="nv">texture</span><span class="ss">)</span> <span class="nv">is</span>
+          <span class="nv">type</span> <span class="o">=</span> <span class="nv">TreeFactory</span>.<span class="nv">getTreeType</span><span class="ss">(</span><span class="nv">name</span>, <span class="nv">color</span>, <span class="nv">texture</span><span class="ss">)</span>
+          <span class="nv">tree</span> <span class="o">=</span> <span class="nv">new</span> <span class="nv">Tree</span><span class="ss">(</span><span class="nv">x</span>, <span class="nv">y</span>, <span class="nv">type</span><span class="ss">)</span>
+          <span class="nv">trees</span>.<span class="nv">add</span><span class="ss">(</span><span class="nv">tree</span><span class="ss">)</span>
+
+      <span class="nv">method</span> <span class="nv">draw</span><span class="ss">(</span><span class="nv">canvas</span><span class="ss">)</span> <span class="nv">is</span>
+          <span class="nv">foreach</span> <span class="ss">(</span><span class="nv">tree</span> <span class="nv">in</span> <span class="nv">trees</span><span class="ss">)</span> <span class="k">do</span>
+              <span class="nv">tree</span>.<span class="nv">draw</span><span class="ss">(</span><span class="nv">canvas</span><span class="ss">)</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="36-contras">3.6 Contras</h3>
+<p>Troca de RAM por ciclos de CPU quando alguma parte da data do contexto precisa
+ser recalculada toda vez que alguém chama o método flyweight.</p>
+<p>Fazer isso traz complexidade ao código. </p>
+<h3 id="37-problema-para-o-contexto-do-projeto">3.7 Problema para o contexto do projeto</h3>
+<p>Na parte front-end da aplicação não existe casos de repetição tão grandes(10^5)
+que exista a necessidade de aplicar o flyweight. Existem partes que se repetem,
+como por exemplo o container para cada matéria na hora de escolher a monitoria,
+porém terá no máximo 10^2 repetições(aluno de 10º semestre de engenharia de software terá cursado aproximadamente 52 matérias), isto no pior dos casos. Assim como não há uma quantidade grande de repetições, não há necessidade de economizar memória que é a principal função desse padrão. Desta maneira utiliza-lo no front-end desta aplicação seria um overkill, e uma extensão desnescessário do padrão para o nosso caso específico.</p>
 <h2 id="referencias">Referências</h2>
 <p>POWELL, Micah. <strong>React State Management Patterns</strong>. Disponível em: <a href="https://itnext.io/react-state-management-patterns-908325dbb8f3">https://itnext.io/react-state-management-patterns-908325dbb8f3</a> Acesso em: 24 de Outubro de 2019.</p>
 <p>Maruta, Rafael. <strong>10 obstáculos frequentes encontrados pelos novos tripulantes do React</strong>. Disponível em: <a href="https://medium.com/reactbrasil/10-obst%C3%A1culos-frequentes-encontrados-pelos-novos-tripulantes-do-react-7672c4facf58">https://medium.com/reactbrasil/10-obst%C3%A1culos-frequentes-encontrados-pelos-novos-tripulantes-do-react-7672c4facf58</a></p>
 <p><strong>Higher-Order Components no React</strong>. Disponível em: <a href="https://mathmesquita.me/2017/03/01/higher-order-components-no-react.html">https://mathmesquita.me/2017/03/01/higher-order-components-no-react.html</a></p>
 <p><strong>Redux for React: A Simple Introduction</strong>. Disponível em: <a href="https://medium.com/@rossbulat/redux-for-react-a-simple-introduction-b1f9dcbda8f4">https://medium.com/@rossbulat/redux-for-react-a-simple-introduction-b1f9dcbda8f4</a></p>
+<p><strong>Flyweight</strong>. Disponível em:<a href="https://refactoring.guru/design-patterns/flyweight">https://refactoring.guru/design-patterns/flyweight</a></p>
                 
                   
                 
