@@ -6,7 +6,7 @@
 | :------: | :----: | :-------: | :------: |
 | 23/10/2019 | 0.1 | Adiciona introdução sobre o módulo Backend | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 | 24/10/2019 | 0.2 | Adiciona introdução sobre o PDF reader e template-method | [Paulo Vitor](https://github.com/paulovitorrocha) e  [João Gabriel Rossi](https://github.com/bielrossi15) |
-| 23/10/2019 | 0.3 | Adicionado diagrama de classe para o Tempalte Method | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 23/10/2019 | 0.3 | Adicionado diagrama de classe e trecho de codigo para o Tempalte Method | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 
 ## Template-method
 
@@ -31,7 +31,35 @@ Caso opte-se por implementar outro metodo de leitura de arquivo para extração 
 
 Decidiu-se por utilizar o template method visto que a extração das informações deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.
 
+**Modelagem do template method**
+
 ![Template method class diagram](./assets/img/back-end_patterns/template_metho_diagram.png)
+
+**Interface do tempalte method**
+```Python
+class Extractor(ABC):
+
+    def init(self, reg_pdf):
+        self.reg_pdf = reg_pdf
+
+    def template_method(self):
+        self.extractIra()
+        self.extractReg()
+        self.extractSub()
+
+    @abstractmethod
+    def extractIra(self):
+        pass
+
+    @abstractmethod
+    def extractReg(self):
+        pass
+
+    @abstractmethod
+    def extractSub(self):
+        pass
+
+```
 
 ## Padrões usados por padrão no Django
 
