@@ -65,7 +65,7 @@ Devido a complexidade da criação do objeto é necessária a divisão do objeto
 
 ### Solução Implementada
 
-Como o objeto é dividido em partes, decidiu-se por utilizar o padrão Builder para criar o objeto passo a paaso.
+O código desenvolvido foi baseado na aplicação MWScanner, disponível abertamente no GitHub. Adaptou-se o código e desenvolveu-se as necessidades do nosso projeto tendo como base o projeto citado.
 
 **Modelagem do Builder**:
 ![Modelagem do builder implementado](assets/img/crawler_patterns/builder_model.png)

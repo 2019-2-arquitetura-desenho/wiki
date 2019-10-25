@@ -5,6 +5,7 @@
 | Data | Versão | Descrição | Autor(es) |
 | :--: | :----: | :-------: | :-------: |
 | 24/10/2019 | 0.1 | Adiciona Prop Drilling Pattern | [João Rodrigues](https://github.com/rjoao) |
+| 24/10/2019 | 0.2 | Adiciona HOC | [Lucas Aguiar](https://github.com/Ridersk) |
 
 ## 1. Prop Drilling Pattern
 
@@ -141,12 +142,121 @@ High Order Component é uma função que pega um componente existente e retorna 
 
 Um HOC não modifica o componente de entrada, nem usa herança para copiar seu comportamento. Em vez disso, um HOC compõe o componente original envolvendo-o em um componente de contêiner. Um HOC é uma função pura com zero efeitos colaterais.
 
-### 2.1 Aplicação do HOC com o Redux
+### 2.1 Exemplo - Uso de PopUps
+
+Utilizando a lógica dos HOCs é possivel reutilizar a lógica para abrir ou fechar um popup.
+
+Criação da HOC
+
+createPopup.js:
+```
+
+import React from 'react';
+
+const createPopup = Popup => class extends React.Component{
+   constructor(props){
+      super(props);
+   }
+
+   closePopupHandler = () => {
+      // lógica para fechar o popup
+   }
+
+   render(){
+      return <Popup closePopup={this.closePopupHandler} {...this.props} />;
+   }
+}
+
+export default createPopup;
+```
+
+PopUp que ganhará a funcionalidade
+
+SignInPopup:
+```
+import React from 'react';
+
+import createPopup from 'createPopup.js';
+
+const SignInPopup = ({ closePopup, ...props }) => {
+   return (
+      <div class="popup">
+         <button onClick={closePopup}>Fechar Popup</button>
+         // Resto do JSX
+      </div>
+   )
+}
+
+export default createPopup(SignInPopup);
+```
+
+### 2.2 Aplicação do HOC com o Redux
 
 Em nosso projeto, o exemplo mais claro do uso de HOC, vai ser através do uso da biblioteca de Redux para controlar os estados da aplicação.
+
+O Redux é uma ferramenta de gerenciamento de estados bastante útil ou até mesmo uma necessidade nos aplicativos React à medida que seu estado aumenta de complexidade. O Redux permite gerenciar todo o estado do aplicativo em um objeto, a partir da Store(conjunto de estados da sua aplicação).
+
+![Redux ciclo](./assets/img/front-end_patterns/redux.png)
+
+store simples:
+```
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import rootReducer from './reducers';
+
+let initialStore = {
+};
+
+const store = createStore(rootReducer, initialStore);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>, 
+document.getElementById('root'));
+```
+
+component:
+```
+import { connect } from 'react-redux';
+
+//Presentational component
+class MyComponent extends Component {
+   
+	render() {
+		//...
+	}
+}
+  
+//state to props 
+const mapStateToProps = (state, ownProps) => {
+return({
+		itemState: state.someValue,
+	});
+};
+
+//dispatch actions to props
+const mapDispatchToProps = (dispatch, ownProps) => {
+	return({
+		handleAction: arg => dispatch(setMyAction(arg)),
+	});
+};
+
+//Container component
+export const MyComponentContainer = connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(MyComponent);
+
+export default MyComponentContainer
+```
 
 ## Referências
 
 POWELL, Micah. **React State Management Patterns**. Disponível em: <https://itnext.io/react-state-management-patterns-908325dbb8f3> Acesso em: 24 de Outubro de 2019.
 
 Maruta, Rafael. **10 obstáculos frequentes encontrados pelos novos tripulantes do React**. Disponível em: <https://medium.com/reactbrasil/10-obst%C3%A1culos-frequentes-encontrados-pelos-novos-tripulantes-do-react-7672c4facf58>
+
+**Higher-Order Components no React**. Disponível em: <https://mathmesquita.me/2017/03/01/higher-order-components-no-react.html>
+
+**Redux for React: A Simple Introduction**. Disponível em: <https://medium.com/@rossbulat/redux-for-react-a-simple-introduction-b1f9dcbda8f4>
