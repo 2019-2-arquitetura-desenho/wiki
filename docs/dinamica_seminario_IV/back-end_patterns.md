@@ -5,8 +5,32 @@
 |   Data   | Versão | Descrição | Autor(es)|
 | :------: | :----: | :-------: | :------: |
 | 23/10/2019 | 0.1 | Adiciona introdução sobre o módulo Backend | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 24/10/2019 | 0.2 | Adiciona introdução sobre o PDF reader e template-method | [Paulo Vitor](https://github.com/paulovitorrocha) e  [João Gabriel Rossi](https://github.com/bielrossi15) |
+
+
+## PDF-Reader
+
+O **PDF-Reader** do projeto é uma feature do módulo da aplicação [A Monitoria](https://github.com/2019-2-arquitetura-desenho/wiki/) responsável por extrair e salvar no banco de dados as informações referentes ao processo de monitoria como **Índice de Rendimento Acadêmico**, **Matrícula** e **Matérias passíveis de monitoria**, presentes no PDF do histórico escolar. Esse módulo é de suma importância para o projeto, pois, possibilitará apresentar as matérias que o aluno poderá realizar monitoria, assim como permitirá que seja disponibilizado um ranking em tempo real a partir da fórmula da monitoria.
+No repositório da [Monitoria API](https://github.com/2019-2-arquitetura-desenho/monitoria-api/tree/feature/pdf-reader) aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nas seguintes funções do PDF-Reader:
+
+*   **ExtractIra**: função que extrai o Índice de Rendimento Acadêmico do PDF.
+
+*   **ExtractReg**: função que extrai o número de matrícula do PDF.
+
+*   **ExtractSub**: função que extrai as matérias passíveis de monitoria do PDF.
+
+### Problema
+
+
+
+### Solução Implementada
+
+Decidiu-se por utilizar o template method visto que a extração das informações deveria seguir um "roteiro" para salvar os dados em json compatível com o banco de dados.
 
 ## Template-method
+
+O Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi utilizado no projeto nas funções de extração de informação do PDF de forma a manter a estrutura definida na superclasse intacta.
+
 
 ## Padrões usados por padrão no Django
 
@@ -30,5 +54,3 @@ Esse é o porque de ambos os dados representandos por um modelo e a informação
 ### Padrão estrutural
 
 O serializer é uma importante estrutura do Django, que permite a  conversão de dados complexos como querysets e instâncias de modelo, em objetos python nativos, que podem ser facilmente transformados em outros tipos como JSON.
-
-
