@@ -15,8 +15,8 @@
 O **Web Crawler** do projeto é um módulo da aplicação [A Monitoria](https://github.com/2019-2-arquitetura-desenho/wiki/) responsável por capturar e disponibilizar as **ofertas do campus da UnB-Gama** disponíveis no site do Matrícula Web, UnB. Esse módulo é de suma importância para o projeto, pois, possibilitará apresentar a oferta e uma descrição das informações pertinentes aos interesses do usuário para a matrícula em monitoria.
 No repositório do [Crawler de Ofertas](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler) aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nos seguintes submódulos do Crawler:
 
-*   **Builder**: baseado na oferta do Matrícula Web, captura dados sobre disciplinas, turmas, professores e informações corretas em relação ao campus Unb-Gama.
-*   **Transformers**: trata a complexidade dos dados obtidos e manipula-os de maneira a modelar as adequação do banco de dados postgreSQL.
+*   **Builder**: baseado na oferta do Matrícula Web, captura dados sobre disciplinas, turmas, professores e informações correlatas ao campus UnB-Gama.
+*   **Transformers**: trata a complexidade dos dados obtidos e manipula-os de maneira a modelar adequadamente os dados ao modelo de dados do banco postgreSQL.
 *   **Savers**: exporta os dados obtidos pelo Crawler para o formato json a fim de ser carregado no banco de dados.
 *   **API**: fornece uma interface para obtenção das ofertas do campus UnB-Gama.
 
@@ -35,7 +35,7 @@ Estudou-se algumas soluções em relação a padrões para resolver o problema a
 **Modelagem do Facade**:
 ![Modelagem do Facade](assets/img/crawler_patterns/facade_pattern.jpg)
 
-Portanto, implementou-se uma fachada que possui delega as responsabilidade para três módulos, conforme abaixo.
+Portanto, implementou-se uma fachada que delega as responsabilidade para três módulos, conforme abaixo.
 
 ```python
 from offer_crawler.builders.DepartmentBuilder import DepartmentBuilder
