@@ -9,13 +9,13 @@ help:
 		@echo "Commands:"
 		@echo "pull        Pull the latest Mkdocs image"
 		@echo "build       Build the documentation site"
-		@echo "serve       Start the live docs server"
+		@echo "server      Start the live docs server"
 #		@echo "deploy      Deploy to GitHub Pages"
 		@echo ""
 
-all: serve
+all: server
 
-serve:
+server:
 	sudo docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
 
 pull: 	

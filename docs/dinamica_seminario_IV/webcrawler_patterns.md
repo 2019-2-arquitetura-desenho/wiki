@@ -9,6 +9,7 @@
 | 23/10/2019 | 0.3 | Adiciona descrição sobre padrão builder utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 24/10/2019 | 0.4 | Adiciona descrição e diagrama sobre padrão fachada utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 24/10/2019 | 1.0 | Atualiza referências e gera primeira versão do documento | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 24/10/2019 | 1.1 | Adiciona rastreabilidade aos códigos-fonte | [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
@@ -54,6 +55,11 @@ if __name__ == '__main__':
     Facade()
 
 ```
+
+#### Rastreabilidade
+
+*   [Código do Padrão Facade Implementado](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/DatabaseFacade.py)
+
 
 ## Builder
 
@@ -130,6 +136,14 @@ class DepartmentBuilder(TableReaderMixin, UrlLoaderMixin):
         return department
 ```
 
+#### Rastreabilidade
+
+*   [Código do builder de departamento](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/builders/DepartmentBuilder.py)
+*   [Código do builder de disciplina](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/builders/DisciplinesBuilder.py)
+*   [Código do builder das turmas](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/builders/ClassBuilder.py)
+*   [Pasta das classes auxiliares](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/tree/devel/crawler/classes)
+
+
 ## Template Method
 
 O **Template Method** é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi fundamental no projeto no submódulo **"Transformers"**, pois possibilitou que os dados capturados pelo Crawler sejam tratados de maneira padronizada de forma a facilitar o armazenamento das ofertas (json) em um formato compreensível pelo banco de dados.
@@ -152,6 +166,7 @@ Conforme exposto abaixo em um exemplo de uma disciplina, percebe-se que o json s
     },
 ]
 ```
+
 
 ### Solução Implementada
 
@@ -186,6 +201,10 @@ class JsonTransformer(ABC):
     def define_fields(self, obj) -> None:
         pass
 ```
+
+##### Rastreabilidade
+
+*   [Código da Classe Abstrata do Template Method](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/transformers/transformer.py)
 
 #### Transformer Concreta
 
@@ -225,6 +244,13 @@ class DisciplineClassTransformer(JsonTransformer):
 
         DisciplineClassTransformer.disciplines_class.append(self.map_discipline_class)
 ```
+
+##### Rastreabilidade
+
+*   [Código da Classe Concentra de Disciplinas](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/transformers/discipline_transformer.py)
+*   [Código da Classe Concentra de Turma](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/transformers/discipline_class_transformer.py)
+*   [Código da Classe Concentra de Encontros](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/transformers/meeting_transformer.py)
+*   [Código da Classe Concentra de Professor](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/transformers/professor_transformer.py)
 
 ## Referências
 
