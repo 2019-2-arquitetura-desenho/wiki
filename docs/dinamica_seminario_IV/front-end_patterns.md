@@ -6,6 +6,15 @@
 | :--: | :----: | :-------: | :-------: |
 | 24/10/2019 | 0.1 | Adiciona Prop Drilling Pattern | [João Rodrigues](https://github.com/rjoao) |
 | 24/10/2019 | 0.2 | Adiciona HOC | [Lucas Aguiar](https://github.com/Ridersk) |
+|25/10/2019|0.3|Adiciona Flyweight|[Ivan Dobbin](https://github.com/darmsDD)|
+|25/10/2019|0.3|Adiciona introdução|[Ivan Dobbin](https://github.com/darmsDD)|
+|25/10/2019|0.3|Adiciona divisão entre padrões utilizados e não utilizados|[Ivan Dobbin](https://github.com/darmsDD)|
+
+## Introdução
+Este documento apresenta os padrões de design que serão utilizados no front-end
+e alguns que não foram utilizados e o porque.  
+
+## Padrões Utilizados
 
 ## 1. Prop Drilling Pattern
 
@@ -251,6 +260,94 @@ export const MyComponentContainer = connect(
 export default MyComponentContainer
 ```
 
+## Padrões não utilizados
+
+## 1. Flyweight
+É um padrão de projeto que tem como objetivo economizar memória. A ideia 
+principal é compartilhar as partes em comum dos objetos em vez de manter 
+todos os dados de cada objeto nele mesmo. Isso permite que caibam mais objetos
+dentro da RAM.
+
+### 1.1 Problema
+Vamos imaginar um jogo, no qual você tem um exército de soldados, cada soldado tem altura,largura,peso,cor,arma,armadura. O problema é que se cada soldado for um objeto, haverá um grande gasto de memória. Como resolver?
+
+### 1.2 Solução
+Você percebeu que os soldados sempre tem a mesma altura,peso,largura e armadura, mudando apenas a cor e a arma. A parte de dados constantes é chamada de estado intrínseco(altura,peso,largura,armadura) e a parte e estado extrínseco(cor,arma). A ideia é criar apenas um objeto com os estados intrísecos, e criar n objetos com os estados extrínsecos, que fazem referência aos estados intrísecos. Isso faz com que
+haja menos repetição de dados, salvando muito memória.
+
+### 1.3 Diagrama
+![flyweight](./assets/img/front-end_patterns/flyweight.jpg)
+
+### 1.4 Pseudocódigo
+    Exemplo com árvores.
+
+      //The flyweight class contains a portion of the state of a
+      // tree. These fields store values that are unique for each
+      // particular tree. For instance, you won't find here the tree
+      // coordinates. But the texture and colors shared between many
+      // trees are here. Since this data is usually BIG, you'd waste a
+      // lot of memory by keeping it in each tree object. Instead, we
+      // can extract texture, color and other repeating data into a
+      // separate object which lots of individual tree objects can
+      // reference.
+      class TreeType is
+          field name
+          field color
+          field texture
+          constructor TreeType(name, color, texture) { ... }
+          method draw(canvas, x, y) is
+              // 1. Create a bitmap of a given type, color & texture.
+              // 2. Draw the bitmap on the canvas at X and Y coords.
+
+      // Flyweight factory decides whether to re-use existing
+      // flyweight or to create a new object.
+      class TreeFactory is
+          static field treeTypes: collection of tree types
+          static method getTreeType(name, color, texture) is
+              type = treeTypes.find(name, color, texture)
+              if (type == null)
+                  type = new TreeType(name, color, texture)
+                  treeTypes.add(type)
+              return type
+
+      // The contextual object contains the extrinsic part of the tree
+      // state. An application can create billions of these since they
+      // are pretty small: just two integer coordinates and one
+      // reference field.
+      class Tree is
+          field x,y
+          field type: TreeType
+          constructor Tree(x, y, type) { ... }
+          method draw(canvas) is
+              type.draw(canvas, this.x, this.y)
+
+      // The Tree and the Forest classes are the flyweight's clients.
+      // You can merge them if you don't plan to develop the Tree
+      // class any further.
+      class Forest is
+          field trees: collection of Trees
+
+          method plantTree(x, y, name, color, texture) is
+              type = TreeFactory.getTreeType(name, color, texture)
+              tree = new Tree(x, y, type)
+              trees.add(tree)
+
+          method draw(canvas) is
+              foreach (tree in trees) do
+                  tree.draw(canvas)
+
+### 1.5 Contras
+Troca de RAM por ciclos de CPU quando alguma parte da data do contexto precisa
+ser recalculada toda vez que alguém chama o método flyweight.
+
+Fazer isso traz complexidade ao código. 
+
+### 1.6 Problema para o contexto do projeto
+Na parte front-end da aplicação não existe casos de repetição tão grandes(10^5)
+que exista a necessidade de aplicar o flyweight. Existem partes que se repetem,
+como por exemplo o container para cada matéria na hora de escolher a monitoria,
+porém terá no máximo 10^2 repetições(aluno de 10º semestre de engenharia de software terá cursado aproximadamente 52 matérias), isto no pior dos casos. Assim como não há uma quantidade grande de repetições, não há necessidade de economizar memória que é a principal função desse padrão. Desta maneira utiliza-lo no front-end desta aplicação seria um overkill, e uma extensão desnescessário do padrão para o nosso caso específico.
+
 ## Referências
 
 POWELL, Micah. **React State Management Patterns**. Disponível em: <https://itnext.io/react-state-management-patterns-908325dbb8f3> Acesso em: 24 de Outubro de 2019.
@@ -260,3 +357,5 @@ Maruta, Rafael. **10 obstáculos frequentes encontrados pelos novos tripulantes 
 **Higher-Order Components no React**. Disponível em: <https://mathmesquita.me/2017/03/01/higher-order-components-no-react.html>
 
 **Redux for React: A Simple Introduction**. Disponível em: <https://medium.com/@rossbulat/redux-for-react-a-simple-introduction-b1f9dcbda8f4>
+
+**Flyweight**. Disponível em:<https://refactoring.guru/design-patterns/flyweight>

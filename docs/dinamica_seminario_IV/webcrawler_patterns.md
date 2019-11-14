@@ -9,7 +9,7 @@
 | 23/10/2019 | 0.3 | Adiciona descrição sobre padrão builder utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 24/10/2019 | 0.4 | Adiciona descrição e diagrama sobre padrão fachada utilizado | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 24/10/2019 | 1.0 | Atualiza referências e gera primeira versão do documento | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 24/10/2019 | 1.1 | Adiciona rastreabilidade aos códigos-fonte | [Welison Regis](https://github.com/WelisonR) |
+| 13/11/2019 | 1.1 | Adiciona rastreabilidade aos códigos-fonte | [Welison Regis](https://github.com/WelisonR) |
 
 ## Introdução
 
@@ -59,7 +59,9 @@ if __name__ == '__main__':
 #### Rastreabilidade
 
 *   [Código do Padrão Facade Implementado](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/blob/devel/crawler/DatabaseFacade.py)
-
+*   [Pasta com os Builders](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/tree/devel/crawler/builders)
+*   [Pasta com os Transformers](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/tree/devel/crawler/transformers)
+*   [Pasta com os Savers](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler/tree/devel/crawler/savers)
 
 ## Builder
 
