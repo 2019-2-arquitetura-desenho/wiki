@@ -470,6 +470,17 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Pontos** | 5 |
 | **Critérios de aceitação** | -  A aplicação deve ser capaz de manipular cadastros em disciplinas e turmas. |
 
+### TS08
+#### Menu de Navegação
+
+| TS08 | Menu de Navegação |
+| ---: | :---------- |
+| **Épico** | [Ajuda](#ep05) |
+| **Descrição** | Eu, como **Usuário** desejo navegar entre as telas da aplicação para que **consiga cadastrar em uma disciplina, verificar minhas configurações, visualizar minhas disciplinas cadastradas, etc** |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | -  A aplicação deve ser capaz de portar um menu de navegação simples e prático. |
+
 
 
 ## Referências
