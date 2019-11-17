@@ -5,7 +5,7 @@
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
 | 22/08/19 | 0.1 | Adição do Protótipo | [João Gabriel](https://github.com/bielrossi15) e [Paulo Vitor Rocha](https://github.com/PauloVitorRocha) |
-| 17/11/19 | 2.0 | Adição da segunda versão do protótipo | [João Rodrigues](https://github.com/rjoao) |
+| 17/11/19 | 1.0 | Adição da segunda versão do protótipo | [João Rodrigues](https://github.com/rjoao) |
 
 ## Introdução
 O objetivo da criação de um protótipo navegável é ter uma visão um pouco mais funcional do projeto, para entender como certas coisas e ideias se encaixariam como um todo, facilitando a compreensão tanto do time de desenvolvedores, como do próprio cliente.
