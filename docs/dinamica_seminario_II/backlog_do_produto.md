@@ -438,15 +438,15 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Critérios de aceitação** | -  A aplicação deve estar disponível na internet para que seja possível busca em sua base de dados através de API. |
 
 ### TS05
-#### Deploy API de Oferta
+#### Integração API com Crawler
 
-| TS05 | Deploy Api de Oferta |
+| TS05 | Integração API com Crawler|
 | ---: | :---------- |
 | **Épico** | [Crawler](#ep06) |
-| **Descrição** | Eu, como **desenvolvedor**, gostaria de **realizar o deploy da API de oferta** para **disponibilizar as disciplinas e turmas ofertas no semestre**. |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **integrar a API com o Crawler** para **utilizar suas funcionalidades na API**. |
 | **Priorização** | C |
 | **Pontos** | 5 |
-| **Critérios de aceitação** | -  A aplicação deve estar disponível na internet para que seja possível busca em sua base de dados através de API. |
+| **Critérios de aceitação** | -  A aplicação deve ser capaz de se comunicar com o Crawler para manipular suas informações. |
 
 ### TS06
 #### Leitura e extração de informações em PDF
