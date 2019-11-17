@@ -448,6 +448,17 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Pontos** | 5 |
 | **Critérios de aceitação** | -  A aplicação deve estar disponível na internet para que seja possível busca em sua base de dados através de API. |
 
+### TS06
+#### Leitura e extração de informações em PDF
+
+| TS06 | Leitura e extração de informações em PDF |
+| ---: | :---------- |
+| **Épico** | [Ajuda](#ep05) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **realizar a extração de informações do PDF enviado pelo usuário** para **manipulá-las**. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | -  A aplicação deve estar disponível na internet para que seja possível busca em sua base de dados através de API. |
+
 
 ## Referências
 
