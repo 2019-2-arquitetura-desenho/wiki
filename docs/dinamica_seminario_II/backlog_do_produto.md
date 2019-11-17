@@ -403,6 +403,17 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Pontos** | 5 |
 | **Critérios de aceitação** | - Ambiente estável que facilite o acesso de todos os membros durante o desenvolvimento. |
 
+### TS02
+#### Recuperação de Turmas
+
+| TS02 | Recuperação de Turmas |
+| ---: | :---------- |
+| **Épico** | [Crawler](#ep06) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **recuperar todas as turmas de oferta do Matrícula Web (UnB)** para **disponibilizar na aplicação as ofertas de monitoria ao usuário**. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | - Todas as turmas da oferta do Matrícula Web devem ser capturadas. |
+
 
 ## Referências
 
