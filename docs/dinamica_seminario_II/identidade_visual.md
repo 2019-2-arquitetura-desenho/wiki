@@ -8,6 +8,7 @@
 | 05/09/19 | 0.2 | Explicação das cores | [João Rossi](https://github.com/bielrossi15) |
 | 05/09/19 | 0.3 | Método de geração da paleta | [João Rossi](https://github.com/bielrossi15) |
 | 05/09/19 | 0.4 | Análise de cores | [João Rossi](https://github.com/bielrossi15) |
+| 17/11/19 | 0.5 | Análise de fonte e logo | [João Rossi](https://github.com/bielrossi15) |
 
 
 ## 1. Introdução
@@ -41,6 +42,20 @@ Explicaremos o porque da escolha de cada cor:
 - Roxo (#5e1dad): O roxo é uma cor que combina bem com o azul, sendo uma cor mais elegante e enigmática, contrastando com a calma que o azul transmite.
   
 - Preto (#141414): Assim como o branco, é uma cor padrão, sendo necessária para complementar as outras em alguns momentos.
+
+## Fontes
+
+O estudo das fontes é um ponto importante para o design de um produto, sendo motivo de pesquisas na área. Com isso, a equipe decidiu escolher uma fonte comum, para o usuário se sentir familiarizado com a mesma.
+
+## Logo
+
+A equipe separou uma pessoa para montar o logo e deixá-lo com as cores já selecionadas, além de dar um significado para o logo baseado no funcionamento e utilização do produto. 
+
+![Logo](../assets/img/logo/logo_completa.png)
+
+A logo possui 3 partes, sendo um livro fechado nos tons de azul citados neste documento e uma caneta nos tons de roxo e preto também citados neste documento, e em alguns lugares ela também aparece com o nome do produto.
+
+ A montagem e escolha de elementos para a logo é bem auto-explicativa, pois se trata de um produto focado na área da educação, aonde os elementos (livro e caneta) se encontram brem presentes, trazendo uma sensação de familiaridade para o usuário que se encontra no meio aonde o produto será utilizado.
 
 ## Referências 
 
