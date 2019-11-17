@@ -6,6 +6,7 @@
 |:--------:|:--------:|:----------------------:|:------------------:|
 | 16/11/2019 | 0.1 | Criação do Documento, separação de tópicos | [Welison Regis](https://github.com/WelisonR) |
 | 17/11/2019 | 0.2 | Incluindo o objetivo | [Paulo Vitor](https://github.com/PauloVitorRocha) |
+| 17/11/2019 | 0.3 | Incluindo o escopo | [Paulo Vitor](https://github.com/PauloVitorRocha) |
 
 
 ## 1. Introdução
@@ -15,6 +16,7 @@
     Este documento fornece uma visão geral da arquitetura do sistema A Monitoria. Ele tem como objetivo capturar e demonstrar as decisões da equipe com relação ao escopo  arquitetural do projeto.
 
 ### 1.2 Escopo
+    Este Documento de Arquitetura de Software fornece uma visão geral de arquitetura do sistema A Monitoria. A Monitoria está sendo desenvolvido por alunos da UnB-FGA com o intuito de melhorar e facilitar o cadastro dos alunos em uma monitoria, de modo a deixar mais transparente e veloz o processo de seleção.
 
 ### 1.3 Definições, Acrônimos e Abreviações
 
