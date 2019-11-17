@@ -61,6 +61,8 @@ nav:
       - Padrões e GOFs - WebCrawler: dinamica_seminario_IV/webcrawler_patterns.md
       - Padrões e GOFs - Front-end: dinamica_seminario_IV/front-end_patterns.md 
       - Padrões e GOFs - Back-end: dinamica_seminario_IV/back-end_patterns.md
+    - Dinâmica e seminário V:
+      - Documento de Arquitetura: dinamica_seminario_V/documento_arquitetura.md
   - Iniciativas Extras:
     - Extensões: samples.md
     - Documento de Visão: documento_visao.md
