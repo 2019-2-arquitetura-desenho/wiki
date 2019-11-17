@@ -849,6 +849,40 @@
     2.3 Front-end
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    Actions:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reducer" class="md-nav__link">
+    Reducer:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1142,6 +1176,40 @@
     2.3 Front-end
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    Actions:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reducer" class="md-nav__link">
+    Reducer:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1338,6 +1406,12 @@
 <td align="center">Adiciona descrições de implementação e implantação do crawler</td>
 <td align="center"><a href="https://github.com/lievertom">Lieverton Silva</a> e <a href="https://github.com/WelisonR">Welison Regis</a></td>
 </tr>
+<tr>
+<td align="center">17/11/19</td>
+<td align="center">0.7</td>
+<td align="center">Adicionando Representação arquitetural do Front</td>
+<td align="center"><a href="https://github.com/darmsDD">Ivan Dobbin</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="1-introducao">1. Introdução</h2>
@@ -1358,7 +1432,15 @@
 <br/></li>
 <li><a href="https://github.com/2019-2-arquitetura-desenho/wiki">https://github.com/2019-2-arquitetura-desenho/wiki</a></li>
 <li><a href="https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm">https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm</a></li>
-<li><a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm">https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm</a></li>
+<li>
+<p><a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm">https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm</a></p>
+</li>
+<li>
+<p><a href="https://redux.js.org/basics/reducers">https://redux.js.org/basics/reducers</a></p>
+</li>
+<li>
+<p><a href="https://android.jlelse.eu/react-native-redux-architecture-part-1-8178fc9065c2">https://android.jlelse.eu/react-native-redux-architecture-part-1-8178fc9065c2</a></p>
+</li>
 </ul>
 <h2 id="2-representacao-arquitetural">2. Representação Arquitetural</h2>
 <p>Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por três principais módulos:</p>
@@ -1379,7 +1461,16 @@
 <h3 id="22-back-end-api">2.2 Back-end API</h3>
 <p>To do</p>
 <h3 id="23-front-end">2.3 Front-end</h3>
-<p>To do</p>
+<p><img alt="arquitetura_front" src="../assets/representacao_arquitetural_front.png" /></p>
+<h4 id="components">Components:</h4>
+<p>Componentes são os componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.</p>
+<h4 id="actions">Actions:</h4>
+<p>É uma coleção de funções que realização alguma requisição no servidor
+To do</p>
+<h4 id="reducer">Reducer:</h4>
+<p>É ele que diz como os estados da aplicação mudam de acordo com as respostas da actions.</p>
+<h4 id="server">Server:</h4>
+<p>Local da onde vem os dados.</p>
 <h2 id="3-restricoes-e-metas-arquiteturais">3. Restrições e Metas Arquiteturais</h2>
 <table>
 <thead>
