@@ -397,7 +397,7 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 
 | TS01 | Configuração de ambiente |
 | ---: | :---------- |
-| **Épico** | [Crawler](#ep06) |
+| **Épico** | [Ajuda](#ep05) |
 | **Descrição** | Eu, **como** desenvolvedor, **desejo** gostaria de configurar o ambiente de desenvolvimento  **para que eu possa** iniciar o projeto. |
 | **Priorização** | C |
 | **Pontos** | 5 |
