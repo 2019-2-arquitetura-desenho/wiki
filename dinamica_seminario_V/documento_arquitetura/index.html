@@ -894,8 +894,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#431-diagrama-de-representativo-do-crawler" class="md-nav__link">
-    4.3.1 Diagrama de Representativo do Crawler
+  <a href="#431-diagrama-de-classes-do-crawler" class="md-nav__link">
+    4.3.1 Diagrama de Classes do Crawler
   </a>
   
 </li>
@@ -919,8 +919,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#51-diagrama-de-implementacao" class="md-nav__link">
-    5.1 Diagrama de Implementação
+  <a href="#51-servidores-mw-crawler-heroku" class="md-nav__link">
+    5.1 Servidores MW Crawler (Heroku)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-servidores-back-end-heroku" class="md-nav__link">
+    5.2 Servidores back-end (Heroku)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-servidores-front-end-heroku" class="md-nav__link">
+    5.3 Servidores front-end (Heroku)
   </a>
   
 </li>
@@ -1173,8 +1187,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#431-diagrama-de-representativo-do-crawler" class="md-nav__link">
-    4.3.1 Diagrama de Representativo do Crawler
+  <a href="#431-diagrama-de-classes-do-crawler" class="md-nav__link">
+    4.3.1 Diagrama de Classes do Crawler
   </a>
   
 </li>
@@ -1198,8 +1212,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#51-diagrama-de-implementacao" class="md-nav__link">
-    5.1 Diagrama de Implementação
+  <a href="#51-servidores-mw-crawler-heroku" class="md-nav__link">
+    5.1 Servidores MW Crawler (Heroku)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-servidores-back-end-heroku" class="md-nav__link">
+    5.2 Servidores back-end (Heroku)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-servidores-front-end-heroku" class="md-nav__link">
+    5.3 Servidores front-end (Heroku)
   </a>
   
 </li>
@@ -1307,7 +1335,7 @@
 <tr>
 <td align="center">17/11/19</td>
 <td align="center">0.6</td>
-<td align="center">Adiciona descrições de implementação do crawler</td>
+<td align="center">Adiciona descrições de implementação e implantação do crawler</td>
 <td align="center"><a href="https://github.com/lievertom">Lieverton Silva</a> e <a href="https://github.com/WelisonR">Welison Regis</a></td>
 </tr>
 </tbody>
@@ -1391,12 +1419,18 @@
 <h3 id="41-front-end">4.1 Front-end</h3>
 <h3 id="42-back-end-api">4.2 Back-end API</h3>
 <h3 id="43-webcrawler-api">4.3 Webcrawler API</h3>
-<h4 id="431-diagrama-de-representativo-do-crawler">4.3.1 Diagrama de Representativo do Crawler</h4>
+<h4 id="431-diagrama-de-classes-do-crawler">4.3.1 Diagrama de Classes do Crawler</h4>
 <p><img alt="Diagrama de Classe Crawler" src="../assets/diagrama_classe_crawler.png" /></p>
 <h2 id="5-visualizacao-de-implantacao">5. Visualização de implantação</h2>
 <p>O Diagrama de implementação serve para dar uma visão de como seria implementado em hardware a arquitetura proposta. Visto que nela é possível ver a quantidade de servidores e/ou serviços por servidores , máquinas pessoais e protocolos de comunicação.</p>
-<h3 id="51-diagrama-de-implementacao">5.1 Diagrama de Implementação</h3>
-<p><img alt="Diagrama de Implementação" src="../assets/diagrama_implementacao.jpg" /></p>
+<p>Diagrama de implantação da aplicação "A Monitoria":</p>
+<p><img alt="Diagrama de implantação" src="../assets/diagrama_implementacao.jpg" /></p>
+<h3 id="51-servidores-mw-crawler-heroku">5.1 Servidores MW Crawler (Heroku)</h3>
+<p>O serviço de crawler das informações de oferta do matrícula web por meio de http está hospedado na plataforma <a href="https://www.heroku.com/">Heroku</a>, assim como sua API e demais serviços. O serviço está integrafo por meio de protocolo tcp/ip para fins de conexão.</p>
+<h3 id="52-servidores-back-end-heroku">5.2 Servidores back-end (Heroku)</h3>
+<p>O serviço de back-end disponibiliza uma interface para a manipulação dos dados relacionados ao processo de monitoria, como históricos escolares e dados pessoais do cadastrante. O serviço está disponível por meio de requisições http por meio da plataforma <a href="https://www.heroku.com/">Heroku</a>.</p>
+<h3 id="53-servidores-front-end-heroku">5.3 Servidores front-end (Heroku)</h3>
+<p>O serviço de front-end está sendo disponibilizado em interface web por meio de requests http disponibilizadas através da plataforma <a href="https://www.heroku.com/">Heroku</a>.</p>
 <h3 id="6-visao-de-implementacao">6. Visão de Implementação</h3>
 <h4 id="61-camadas-api-webcrawler">6.1 Camadas API WebCrawler</h4>
 <p>No repositório do Crawler de Ofertas aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nos seguintes submódulos do Crawler:</p>
