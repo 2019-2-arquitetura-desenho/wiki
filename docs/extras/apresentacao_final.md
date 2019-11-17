@@ -3,7 +3,6 @@
 ## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |:---:|:---:|:---:|:---:|
-| - | - | - | - |
 | 17/11/19 | 0.1 | Adicionando introdução e descorrendo sobre Gerência | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rossi](https://github.com/bielrossi15) |
 
 ## 1. Introdução

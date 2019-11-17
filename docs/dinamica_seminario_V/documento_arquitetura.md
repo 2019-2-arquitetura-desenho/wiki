@@ -64,7 +64,7 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 ![Representação Arquitetural](assets/representacao_arquitetural.png)
 
-### 2.1 Crawller API
+### 2.1 Crawler API
 
 To do
 
