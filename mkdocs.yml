@@ -65,7 +65,7 @@ nav:
       - Documento de Arquitetura: dinamica_seminario_V/documento_arquitetura.md
   - Iniciativas Extras:
     - Documento de Visão: extras/documento_visao.md
-    - Apresnetação final: extras/apresentacao_final.md
+    - Apresentação final: extras/apresentacao_final.md
 
 # Style
 extra_css:
