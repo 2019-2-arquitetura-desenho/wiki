@@ -4,9 +4,10 @@
 
 |   Data   | Versão | Descrição | Autor(es)|
 | :------: | :----: | :-------: | :------: |
-| 16/08/19 |   0.1  | Adição do diagrama de sequência - login de usuário aluno | [Paulo Vitor](https://github.com/PauloVitorRocha) |
-| 19/08/19 |   0.2  | Adição da segunda versão do diagrama de sequẽncia - login de usuário aluno | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rodrigues](https://github.com/rjoao) |
+| 16/08/19 |   0.1  | Adição do diagrama de sequência - login | [Paulo Vitor](https://github.com/PauloVitorRocha) |
+| 19/08/19 |   0.2  | Adição da segunda versão do diagrama de sequẽncia - login | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rodrigues](https://github.com/rjoao) |
 | 19/08/19 |   0.3  | Adição do diagrama de sequência - cadastro de usuário aluno | [João Rodrigues](https://github.com/rjoao) |
+| 17/11/19 | 0.4 | Adição da segunda versão do diagrama de sequência - cadastro de usuário aluno | [João Rodrigues](https://github.com/rjoao) |
 
 
 ## Introdução
@@ -20,10 +21,17 @@ Os diagramas de sequência são os diagramas dinâmicos mais relevantes na UML e
 
 
 ## Diagrama de Sequência - Cadastro de Usuário Aluno
+
+### Versão 1.0
+
 ![Diagrama de Sequência de Cadastro de Usuário Aluno](./assets/img/diagrama_sequencia_cadastro_usuario_aluno.png)
 
+### Versão 2.0
 
-## Diagrama de Sequência - Login de Usuário Aluno
+![Diagrama de Sequência de Cadastro de Usuário Aluno](./assets/img/diagrama_sequencia_cadastro_aluno_v2.png)
+
+
+## Diagrama de Sequência - Login
 
 ### Versão 1.0
 ![Diagrama de login](./assets/img/DiagramaDeLogin.png)
