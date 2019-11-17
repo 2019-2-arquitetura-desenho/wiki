@@ -390,6 +390,20 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Origem** | [Questionário](/../dinamica_seminario_I/Elicitacao/questionario/) |
 | **Critérios de aceitação** | - Os administradores adicionam mais perguntas e respostas ao FAQ </br> - Os administradores alteram as perguntas e respostas previamente adicionadas |
 
+## Histórias Técnicas
+
+### TS01
+#### Configuração de ambiente
+
+| TS01 | Configuração de ambiente |
+| ---: | :---------- |
+| **Épico** | [Crawler](#ep06) |
+| **Descrição** | Eu, **como** desenvolvedor, **desejo** gostaria de configurar o ambiente de desenvolvimento  **para que eu possa** iniciar o projeto. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | - Ambiente estável que facilite o acesso de todos os membros durante o desenvolvimento. |
+
+
 ## Referências
 
 **[1]** SERRANO, Maurício; SERRANO, Milene. **Requisitos - Aula 17. 1º/2019**. Material apresentado para a disciplina de Requisitos de Software no curso de Engenharia de Software da UnB, FGA.
