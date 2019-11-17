@@ -8,7 +8,7 @@
 | 16/11/2019 | 0.2 | Adiciona representação arquitetural | [Welison Regis](https://github.com/WelisonR) |
 | 17/11/2019 | 0.3 | Inclui o objetivo, escopo e referências | [Paulo Vitor](https://github.com/PauloVitorRocha) |
 | 17/11/2019 | 0.4 | Adiciona restrições e metas arquiteturais | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-
+| 17/11/2019 | 0.4 | Adiciona diagrama de componente | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## 1. Introdução
 
@@ -87,32 +87,32 @@ To do
 | **Arquitetura** | Devido ao contexto do problema, isto é, aplicação com uma lógica bem definida e que não necessita escalar em alto nível (voltado ao público da FGa), será desenvolvida uma aplicação baseada em uma arquitetura monolítica definida em camadas, que centralizará as atividades e proverá maior desempenho ao serviço. |
 | **Outros** | - Equipe com 09 membros;<br/> - Utilização de serviços de deploy gratuitos (e limitados, claramente); <br/> - Prazo de desenvolvimento da aplicação em aproximadamente 120 dias.<br/> - A aplicação deve ser responsível a fim de ser utilizada tanto web como mobile.|
 
-## 4. Visão de Casos de Uso
+## 4. Visão Lógica
+
+### 4.1 Front-end
+
+### 4.2 Back-end API
+
+### 4.3 API WebCrawler
+
+![Diagrama de Classe Crawler](assets/diagrama_classe_crawler.png)
+
+## 5. Visão da Implementação
+
+O Diagrama de implementação serve para dar uma visão de como seria implementado em hardware a arquitetura proposta. Visto que nela é possível ver a quantidade de servidores e/ou serviços por servidores , máquinas pessoais e protocolos de comunicação.
+
+### 5.1 Diagrama de Implementação
+
+![Diagrama de Implementação](assets/diagrama_implementacao.jpg)
+
+## 6. Visão de Dados
+
+### 6.1 API WebCrawler
+
+### 6.2 Front-end
 
 
-## 5. Visão Lógica
-
-### 5.1 Front-end
-
-### 5.2 API WebCrawler
-
-### 5.3 Back-end API
+## 7. Tamanho e Desempenho
 
 
-## 6. Visualização da Implementação
-
-
-## 7. Visão da Implementação
-
-
-## 8. Visão de Dados
-
-### 8.1 API WebCrawler
-
-### 8.2 Front-end
-
-
-## 9. Tamanho e Desempenho
-
-
-## 10. Qualidade
+## 8. Qualidade
