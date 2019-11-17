@@ -5,6 +5,7 @@
 |:---:|:---:|:---:|:---:|
 | 17/11/19 | 0.1 | Adicionando introdução e discorrendo sobre Gerência e funcionalidades | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rossi](https://github.com/bielrossi15) |
 | 17/11/19 | 0.2 | Adicionando a explicação do produto, desenvolvimento e trabalho em equipe | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rossi](https://github.com/bielrossi15) | 
+| 17/11/19 | 0.3 | Adicionando imagens do produto | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rossi](https://github.com/bielrossi15) | 
 
 ## 1. Introdução
 Este documento refere-se a apresentação final do grupo A Monitoria da matéria Arquitetura e Desenho de Software.
@@ -68,8 +69,34 @@ A equipe trabalhou seguindo o documento de [Metodologias](../../dinamica_seminar
 - [Back-end](https://github.com/2019-2-arquitetura-desenho/monitoria-api) - Repositório com o código da API;
 - [Web Crawler](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler) - Repositório do Web Crawler para salvar as matérias oferecidas na FGA;
 
-
 ## 7. O produto
+
+#### Página de Login
+
+![Página de Login - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/login.png)
+
+#### Página de Cadastro
+
+![Página de Cadastro - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/cadastro.png)
+
+#### Página Inicial
+
+![Página Inicial - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/pagina_inicial.png)
+
+#### Página de Informações Pessoais
+
+![Página de Informações Pessoais - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/pagina_info_pessoais.png)
+
+#### Página de Cadastro em Monitoria
+
+![Página de Página de Cadastro em Monitoria - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/cadastrar_monitoria.png)
+
+#### Página de Resultados 
+
+![Página de Página de Resultados - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/resultado.png)
+
+
 
 
 ## 8. Referências
+
