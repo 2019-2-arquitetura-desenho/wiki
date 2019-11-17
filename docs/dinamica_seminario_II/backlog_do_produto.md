@@ -47,6 +47,10 @@ Criar e desenvolver mecanismos que facilitem a utilização da plataforma.
 #### Autenticação
 Criar funcionalidades que validem as informações dos usuários.
 
+### EP06
+#### Crawler
+Criar funcionalidades referentes a ferramenta de Web Crawler.
+
 ## Histórias de Usuário
 
 
@@ -385,6 +389,99 @@ Criar funcionalidades que validem as informações dos usuários.
 | **Pontos** | 1 |
 | **Origem** | [Questionário](/../dinamica_seminario_I/Elicitacao/questionario/) |
 | **Critérios de aceitação** | - Os administradores adicionam mais perguntas e respostas ao FAQ </br> - Os administradores alteram as perguntas e respostas previamente adicionadas |
+
+## Histórias Técnicas
+
+### TS01
+#### Configuração de ambiente
+
+| TS01 | Configuração de ambiente |
+| ---: | :---------- |
+| **Épico** | [Ajuda](#ep05) |
+| **Descrição** | Eu, **como** desenvolvedor, **desejo** gostaria de configurar o ambiente de desenvolvimento  **para que eu possa** iniciar o projeto. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | - Ambiente estável que facilite o acesso de todos os membros durante o desenvolvimento. |
+
+### TS02
+#### Recuperação de Turmas
+
+| TS02 | Recuperação de Turmas |
+| ---: | :---------- |
+| **Épico** | [Crawler](#ep06) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **recuperar todas as turmas de oferta do Matrícula Web (UnB)** para **disponibilizar na aplicação as ofertas de monitoria ao usuário**. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | - Todas as turmas da oferta do Matrícula Web devem ser capturadas. |
+
+### TS03
+#### Modelagem API de OFerta
+
+| TS03 | Modelagem Api de Oferta |
+| ---: | :---------- |
+| **Épico** | [Crawler](#ep06) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **modelar a API Restful para receber as disciplinas e turmas das ofertas** do Matrícula Web. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | - Os modelos de dados estruturados devem se adequar aos atributos de disciplina e turma do Matrícula Web. |
+
+
+### TS04
+#### Deploy API de OFerta
+
+| TS04 | Deploy Api de Oferta |
+| ---: | :---------- |
+| **Épico** | [Crawler](#ep06) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **realizar o deploy da API de oferta** para **disponibilizar as disciplinas e turmas ofertas no semestre**. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | -  A aplicação deve estar disponível na internet para que seja possível busca em sua base de dados através de API. |
+
+### TS05
+#### Integração API com Crawler
+
+| TS05 | Integração API com Crawler|
+| ---: | :---------- |
+| **Épico** | [Crawler](#ep06) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **integrar a API com o Crawler** para **utilizar suas funcionalidades na API**. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | -  A aplicação deve ser capaz de se comunicar com o Crawler para manipular suas informações. |
+
+### TS06
+#### Leitura e extração de informações em PDF
+
+| TS06 | Leitura e extração de informações em PDF |
+| ---: | :---------- |
+| **Épico** | [Ajuda](#ep05) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **realizar a extração de informações do PDF enviado pelo usuário** para **manipulá-las**. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | -  A aplicação deve estar preparada para manipular dados provindos de PDF's padronizados enviados pelo usuário. |
+
+### TS07
+#### Cadastro em turma
+
+| TS07 | Cadastro em turma|
+| ---: | :---------- |
+| **Épico** | [Ajuda](#ep05) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **gerar uma estrutura** para **cadastros em disciplinas e turmas**. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | -  A aplicação deve ser capaz de manipular cadastros em disciplinas e turmas. |
+
+### TS08
+#### Menu de Navegação
+
+| TS08 | Menu de Navegação |
+| ---: | :---------- |
+| **Épico** | [Ajuda](#ep05) |
+| **Descrição** | Eu, como **Usuário** desejo navegar entre as telas da aplicação para que **consiga cadastrar em uma disciplina, verificar minhas configurações, visualizar minhas disciplinas cadastradas, etc** |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | -  A aplicação deve ser capaz de portar um menu de navegação simples e prático. |
+
+
 
 ## Referências
 
