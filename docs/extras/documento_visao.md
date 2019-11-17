@@ -6,6 +6,7 @@
 |:----:|:------:|:---------:|:--------:|
 | 22/08/19 | 0.1 | Adição do template | [Lieverton Silva](https://github.com/lievertom) e  [Welison Regis](https://github.com/WelisonR) |
 | 22/08/19 | 0.2 | Desenvolvimento do template | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+| 19/11/19 | 0.3 | Adicao das referencias | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 
 ## Introdução 
 
@@ -169,23 +170,6 @@ O sistema deve ser resistente a ataque e possiveis tentativas de invasao. O sist
 ### Restrições de Uso
 Para o uso do sistema é necessário que o usuário tenha acesso a um dispositivo conectado à internet.
 
+## Referências
 
-## Faixas de Qualidade
-
- Nota: Está seção ainda está em desenvolvimento.
-
-Defina as faixas de qualidade para desempenho, robustez, tolerância a falhas, usabilidade e características similares que o conjunto de recursos não descreve.
-
-## Requisitos de Documentação
-
- Nota: Está seção ainda está em desenvolvimento.
-
-Esta seção descreve a documentação que deve ser desenvolvida para suportar a implementação bem sucedida do aplicativo.
-### Notas sobre a liberação, arquivo Leia-me: 
-As notas sobre a liberação ou um arquivo Leia-me abreviado podem incluir uma seção "O que Há de Novo", uma discussão sobre problemas de compatibilidade com liberações anteriores, e alertas de instalação e atualização. O documento pode também conter ou vincular correções na liberação e quaisquer problemas ou soluções alternativas conhecidos.
-### Ajuda On-line:
-Muitos aplicativos fornecem um sistema de ajuda on-line para ajudar o usuário. A natureza desses sistemas é exclusiva para desenvolvimento de aplicativo, pois eles combinam aspectos de programação (centros de informações pesquisáveis e navegação do tipo Web) com aspectos de composição técnica (organização, apresentação). Muitas equipes consideram que o desenvolvimento do sistema de ajuda on-line é um projeto dentro de um projeto que se beneficia do gerenciamento de escopo e planejamento no início do projeto.
-### Guias de Instalação: 
-Um documento que inclui instalação, configuração e instruções de atualização como parte da oferta de solução integral.
-### Rótulo e Embalagem:	
-Uma aparência consistente começa com a embalagem do produto e se aplica aos menus de instalação, telas iniciais, sistemas de ajuda, caixas de diálogo de GUI e assim por diante. Esta seção define as necessidades e tipos de rótulos a serem incorporados no código. Os exemplos incluem copyright e avisos de patentes, logotipos corporativos, ícones padronizados e outros elementos gráficos.
+[^1]: Documento de Visão. Disponível em: https://www.ibm.com/support/knowledgecenter/pt-br/SSYMRC_6.0.5/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html. Acesso em: 22 ago. 2019.
