@@ -457,7 +457,7 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Descrição** | Eu, como **desenvolvedor**, gostaria de **realizar a extração de informações do PDF enviado pelo usuário** para **manipulá-las**. |
 | **Priorização** | C |
 | **Pontos** | 5 |
-| **Critérios de aceitação** | -  A aplicação deve estar disponível na internet para que seja possível busca em sua base de dados através de API. |
+| **Critérios de aceitação** | -  A aplicação deve estar preparada para manipular dados provindos de PDF's padronizados enviados pelo usuário. |
 
 
 ## Referências
