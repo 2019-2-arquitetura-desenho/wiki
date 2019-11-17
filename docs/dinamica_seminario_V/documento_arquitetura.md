@@ -10,6 +10,7 @@
 | 17/11/19 | 0.4 | Adiciona restrições e metas arquiteturais | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 17/11/19 | 0.5 | Adiciona diagrama de componente | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 17/11/19 | 0.6 | Adiciona descrições de implementação e implantação do crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+|17/11/19 | 0.7 | Adicionando Representação arquitetural do Front | [Ivan Dobbin](https://github.com/darmsDD) |
 
 ## 1. Introdução
 
@@ -37,6 +38,10 @@ As referências aplicáveis são:
 * <https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm>
 * <https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm>
 
+* <https://redux.js.org/basics/reducers>
+
+* <https://android.jlelse.eu/react-native-redux-architecture-part-1-8178fc9065c2>
+
 
 ## 2. Representação Arquitetural
 
@@ -59,8 +64,19 @@ To do
 To do
 
 ### 2.3 Front-end
-
+![arquitetura_front](assets/representacao_arquitetural_front.png)
+#### Components: 
+Componentes são os componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
+#### Actions: 
+É uma coleção de funções que realização alguma requisição no servidor
 To do
+
+#### Reducer:
+É ele que diz como os estados da aplicação mudam de acordo com as respostas da actions.
+
+#### Server:
+Local da onde vem os dados.
+
 
 ## 3. Restrições e Metas Arquiteturais
 
@@ -121,3 +137,6 @@ No repositório do Crawler de Ofertas aplicou-se alguns padrões de projeto pert
 
 
 ## 8. Qualidade
+
+
+
