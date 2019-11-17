@@ -7,7 +7,7 @@
 | 16/11/2019 | 0.1 | Criação do Documento, separação de tópicos | [Welison Regis](https://github.com/WelisonR) |
 | 16/11/2019 | 0.2 | Adiciona representação arquitetural | [Welison Regis](https://github.com/WelisonR) |
 | 17/11/2019 | 0.3 | Inclui o objetivo, escopo e referências | [Paulo Vitor](https://github.com/PauloVitorRocha) |
-| 17/11/2019 | Adiciona restrições e metas arquiteturais | [Welison Regis](https://github.com/WelisonR) |
+| 17/11/2019 | 0.4 | Adiciona restrições e metas arquiteturais | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 
 ## 1. Introdução
