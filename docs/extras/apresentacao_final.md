@@ -3,7 +3,7 @@
 ## Histórico de Revisão:
 | Data | Versão | Descrição | Autor |
 |:---:|:---:|:---:|:---:|
-| 17/11/19 | 0.1 | Adicionando introdução e descorrendo sobre Gerência | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rossi](https://github.com/bielrossi15) |
+| 17/11/19 | 0.1 | Adicionando introdução e discorrendo sobre Gerência e funcionalidades | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rossi](https://github.com/bielrossi15) |
 
 ## 1. Introdução
 Este documento refere-se a apresentação final do grupo A Monitoria da matéria Arquitetura e Desenho de Software.
@@ -15,10 +15,9 @@ Ele tem como objetivo tentar demonstrar todo o trabalho realizado pela equipe ao
 O presente tópico busca definir e formalizar as metodologias de trabalho que foram aplicadas no desenvolvimento do projeto. Nesse sentido, quanto as metodologias pertinentes ao escopo de elaboração da aplicação, podemos citar o scrum, kanban, extreme programming. Já para as metodologias de gerência temos, reuniões, quadro de conhecimento e avaliações de desempenho com burndown, velocity. Para um melhor detalhamento sobre metodologia visite a página de [Metodologias](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_II/metodologias/) em nossa [Wiki](https://2019-2-arquitetura-desenho.github.io/wiki/).
 
 ## 4. Funcionalidades
-
+O escopo do projeto foi definido entre os membros do grupo em conjunto com a professora Milene Serrano. As funcionalidades foram definidas a partir de um [questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) para alunos e professores da universidade. As funcionalidades foram também definidas por meio de um [protótipo](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/) o que facilitou a limitação de escopo do projeto.
 
 ## 5. Desenvolvimento
-
 
 ## 6. Trabalho em Equipe
 
