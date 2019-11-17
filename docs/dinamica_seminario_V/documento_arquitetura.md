@@ -9,7 +9,7 @@
 | 17/11/19 | 0.3 | Inclui o objetivo, escopo e referências | [Paulo Vitor](https://github.com/PauloVitorRocha) |
 | 17/11/19 | 0.4 | Adiciona restrições e metas arquiteturais | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 17/11/19 | 0.5 | Adiciona diagrama de componente | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 17/11/19 | 0.6 | Adiciona descrições de implementação do crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 0.6 | Adiciona descrições de implementação e implantação do crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## 1. Introdução
 
@@ -82,7 +82,7 @@ To do
 ### 4.3 Webcrawler API
 
 
-#### 4.3.1 Diagrama de Representativo do Crawler
+#### 4.3.1 Diagrama de Classes do Crawler
 
 ![Diagrama de Classe Crawler](assets/diagrama_classe_crawler.png)
 
@@ -90,9 +90,21 @@ To do
 
 O Diagrama de implementação serve para dar uma visão de como seria implementado em hardware a arquitetura proposta. Visto que nela é possível ver a quantidade de servidores e/ou serviços por servidores , máquinas pessoais e protocolos de comunicação.
 
-### 5.1 Diagrama de Implementação
+Diagrama de implantação da aplicação "A Monitoria":
 
-![Diagrama de Implementação](assets/diagrama_implementacao.jpg)
+![Diagrama de implantação](assets/diagrama_implementacao.jpg)
+
+### 5.1 Servidores MW Crawler (Heroku)
+
+O serviço de crawler das informações de oferta do matrícula web por meio de http está hospedado na plataforma [Heroku](https://www.heroku.com/), assim como sua API e demais serviços. O serviço está integrafo por meio de protocolo tcp/ip para fins de conexão.
+
+### 5.2 Servidores back-end (Heroku)
+
+O serviço de back-end disponibiliza uma interface para a manipulação dos dados relacionados ao processo de monitoria, como históricos escolares e dados pessoais do cadastrante. O serviço está disponível por meio de requisições http por meio da plataforma [Heroku](https://www.heroku.com/).
+
+### 5.3 Servidores front-end (Heroku)
+
+O serviço de front-end está sendo disponibilizado em interface web por meio de requests http disponibilizadas através da plataforma [Heroku](https://www.heroku.com/).
 
 ### 6. Visão de Implementação
 
