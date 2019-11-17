@@ -4,7 +4,7 @@
 | Data | Versão | Descrição | Autor |
 |:---:|:---:|:---:|:---:|
 | 17/11/19 | 0.1 | Adicionando introdução e discorrendo sobre Gerência e funcionalidades | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rossi](https://github.com/bielrossi15) |
-| 17/11/19 | 0.2 | Adicionando a explicação do produto e desenvolvimento | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rossi](https://github.com/bielrossi15) |
+| 17/11/19 | 0.2 | Adicionando a explicação do produto, desenvolvimento e trabalho em equipe | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rossi](https://github.com/bielrossi15) | 
 
 ## 1. Introdução
 Este documento refere-se a apresentação final do grupo A Monitoria da matéria Arquitetura e Desenho de Software.
@@ -13,9 +13,9 @@ Ele tem como objetivo tentar demonstrar todo o trabalho realizado pela equipe ao
 ## 2. O produto
 A ideia do produto passou por uma seleção criteriosa, utilizando 3 métodos para a escolha, sendo eles:   
 
-- [5W2H](../../dinamica_seminario_I/definicao_tema/5W2H/)
-- [Rich Picture](../../dinamica_seminario_I/definicao_tema/rich_picture/)  
-- [Ishikawa](../../dinamica_seminario_I/definicao_tema/ishikawa/)  
+- [5W2H](../../dinamica_seminario_I/definicao_tema/5W2H/);
+- [Rich Picture](../../dinamica_seminario_I/definicao_tema/rich_picture/);  
+- [Ishikawa](../../dinamica_seminario_I/definicao_tema/ishikawa/);  
    
 Foram utilizados os documentos para levantar necessidades, fluxos de trabalho e possíveis problemas que seriam encontrados no decorrer do projeto, sendo a escolha final baseada numa votação entre os membros do grupo com opiniões baseadas nos levantamentos finais da documentação auxiliar.
 
@@ -40,13 +40,13 @@ Entrando na competência do desenvolvimento, a equipe se ateve primeiro ao geren
 Foram feitos diagramas UML estáticos e dinâmicos, para ter a representação do produto em diferentes níveis de detalhes. 
 
 #### Diagramas Estáticos
-- [Diagrama de Classes](../../dinamica_seminario_III/diagrama_classes/)
-- [Diagrama de Pacotes](../../dinamica_seminario_III/diagrama_pacotes/)
+- [Diagrama de Classes](../../dinamica_seminario_III/diagrama_classes/);
+- [Diagrama de Pacotes](../../dinamica_seminario_III/diagrama_pacotes/);
 
 #### Diagramas Dinâmicos
-- [Diagrama de Sequência](../../dinamica_seminario_III/diagrama_seq/)  
-- [Diagrama de Estado](../../dinamica_seminario_III/diagrama_de_estados/)
-- [Diagrama de Atividades](../../dinamica_seminario_III/diagrama_de_atividades/)
+- [Diagrama de Sequência](../../dinamica_seminario_III/diagrama_seq/);  
+- [Diagrama de Estado](../../dinamica_seminario_III/diagrama_de_estados/);
+- [Diagrama de Atividades](../../dinamica_seminario_III/diagrama_de_atividades/);
 
 Além dos diagramas para avaliação do funcionamento do produto, foi feito também o [Documento de Arquitetura](../../dinamica_seminario_V/documento_arquitetura/) para ajudar no entendimento do funcionamento do frontend, backend e do crawler e como ocorreria essa integração entre elas e o funcionamento de cada uma.
 
@@ -54,11 +54,19 @@ Além dos diagramas para avaliação do funcionamento do produto, foi feito tamb
 
 No que compete a padrões de projeto, a equipe selecionou alguns específicos para resolver os problemas do nosso produto. Foram utilizados diferentes padrões em nossos 3 repositórios e aqui tem-se o detalhamento de cada um:  
 
-- [Patterns Web Crawler](../../dinamica_seminario_IV/webcrawler_patterns/)  
-- [Patterns Front-end](../../dinamica_seminario_IV/front-end_patterns/)  
-- [Patterns Back-end](../../dinamica_seminario_IV/back-end_patterns/)  
+- [Patterns Web Crawler](../../dinamica_seminario_IV/webcrawler_patterns/);  
+- [Patterns Front-end](../../dinamica_seminario_IV/front-end_patterns/);  
+- [Patterns Back-end](../../dinamica_seminario_IV/back-end_patterns/);  
 
 ## 6. Trabalho em Equipe
+A equipe trabalhou seguindo o documento de [Metodologias](../../dinamica_seminario_II/metodologias/) e como foi explicado na parte de gerência, foram utilizadas práticas de 3 diferentes metodologias, scrum, XP e kanban, utilizando algumas técnicas, como o pair programming, quadro de conhecimento, entre outros.
+
+**O projeto foi dividido em 4 repositórios:**
+
+- [Wiki](https://github.com/2019-2-arquitetura-desenho/wiki) - Nesse repositório toda a documentação foi mantida;
+- [Front-end](https://github.com/2019-2-arquitetura-desenho/monitoria-app) - Repositório dedicado apenas ao front-end do projeto, em React;
+- [Back-end](https://github.com/2019-2-arquitetura-desenho/monitoria-api) - Repositório com o código da API;
+- [Web Crawler](https://github.com/2019-2-arquitetura-desenho/monitoria-crawler) - Repositório do Web Crawler para salvar as matérias oferecidas na FGA;
 
 
 ## 7. O produto
