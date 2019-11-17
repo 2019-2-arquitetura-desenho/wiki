@@ -47,6 +47,10 @@ Criar e desenvolver mecanismos que facilitem a utilização da plataforma.
 #### Autenticação
 Criar funcionalidades que validem as informações dos usuários.
 
+### EP06
+#### Crawler
+Criar funcionalidades referentes a ferramenta de Web Crawler.
+
 ## Histórias de Usuário
 
 
