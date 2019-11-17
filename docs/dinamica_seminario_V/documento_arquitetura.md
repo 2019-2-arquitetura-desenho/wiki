@@ -4,11 +4,12 @@
 
 | Data | Versão | Descrição | Autor(es) |
 |:--------:|:--------:|:----------------------:|:------------------:|
-| 16/11/2019 | 0.1 | Criação do Documento, separação de tópicos | [Welison Regis](https://github.com/WelisonR) |
-| 16/11/2019 | 0.2 | Adiciona representação arquitetural | [Welison Regis](https://github.com/WelisonR) |
-| 17/11/2019 | 0.3 | Inclui o objetivo, escopo e referências | [Paulo Vitor](https://github.com/PauloVitorRocha) |
-| 17/11/2019 | 0.4 | Adiciona restrições e metas arquiteturais | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-| 17/11/2019 | 0.4 | Adiciona diagrama de componente | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 16/11/19 | 0.1 | Criação do Documento, separação de tópicos | [Welison Regis](https://github.com/WelisonR) |
+| 16/11/19 | 0.2 | Adiciona representação arquitetural | [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 0.3 | Inclui o objetivo, escopo e referências | [Paulo Vitor](https://github.com/PauloVitorRocha) |
+| 17/11/19 | 0.4 | Adiciona restrições e metas arquiteturais | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 0.5 | Adiciona diagrama de componente | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 0.6 | Adiciona descrições de implementação do crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## 1. Introdução
 
@@ -35,21 +36,6 @@ As referências aplicáveis são:
 * <https://github.com/2019-2-arquitetura-desenho/wiki>
 * <https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm>
 * <https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm>
-
-
-### 1.5 Visão Geral
-
-<!-- Este documento visa detalhar as soluções arquiteturais desenvolvidas no sistema. Deste modo, neste documento serão abordados os seguintes aspectos:
-
-* Representação Arquitetural
-* Restrições e Metas Arquiteturais
-* Visão de Casos de Uso
-* Visão Lógica
-* Visão de Processos
-* Visualização da Implementação
-* Visão de Dados
-* Tamanho e Desempenho
-* Qualidade -->
 
 
 ## 2. Representação Arquitetural
@@ -93,11 +79,14 @@ To do
 
 ### 4.2 Back-end API
 
-### 4.3 API WebCrawler
+### 4.3 Webcrawler API
+
+
+#### 4.3.1 Diagrama de Representativo do Crawler
 
 ![Diagrama de Classe Crawler](assets/diagrama_classe_crawler.png)
 
-## 5. Visão da Implementação
+## 5. Visualização de implantação
 
 O Diagrama de implementação serve para dar uma visão de como seria implementado em hardware a arquitetura proposta. Visto que nela é possível ver a quantidade de servidores e/ou serviços por servidores , máquinas pessoais e protocolos de comunicação.
 
@@ -105,12 +94,16 @@ O Diagrama de implementação serve para dar uma visão de como seria implementa
 
 ![Diagrama de Implementação](assets/diagrama_implementacao.jpg)
 
-## 6. Visão de Dados
+### 6. Visão de Implementação
 
-### 6.1 API WebCrawler
+#### 6.1 Camadas API WebCrawler
 
-### 6.2 Front-end
+No repositório do Crawler de Ofertas aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nos seguintes submódulos do Crawler:
 
+*   **Builder**: baseado na oferta do Matrícula Web, captura dados sobre disciplinas, turmas, professores e informações correlatas ao campus UnB-Gama.
+*   **Transformers**: trata a complexidade dos dados obtidos e manipula-os de maneira a modelar adequadamente os dados ao modelo de dados do banco postgreSQL.
+*   **Savers**: exporta os dados obtidos pelo Crawler para o formato json a fim de ser carregado no banco de dados.
+*   **API**: fornece uma interface para obtenção das ofertas do campus UnB-Gama.
 
 ## 7. Tamanho e Desempenho
 
