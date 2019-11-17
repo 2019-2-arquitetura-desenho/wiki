@@ -33,6 +33,30 @@ O presente tópico busca definir e formalizar as metodologias de trabalho que fo
 O escopo do projeto foi definido entre os membros do grupo em conjunto com a professora Milene Serrano. As funcionalidades foram definidas a partir de um [questionario](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/questionario/) para alunos e professores da universidade. As funcionalidades foram também definidas por meio de um [protótipo](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/Elicitacao/prototipo/) o que facilitou a limitação de escopo do projeto.
 
 ## 5. Desenvolvimento
+Entrando na competência do desenvolvimento, a equipe se ateve primeiro ao gerenciamento do projeto com documentos para o controle e definição da aplicação para depois criar diagramas UML do projeto, seguido das especificações dos padrões para a solução dos problemas que seriam encontrados durante o decorrer do projeto e por fim, um documento de arquitetura para falar da integração e funcionamento deste produto software em suas 3 frontes principais: Web Crawler, Front-end e Back-end.
+
+### Diagramas e Documento de Arquitetura
+
+Foram feitos diagramas UML estáticos e dinâmicos, para ter a representação do produto em diferentes níveis de detalhes. 
+
+#### Diagramas Estáticos
+- [Diagrama de Classes](../../dinamica_seminario_III/diagrama_classes/)
+- [Diagrama de Pacotes](../../dinamica_seminario_III/diagrama_pacotes/)
+
+#### Diagramas Dinâmicos
+- [Diagrama de Sequência](../../dinamica_seminario_III/diagrama_seq/)  
+- [Diagrama de Estado](../../dinamica_seminario_III/diagrama_de_estados/)
+- [Diagrama de Atividades](../../dinamica_seminario_III/diagrama_de_atividades/)
+
+Além dos diagramas para avaliação do funcionamento do produto, foi feito também o [Documento de Arquitetura](../../dinamica_seminario_V/documento_arquitetura/) para ajudar no entendimento do funcionamento do frontend, backend e do crawler e como ocorreria essa integração entre elas e o funcionamento de cada uma.
+
+### Patterns
+
+No que compete a padrões de projeto, a equipe selecionou alguns específicos para resolver os problemas do nosso produto. Foram utilizados diferentes padrões em nossos 3 repositórios e aqui tem-se o detalhamento de cada um:  
+
+- [Patterns Web Crawler](../../dinamica_seminario_IV/webcrawler_patterns/)  
+- [Patterns Front-end](../../dinamica_seminario_IV/front-end_patterns/)  
+- [Patterns Back-end](../../dinamica_seminario_IV/back-end_patterns/)  
 
 ## 6. Trabalho em Equipe
 
