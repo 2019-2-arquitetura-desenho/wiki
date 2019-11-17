@@ -426,6 +426,18 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Critérios de aceitação** | - Os modelos de dados estruturados devem se adequar aos atributos de disciplina e turma do Matrícula Web. |
 
 
+### TS04
+#### Deploy API de OFerta
+
+| TS04 | Deploy Api de Oferta |
+| ---: | :---------- |
+| **Épico** | [Crawler](#ep06) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **realizar o deploy da API de oferta** para **disponibilizar as disciplinas e turmas ofertas no semestre**. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | -  A aplicação deve estar disponível na internet para que seja possível busca em sua base de dados através de API. |
+
+
 ## Referências
 
 **[1]** SERRANO, Maurício; SERRANO, Milene. **Requisitos - Aula 17. 1º/2019**. Material apresentado para a disciplina de Requisitos de Software no curso de Engenharia de Software da UnB, FGA.
