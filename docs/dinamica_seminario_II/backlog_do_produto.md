@@ -414,6 +414,17 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Pontos** | 5 |
 | **Critérios de aceitação** | - Todas as turmas da oferta do Matrícula Web devem ser capturadas. |
 
+### TS03
+#### Modelagem API de OFerta
+
+| TS03 | Modelagem Api de Oferta |
+| ---: | :---------- |
+| **Épico** | [Crawler](#ep06) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **modelar a API Restful para receber as disciplinas e turmas das ofertas** do Matrícula Web. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | - Os modelos de dados estruturados devem se adequar aos atributos de disciplina e turma do Matrícula Web. |
+
 
 ## Referências
 
