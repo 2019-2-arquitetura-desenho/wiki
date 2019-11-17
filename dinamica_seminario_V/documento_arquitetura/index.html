@@ -845,8 +845,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-backend-api" class="md-nav__link">
-    2.2 Backend API
+  <a href="#22-back-end-api" class="md-nav__link">
+    2.2 Back-end API
   </a>
   
 </li>
@@ -893,15 +893,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#52-crawler-api" class="md-nav__link">
-    5.2 Crawler API
+  <a href="#52-api-webcrawler" class="md-nav__link">
+    5.2 API WebCrawler
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#53-backend-api" class="md-nav__link">
-    5.3 Backend API
+  <a href="#53-back-end-api" class="md-nav__link">
+    5.3 Back-end API
   </a>
   
 </li>
@@ -934,8 +934,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#81-webcrawler" class="md-nav__link">
-    8.1 WebCrawler
+  <a href="#81-api-webcrawler" class="md-nav__link">
+    8.1 API WebCrawler
   </a>
   
 </li>
@@ -1126,8 +1126,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-backend-api" class="md-nav__link">
-    2.2 Backend API
+  <a href="#22-back-end-api" class="md-nav__link">
+    2.2 Back-end API
   </a>
   
 </li>
@@ -1174,15 +1174,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#52-crawler-api" class="md-nav__link">
-    5.2 Crawler API
+  <a href="#52-api-webcrawler" class="md-nav__link">
+    5.2 API WebCrawler
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#53-backend-api" class="md-nav__link">
-    5.3 Backend API
+  <a href="#53-back-end-api" class="md-nav__link">
+    5.3 Back-end API
   </a>
   
 </li>
@@ -1215,8 +1215,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#81-webcrawler" class="md-nav__link">
-    8.1 WebCrawler
+  <a href="#81-api-webcrawler" class="md-nav__link">
+    8.1 API WebCrawler
   </a>
   
 </li>
@@ -1285,16 +1285,22 @@
 <td align="center"><a href="https://github.com/WelisonR">Welison Regis</a></td>
 </tr>
 <tr>
-<td align="center">17/11/2019</td>
+<td align="center">16/11/2019</td>
 <td align="center">0.2</td>
+<td align="center">Adiciona representação arquitetural</td>
+<td align="center"><a href="https://github.com/WelisonR">Welison Regis</a></td>
+</tr>
+<tr>
+<td align="center">17/11/2019</td>
+<td align="center">0.3</td>
 <td align="center">Inclui o objetivo, escopo e referências</td>
 <td align="center"><a href="https://github.com/PauloVitorRocha">Paulo Vitor</a></td>
 </tr>
 <tr>
 <td align="center">17/11/2019</td>
-<td align="center">0.3</td>
-<td align="center">Adiciona representação arquitetural</td>
+<td align="center">Adiciona restrições e metas arquiteturais</td>
 <td align="center"><a href="https://github.com/WelisonR">Welison Regis</a></td>
+<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -1338,29 +1344,63 @@
 <p><strong>API WebCrawler</strong>: módulo da aplicação responsável por requisitar e disponibilizar as ofertas do campus da UnB-Gama disponíveis no site do Matrícula Web, UnB. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço <a href="http://amonitoria-offers.herokuapp.com/discipline/">Heroku</a>.</p>
 </li>
 <li>
-<p><strong>Frontend Web</strong>: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o Upload Care e possui o deploy no serviço <a href="https://www.heroku.com/">Heroku</a>.</p>
+<p><strong>Front-end Web</strong>: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o Upload Care e possui o deploy no serviço <a href="https://www.heroku.com/">Heroku</a>.</p>
 </li>
 <li>
-<p><strong>API Backend</strong>: módulo da aplicação responsável por prover em conjunto a API WebCrawler recursos necessários ao processo de matrícula em monitoria demandados pelas regras de negócio. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço <a href="https://www.heroku.com/">Heroku</a>.</p>
+<p><strong>API Back-end</strong>: módulo da aplicação responsável por prover em conjunto a API WebCrawler recursos necessários ao processo de matrícula em monitoria demandados pelas regras de negócio. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço <a href="https://www.heroku.com/">Heroku</a>.</p>
 </li>
 </ul>
 <p><img alt="Representação Arquitetural" src="../assets/representacao_arquitetural.png" /></p>
 <h3 id="21-crawller-api">2.1 Crawller API</h3>
 <p>To do</p>
-<h3 id="22-backend-api">2.2 Backend API</h3>
+<h3 id="22-back-end-api">2.2 Back-end API</h3>
 <p>To do</p>
 <h3 id="23-front-end">2.3 Front-end</h3>
 <p>To do</p>
 <h2 id="3-restricoes-e-metas-arquiteturais">3. Restrições e Metas Arquiteturais</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Requisito</th>
+<th align="center">Solução</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Linguagem</strong></td>
+<td align="center">O front-end será elaborado em JavaScript e o back-end em Python.</td>
+</tr>
+<tr>
+<td align="center"><strong>Plataforma</strong></td>
+<td align="center">Serão usadas as plataformas ReactJS para o front-end e Django para o back-end.</td>
+</tr>
+<tr>
+<td align="center"><strong>Segurança</strong></td>
+<td align="center">É necessário resguardar que haja segurança tanto ao perfil de estudante quanto ao perfil de professor na aplicação, não possibilitando a criação de um perfil inválido. Além disso, os dados precisam interagir de uma forma anônima e, para isso, deve-se fazer a utilização de token nas requisições.</td>
+</tr>
+<tr>
+<td align="center"><strong>Persistência</strong></td>
+<td align="center">Os dados deverão ser persistidos em banco de dados através do banco relacional PostgreSQL. A escolha por um banco relacional deriva de questões como escalabilidade, confiança (atomicididade, consistência, isolamento e durabilidade) e complexidade lógica da aplicação, além disso, leva-se em conta a facilidade de deploy contínuo em serviços de hospedagem web, diferente dos bancos não relacionais.</td>
+</tr>
+<tr>
+<td align="center"><strong>Arquitetura</strong></td>
+<td align="center">Devido ao contexto do problema, isto é, aplicação com uma lógica bem definida e que não necessita escalar em alto nível (voltado ao público da FGa), será desenvolvida uma aplicação baseada em uma arquitetura monolítica definida em camadas, que centralizará as atividades e proverá maior desempenho ao serviço.</td>
+</tr>
+<tr>
+<td align="center"><strong>Outros</strong></td>
+<td align="center">- Equipe com 09 membros;<br/> - Utilização de serviços de deploy gratuitos (e limitados, claramente); <br/> - Prazo de desenvolvimento da aplicação em aproximadamente 120 dias.<br/> - A aplicação deve ser responsível a fim de ser utilizada tanto web como mobile.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="4-visao-de-casos-de-uso">4. Visão de Casos de Uso</h2>
 <h2 id="5-visao-logica">5. Visão Lógica</h2>
 <h3 id="51-front-end">5.1 Front-end</h3>
-<h3 id="52-crawler-api">5.2 Crawler API</h3>
-<h3 id="53-backend-api">5.3 Backend API</h3>
+<h3 id="52-api-webcrawler">5.2 API WebCrawler</h3>
+<h3 id="53-back-end-api">5.3 Back-end API</h3>
 <h2 id="6-visualizacao-da-implementacao">6. Visualização da Implementação</h2>
 <h2 id="7-visao-da-implementacao">7. Visão da Implementação</h2>
 <h2 id="8-visao-de-dados">8. Visão de Dados</h2>
-<h3 id="81-webcrawler">8.1 WebCrawler</h3>
+<h3 id="81-api-webcrawler">8.1 API WebCrawler</h3>
 <h3 id="82-front-end">8.2 Front-end</h3>
 <h2 id="9-tamanho-e-desempenho">9. Tamanho e Desempenho</h2>
 <h2 id="10-qualidade">10. Qualidade</h2>
