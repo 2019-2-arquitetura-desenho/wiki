@@ -9,6 +9,7 @@
 | 19/09/19 | 0.3 | Adiciona referências | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 28/10/19 | 0.4 | Adição do diagrama de classe geral v2 | [Lucas Maciel](https://github.com/Ridersk)  |
 | 17/11/19 | 1.0 | Adição diagrma de clsse crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 1.1 | Adição diagrma de clsse crawler | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 
 ## Introdução
 
@@ -25,6 +26,10 @@ Para o desenvolvimento dos diagramas de classes, utilizou-se a ferramenta [Astah
 ### Versão 2.0
 
 ![Diagrama Geral V2 - Backend](./assets/img/diagrama_classes/diagrama_classe_geral_v2.png);
+
+### Versão 3.0
+
+![Diagrama Geral V2 - Backend](./assets/img/diagrama_classes/diagrama_classe_geral_v3.png);
 
 ## Diagrama MW Crawler
 
