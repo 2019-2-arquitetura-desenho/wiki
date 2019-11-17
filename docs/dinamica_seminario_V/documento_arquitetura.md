@@ -5,8 +5,9 @@
 | Data | Versão | Descrição | Autor(es) |
 |:--------:|:--------:|:----------------------:|:------------------:|
 | 16/11/2019 | 0.1 | Criação do Documento, separação de tópicos | [Welison Regis](https://github.com/WelisonR) |
-| 17/11/2019 | 0.2 | Inclui o objetivo, escopo e referências | [Paulo Vitor](https://github.com/PauloVitorRocha) |
-| 17/11/2019 | 0.3 | Adiciona representação arquitetural | [Welison Regis](https://github.com/WelisonR) |
+| 16/11/2019 | 0.2 | Adiciona representação arquitetural | [Welison Regis](https://github.com/WelisonR) |
+| 17/11/2019 | 0.3 | Inclui o objetivo, escopo e referências | [Paulo Vitor](https://github.com/PauloVitorRocha) |
+| 17/11/2019 | Adiciona restrições e metas arquiteturais | [Welison Regis](https://github.com/WelisonR) |
 
 
 ## 1. Introdução
@@ -57,9 +58,9 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 *   **API WebCrawler**: módulo da aplicação responsável por requisitar e disponibilizar as ofertas do campus da UnB-Gama disponíveis no site do Matrícula Web, UnB. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](http://amonitoria-offers.herokuapp.com/discipline/).
 
-*   **Frontend Web**: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o Upload Care e possui o deploy no serviço [Heroku](https://www.heroku.com/).
+*   **Front-end Web**: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o Upload Care e possui o deploy no serviço [Heroku](https://www.heroku.com/).
 
-*   **API Backend**: módulo da aplicação responsável por prover em conjunto a API WebCrawler recursos necessários ao processo de matrícula em monitoria demandados pelas regras de negócio. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](https://www.heroku.com/).
+*   **API Back-end**: módulo da aplicação responsável por prover em conjunto a API WebCrawler recursos necessários ao processo de matrícula em monitoria demandados pelas regras de negócio. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](https://www.heroku.com/).
 
 ![Representação Arquitetural](assets/representacao_arquitetural.png)
 
@@ -67,7 +68,7 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 To do
 
-### 2.2 Backend API
+### 2.2 Back-end API
 
 To do
 
@@ -77,6 +78,14 @@ To do
 
 ## 3. Restrições e Metas Arquiteturais
 
+| Requisito | Solução |
+|:---------:|:-------:|
+| **Linguagem** | O front-end será elaborado em JavaScript e o back-end em Python. |
+| **Plataforma** | Serão usadas as plataformas ReactJS para o front-end e Django para o back-end. |
+| **Segurança** | É necessário resguardar que haja segurança tanto ao perfil de estudante quanto ao perfil de professor na aplicação, não possibilitando a criação de um perfil inválido. Além disso, os dados precisam interagir de uma forma anônima e, para isso, deve-se fazer a utilização de token nas requisições. |
+| **Persistência** | Os dados deverão ser persistidos em banco de dados através do banco relacional PostgreSQL. A escolha por um banco relacional deriva de questões como escalabilidade, confiança (atomicididade, consistência, isolamento e durabilidade) e complexidade lógica da aplicação, além disso, leva-se em conta a facilidade de deploy contínuo em serviços de hospedagem web, diferente dos bancos não relacionais. |
+| **Arquitetura** | Devido ao contexto do problema, isto é, aplicação com uma lógica bem definida e que não necessita escalar em alto nível (voltado ao público da FGa), será desenvolvida uma aplicação baseada em uma arquitetura monolítica definida em camadas, que centralizará as atividades e proverá maior desempenho ao serviço. |
+| **Outros** | - Equipe com 09 membros;<br/> - Utilização de serviços de deploy gratuitos (e limitados, claramente); <br/> - Prazo de desenvolvimento da aplicação em aproximadamente 120 dias.<br/> - A aplicação deve ser responsível a fim de ser utilizada tanto web como mobile.|
 
 ## 4. Visão de Casos de Uso
 
@@ -85,9 +94,9 @@ To do
 
 ### 5.1 Front-end
 
-### 5.2 Crawler API
+### 5.2 API WebCrawler
 
-### 5.3 Backend API
+### 5.3 Back-end API
 
 
 ## 6. Visualização da Implementação
@@ -98,7 +107,7 @@ To do
 
 ## 8. Visão de Dados
 
-### 8.1 WebCrawler
+### 8.1 API WebCrawler
 
 ### 8.2 Front-end
 
