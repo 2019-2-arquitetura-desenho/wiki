@@ -17,6 +17,7 @@
     Este documento fornece uma visão geral da arquitetura do sistema A Monitoria. Ele tem como objetivo capturar e demonstrar as decisões da equipe com relação ao escopo  arquitetural do projeto.
 
 ### 1.2 Escopo
+
     Este Documento de Arquitetura de Software fornece uma visão geral de arquitetura do sistema A Monitoria. A Monitoria está sendo desenvolvido por alunos da UnB-FGA com o intuito de melhorar e facilitar o cadastro dos alunos em uma monitoria, de modo a deixar mais transparente e veloz o processo de seleção.
 
 ### 1.3 Definições, Acrônimos e Abreviações
@@ -49,13 +50,11 @@ As referências aplicáveis são:
 
 ## 2. Representação Arquitetural
 
-### 2.1 Crawller API
-
+### 2.1 Crawler API
 
 ### 2.2 Backend API
 
 ### 2.3 Front-end
-
 
 ## 3. Restrições e Metas Arquiteturais
 
@@ -67,7 +66,7 @@ As referências aplicáveis são:
 
 ### 5.1 Front-end
 
-### 5.2 Crawller API
+### 5.2 Crawler API
 
 ### 5.3 Backend API
 

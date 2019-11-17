@@ -8,6 +8,7 @@
 | 02/09/19 | 0.3 | Introdução sobre o diagrama | [Paulo Vitor](https://github.com/paulovitorrocha) e [João Rossi](https://github.com/bielrossi15)|
 | 05/09/19 | 0.4 | Diagrama versao 2 | [Paulo Vitor](https://github.com/paulovitorrocha) e [João Rossi](https://github.com/bielrossi15)|
 | 05/09/19 | 0.5 | Diagrama versao 3 | [Paulo Vitor](https://github.com/paulovitorrocha) e [João Rossi](https://github.com/bielrossi15)|
+| 17/11/19 | 0.6 | Diagrama versao 4 | [Paulo Vitor](https://github.com/paulovitorrocha) e [João Rossi](https://github.com/bielrossi15)|
 
 ## Introdução
 O diagrama de Gantt é um artefato visual para controlar cronogramas de projetos, com o objetivo de ajudar e avaliar prazos de entrega da equipe.  
@@ -33,6 +34,8 @@ O documento será evoluído conforme o andamento do projeto e a percepção do g
 ![Gantt](GanttV2.png)
 ### versão 3.0
 ![Gantt](Ganttclean.png)
+### versão 4.0
+![Gantt](Gantt_final.png)
 
 
 ## Referências 
