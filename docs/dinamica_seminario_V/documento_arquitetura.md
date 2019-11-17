@@ -7,6 +7,7 @@
 | 16/11/2019 | 0.1 | Criação do Documento, separação de tópicos | [Welison Regis](https://github.com/WelisonR) |
 | 17/11/2019 | 0.2 | Incluindo o objetivo | [Paulo Vitor](https://github.com/PauloVitorRocha) |
 | 17/11/2019 | 0.3 | Incluindo o escopo | [Paulo Vitor](https://github.com/PauloVitorRocha) |
+| 17/11/2019 | 0.4 | Incluindo referências | [Paulo Vitor](https://github.com/PauloVitorRocha) |
 
 
 ## 1. Introdução
@@ -27,6 +28,8 @@ As referências aplicáveis são:
 * <https://sce.uhcl.edu/helm/RationalUnifiedProcess/webtmpl/templates/a_and_d/rup_sad.htm#1.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Introduction>
 <br/>
 * <https://github.com/2019-2-arquitetura-desenho/wiki>
+* <https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm>
+* <https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm>
 
 
 ### 1.5 Visão Geral
