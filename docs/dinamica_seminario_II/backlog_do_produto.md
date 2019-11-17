@@ -437,6 +437,17 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Pontos** | 5 |
 | **Critérios de aceitação** | -  A aplicação deve estar disponível na internet para que seja possível busca em sua base de dados através de API. |
 
+### TS05
+#### Deploy API de Oferta
+
+| TS05 | Deploy Api de Oferta |
+| ---: | :---------- |
+| **Épico** | [Crawler](#ep06) |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **realizar o deploy da API de oferta** para **disponibilizar as disciplinas e turmas ofertas no semestre**. |
+| **Priorização** | C |
+| **Pontos** | 5 |
+| **Critérios de aceitação** | -  A aplicação deve estar disponível na internet para que seja possível busca em sua base de dados através de API. |
+
 
 ## Referências
 
