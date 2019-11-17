@@ -5,11 +5,14 @@
 | Data | Versão | Descrição | Autor(es) |
 |:--------:|:--------:|:----------------------:|:------------------:|
 | 16/11/2019 | 0.1 | Criação do Documento, separação de tópicos | [Welison Regis](https://github.com/WelisonR) |
+| 17/11/2019 | 0.2 | Incluindo o objetivo | [Paulo Vitor](https://github.com/PauloVitorRocha) |
 
 
 ## 1. Introdução
 
 ### 1.1 Objetivo
+
+    Este documento fornece uma visão geral da arquitetura do sistema A Monitoria. Ele tem como objetivo capturar e demonstrar as decisões da equipe com relação ao escopo  arquitetural do projeto.
 
 ### 1.2 Escopo
 
