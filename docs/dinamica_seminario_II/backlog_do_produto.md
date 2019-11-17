@@ -460,15 +460,15 @@ Criar funcionalidades referentes a ferramenta de Web Crawler.
 | **Critérios de aceitação** | -  A aplicação deve estar preparada para manipular dados provindos de PDF's padronizados enviados pelo usuário. |
 
 ### TS07
-#### Período de inscrição
+#### Cadastro em turma
 
-| TS07 | Período de inscrição|
+| TS07 | Cadastro em turma|
 | ---: | :---------- |
 | **Épico** | [Ajuda](#ep05) |
-| **Descrição** | Eu, como **desenvolvedor**, gostaria de **gerar o período de inscrição** para **padronizar com o período de inscrições em turmas**. |
+| **Descrição** | Eu, como **desenvolvedor**, gostaria de **gerar uma estrutura** para **cadastros em disciplinas e turmas**. |
 | **Priorização** | C |
 | **Pontos** | 5 |
-| **Critérios de aceitação** | -  A aplicação deve ser capaz de abrir e fechar automaticamente o período de inscrições em turmas de acordo com o período real de inscirções. |
+| **Critérios de aceitação** | -  A aplicação deve ser capaz de manipular cadastros em disciplinas e turmas. |
 
 
 
