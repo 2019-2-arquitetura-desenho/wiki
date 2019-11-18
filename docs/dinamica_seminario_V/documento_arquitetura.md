@@ -66,10 +66,6 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 ![arquitetura_front](assets/representacao_arquitetural_front.png)
 
-### 2.3 Crawler API
-
-![aquitetura_Crawler](assets/representacao_arquitetural_crawler.jpg)
-
 * **Components:** 
 
 Componentes são os componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
@@ -87,6 +83,9 @@ Componentes são os componentes JavaScript ou classes JavaScript que são respon
 
 Local da onde vem os dados.
 
+### 2.3 Crawler API
+
+![aquitetura_Crawler](assets/representacao_arquitetural_crawler.jpg)
 
 ## 3. Restrições e Metas Arquiteturais
 
