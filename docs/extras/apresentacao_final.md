@@ -73,27 +73,29 @@ A equipe trabalhou seguindo o documento de [Metodologias](../../dinamica_seminar
 
 #### Página de Login
 
-![Página de Login - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/login.png)
+![Página de Login](./img/Login.png)
 
 #### Página de Cadastro
 
-![Página de Cadastro - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/cadastro.png)
+![Página de Cadastro](./img/Cadastro.png)
 
 #### Página Inicial
 
-![Página Inicial - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/pagina_inicial.png)
+![Página Inicial](./img/Home.png)
+Continuação:
+![Página Inicial2](./img/Home2.png)
 
 #### Página de Informações Pessoais
 
-![Página de Informações Pessoais - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/pagina_info_pessoais.png)
+![Página de Informações Pessoais](./img/Info.png)
 
 #### Página de Cadastro em Monitoria
 
-![Página de Página de Cadastro em Monitoria - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/cadastrar_monitoria.png)
+![Página de Página de Cadastro em Monitoria](./img/Monitorias.png)
 
 #### Página de Resultados 
 
-![Página de Página de Resultados - Protótipo Versão 2.0](../dinamica_seminario_I/assets/img/prototipo_v2/resultado.png)
+![Página de Página de Resultados](./img/Resultado.png)
 
 
 
