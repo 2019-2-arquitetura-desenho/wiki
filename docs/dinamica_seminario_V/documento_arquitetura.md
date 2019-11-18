@@ -10,12 +10,14 @@
 | 17/11/19 | 0.4 | Adiciona restrições e metas arquiteturais | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 17/11/19 | 0.5 | Adiciona diagrama de componente | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 17/11/19 | 0.6 | Adiciona descrições de implementação e implantação do crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-|17/11/19 | 0.7 | Adicionando Representação arquitetural do Front | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
-|17/11/19 | 0.8 | Adicionando Diagrama de Pacotes | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
-|17/11/19 | 0.9 | Adicionando Arquitetura Django | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
+| 17/11/19 | 0.7 | Adicionando Representação arquitetural do Front | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
+| 17/11/19 | 0.8 | Adicionando Diagrama de Pacotes | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
+| 17/11/19 | 0.9 | Adicionando Arquitetura Django | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
 | 17/11/19 | 0.10 | Adiciona diagrama arquitetural crawler api | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-|17/11/19 | 0.11 | Arrumando título do tópico 2.1 | [Ivan Dobbin](https://github.com/darmsDD) 
-|17/11/19 | 0.12| Adição do diagrama de classes do Back-end API| [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1)|
+| 17/11/19 | 0.11 | Arrumando título do tópico 2.1 | [Ivan Dobbin](https://github.com/darmsDD) 
+| 17/11/19 | 0.12 | Adição do diagrama de classes do Back-end API| [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1)|
+| 17/11/19 | 0.13 | Adição de tópico de qualidade | [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 0.14 | Inclui tópicos faltantes em implementação |  [Welison Regis](https://github.com/WelisonR) |
 
 ## 1. Introdução
 
@@ -32,20 +34,19 @@ Este Documento de Arquitetura de Software fornece uma visão geral de arquitetur
 * UnB: Universidade de Brasília
 * FGA: Faculdade do Gama - Campus da Universidade de Brasília
 * API: Application Programming Interface (Interface de Programação de Aplicativos)
+* MVT: Model-View-Template.
 
 ### 1.4 Referências
 
 As referências aplicáveis são:
 
-* <https://sce.uhcl.edu/helm/RationalUnifiedProcess/webtmpl/templates/a_and_d/rup_sad.htm#1.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Introduction>
+* [Software Architecture Document](https://sce.uhcl.edu/helm/RationalUnifiedProcess/webtmpl/templates/a_and_d/rup_sad.htm#1.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Introduction)
 <br/>
-* <https://github.com/2019-2-arquitetura-desenho/wiki>
-* <https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm>
-* <https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm>
-
-* <https://redux.js.org/basics/reducers>
-
-* <https://android.jlelse.eu/react-native-redux-architecture-part-1-8178fc9065c2>
+* [Documento de Arquitetura de Software](https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm)
+* [Documento de Arquitetura de Software](https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm)
+* [Wiki - A Monitoria](https://github.com/2019-2-arquitetura-desenho/wiki)
+* [Reducers](https://redux.js.org/basics/reducers)
+* [React Native Redux Architecture Part-1](https://android.jlelse.eu/react-native-redux-architecture-part-1-8178fc9065c2)
 
 
 ## 2. Representação Arquitetural
@@ -54,9 +55,9 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 *   **API WebCrawler**: módulo da aplicação responsável por requisitar e disponibilizar as ofertas do campus da UnB-Gama disponíveis no site do Matrícula Web, UnB. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](http://amonitoria-offers.herokuapp.com/discipline/).
 
-*   **Front-end Web**: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o Upload Care e possui o deploy no serviço [Heroku](https://www.heroku.com/).
+*   **Front-end Web**: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o Upload Care e possui o deploy no serviço [Heroku](https://monitoria-app.herokuapp.com/).
 
-*   **API Back-end**: módulo da aplicação responsável por prover em conjunto a API WebCrawler recursos necessários ao processo de matrícula em monitoria demandados pelas regras de negócio. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](https://www.heroku.com/).
+*   **API Back-end**: módulo da aplicação responsável por prover em conjunto a API WebCrawler recursos necessários ao processo de matrícula em monitoria demandados pelas regras de negócio. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](http://fga-monitoria-api.herokuapp.com/).
 
 ![Representação Arquitetural](assets/representacao_arquitetural.png)
 
@@ -68,22 +69,10 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 ![arquitetura_front](assets/representacao_arquitetural_front.png)
 
-* **Components:** 
-
-Componentes são os componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
-
-* **Actions:** 
-
-É uma coleção de funções que realização alguma requisição no servidor
-
-
-* **Reducer:**
-
-É ele que diz como os estados da aplicação mudam de acordo com as respostas da actions.
-
-*  **Server:**
-
-Local da onde vem os dados.
+* **Components:** componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
+* **Actions:** coleção de funções que realização alguma requisição no servidor
+* **Reducer:** diz como os estados da aplicação mudam de acordo com as respostas da actions.
+*  **Server:** Local da onde vem os dados.
 
 ### 2.3 Crawler API
 
@@ -102,10 +91,11 @@ Local da onde vem os dados.
 
 ## 4. Visão Lógica
 
+Modelagens conforme padrão UML de forma a representar os aspectos arquiteturais do sistema, como as classes utilizadas, as camadas e pacotes da aplicação e a visão da implementação de cada serviço.
 
 ### 4.1 Diagrama de Pacotes Geral
 
-
+#### 4.3.1 Diagrama de Pacotes Geral
 ![Diagrama de Geral - v3.0](assets/diagrama_pacotes_geral_v3.png)
 
 ### 4.2 Back-end API
@@ -117,7 +107,6 @@ Local da onde vem os dados.
 
 
 #### 4.3.1 Diagrama de Classes do Crawler
-
 ![Diagrama de Classe Crawler](assets/diagrama_classe_crawler.png)
 
 ## 5. Visualização de implantação
@@ -142,14 +131,26 @@ O serviço de front-end está sendo disponibilizado em interface web por meio de
 
 ### 6. Visão de Implementação
 
-#### 6.1 Camadas API WebCrawler
+#### 6.2 Front-end
+
+O front-end fragmenta-se em subsistemas de suma importância para o seu funcionamento, como:
+* **Components:** componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
+* **Actions:** coleção de funções que realização alguma requisição no servidor
+* **Reducer:** diz como os estados da aplicação mudam de acordo com as respostas da actions.
+
+#### 6.3 Back-end
+
+O framework Django, utilizado no backend e no WebCrawler do projeto, baseia-se em um modelo MVT (Model-View-Template), que é similar ao MVC, modificando a nomenclatura da camada de exibição de View para Template e a camada de controller para View. Nesse sentido, é provido um ORM (Object-relational mapping), que permite utilizar código de sistemas de tipos diferentes, nesse caso SQL e Python, como model, uma view (controller), que tem o papel de decidir como e qual dado será exibido, e os templates, que no caso do translate-me foi substituído pelo React.
+
+#### 6.1 API WebCrawler
 
 No repositório do Crawler de Ofertas aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nos seguintes submódulos do Crawler:
 
 *   **Builder**: baseado na oferta do Matrícula Web, captura dados sobre disciplinas, turmas, professores e informações correlatas ao campus UnB-Gama.
 *   **Transformers**: trata a complexidade dos dados obtidos e manipula-os de maneira a modelar adequadamente os dados ao modelo de dados do banco postgreSQL.
 *   **Savers**: exporta os dados obtidos pelo Crawler para o formato json a fim de ser carregado no banco de dados.
-*   **API**: fornece uma interface para obtenção das ofertas do campus UnB-Gama.
+*   **API**: fornece uma interface baseada no padrão MVT para obtenção das ofertas do campus UnB-Gama.
+
 
 ## 7. Tamanho e Desempenho
 
@@ -157,5 +158,4 @@ A Monitoria é uma aplicação web, logo não há a necessidade de instalação 
 
 ## 8. Qualidade
 
-
-
+Além dos benefícios percebidos diretamente decorrentes da aplicação dos frameworks utilizados, o armanzenamento em banco de dados relacionais traz consigo a confiabilidade no armazenamento de dados devido as propriedades ACID (atomicidade, consistência, isolamento e durabilidade). Fora isso, a clara separação de conceitos de MVC e demais aspectos de arquiteturais trazem diversos outros benefícios para a aplicação em geral, como testabilidade e manutenabilidade.
