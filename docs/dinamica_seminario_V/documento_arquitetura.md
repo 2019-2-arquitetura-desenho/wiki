@@ -14,6 +14,7 @@
 e [Andre Pinto](https://github.com/andrelucax)
  |
 |17/11/19 | 0.8 | Adicionando Diagrama de Pacotes | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
+|17/11/19 | 0.9 | Adicionando Arquitetura Django | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
 
 ## 1. Introdução
 
@@ -58,26 +59,29 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 ![Representação Arquitetural](assets/representacao_arquitetural.png)
 
-### 2.1 Crawler API
+### 2.1 Crawler API e Back-end API (Django Rest)
 
-To do
+![arquitetura_django](assets/representacao_arquitetural_django.png)
 
-### 2.2 Back-end API
+### 2.2 Front-end
 
-To do
-
-### 2.3 Front-end
 ![arquitetura_front](assets/representacao_arquitetural_front.png)
+
 #### Components: 
+
 Componentes são os componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
+
 #### Actions: 
+
 É uma coleção de funções que realização alguma requisição no servidor
 
 
 #### Reducer:
+
 É ele que diz como os estados da aplicação mudam de acordo com as respostas da actions.
 
 #### Server:
+
 Local da onde vem os dados.
 
 
@@ -96,7 +100,9 @@ Local da onde vem os dados.
 
 
 ### 4.1 Diagrama de Pacotes Geral
+
 [link da criação original](../dinamica_seminario_III/diagrama_pacotes.md)
+
 ![Diagrama de Geral - v3.0](assets/diagrama_pacotes_geral_v3.png)
 
 ### 4.2 Back-end API
