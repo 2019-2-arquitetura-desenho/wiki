@@ -8,6 +8,7 @@
 | 24/10/2019 | 0.2 | Adiciona introdução sobre o PDF reader e template-method | [Paulo Vitor](https://github.com/paulovitorrocha) e  [João Gabriel Rossi](https://github.com/bielrossi15) |
 | 24/10/2019 | 0.3 | Adicionado diagrama de classe e trecho de codigo para o Tempalte Method | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
 | 24/10/2019 | 0.4 | Adicionando referencias bibliograficas | [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1) |
+|18/11/2019|0.5|Adicionando linkagem com o código| [João Rossi](https://github.com/bielrossi15), [Ivan Dobbin](https://github.com/darmsDD) |
 
 ## Template-method
 
@@ -16,7 +17,7 @@ O Template Method é um padrão de design comportamental que define o esqueleto 
 ### PDF-Reader
 
 O **PDF-Reader** do projeto é uma feature do módulo da aplicação [A Monitoria](https://github.com/2019-2-arquitetura-desenho/wiki/) responsável por extrair e salvar no banco de dados as informações referentes ao processo de monitoria como **Índice de Rendimento Acadêmico**, **Matrícula** e **Matérias passíveis de monitoria**, presentes no PDF do histórico escolar. Esse módulo é de suma importância para o projeto, pois, possibilitará apresentar as matérias que o aluno poderá realizar monitoria, assim como permitirá que seja disponibilizado um ranking em tempo real a partir da fórmula da monitoria.
-No repositório da [Monitoria API](https://github.com/2019-2-arquitetura-desenho/monitoria-api/tree/feature/pdf-reader) aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nas seguintes funções do PDF-Reader:
+No repositório da [Monitoria API](https://github.com/2019-2-arquitetura-desenho/monitoria-api/) aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nas seguintes funções do PDF-Reader:
 
 *   **ExtractIra**: função que extrai o Índice de Rendimento Acadêmico do PDF.
 
@@ -61,6 +62,10 @@ class Extractor(ABC):
         pass
 
 ```
+#### Rastreabilidade
+
+*   [Código do Padrão Templathe Implementado](https://github.com/2019-2-arquitetura-desenho/monitoria-api/blob/devel/pdf_reader/LeitorPDF.py)
+
 
 ## Padrões usados por padrão no Django
 
@@ -81,9 +86,19 @@ Esse é o porque de ambos os dados representandos por um modelo e a informação
 | Observer | Signals | Quando um objeto muda de estado, todos os demais são associados a ele são notificados e atualizados automaticamente |
 | Template Method | Visualizacao baseada em classes | Etapas de um algoritmo podem ser redefinidas por subclasses sem alterar a estrutura do algoritmo |
 
+
+#### Rastreabilidade
+
+*   [Código do Padrão Command Implementado](https://github.com/2019-2-arquitetura-desenho/monitoria-api/blob/devel/profiles/views.py)
+
 ### Padrão estrutural
 
 O serializer é uma importante estrutura do Django, que permite a  conversão de dados complexos como querysets e instâncias de modelo, em objetos python nativos, que podem ser facilmente transformados em outros tipos como JSON.
+
+
+#### Rastreabilidade
+
+*   [Código do Padrão Implementado](https://github.com/2019-2-arquitetura-desenho/monitoria-api/blob/devel/profiles/serializers.py)
 
 ## Referências
 
