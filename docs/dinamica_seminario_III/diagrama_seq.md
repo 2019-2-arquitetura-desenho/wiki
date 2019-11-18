@@ -8,7 +8,7 @@
 | 19/08/19 |   0.2  | Adição da segunda versão do diagrama de sequẽncia - login | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rodrigues](https://github.com/rjoao) |
 | 19/08/19 |   0.3  | Adição do diagrama de sequência - cadastro de usuário aluno | [João Rodrigues](https://github.com/rjoao) |
 | 17/11/19 | 0.4 | Adição da segunda versão do diagrama de sequência - cadastro de usuário aluno | [João Rodrigues](https://github.com/rjoao) |
-| 17/11/19 | 1.0 | Adição da terceira versão do diagrama de sequência - login de usuário | [Paulo Vitor](https://github.com/PauloVitorRocha) |
+| 17/11/19 | 1.0 | Adição da terceira versão do diagrama de sequência - login de usuário | [Paulo Vitor](https://github.com/PauloVitorRocha), [João Rodrigues](https://github.com/rjoao) |
 
 
 ## Introdução

@@ -9,8 +9,8 @@
 |25/10/2019|0.3|Adiciona Flyweight|[Ivan Dobbin](https://github.com/darmsDD)|
 |25/10/2019|0.3|Adiciona introdução|[Ivan Dobbin](https://github.com/darmsDD)|
 |25/10/2019|0.3|Adiciona divisão entre padrões utilizados e não utilizados|[Ivan Dobbin](https://github.com/darmsDD)|
-|18/11/2019|0.4|Adicionando linkagem com o código|[Ivan Dobbin](https://github.com/darmsDD), [João Rossi](https://github.com/bielrossi15)|
-
+|17/11/2019|0.4|Adicionando linkagem com o código|[Ivan Dobbin](https://github.com/darmsDD), [João Rossi](https://github.com/bielrossi15)|
+|17/11/2019|0.5|Adiciona tópico Prop drilling com redux persist | [João Rodrigues](https://github.com/rjoao) |
 
 ## Introdução
 Este documento apresenta os padrões de design que serão utilizados no front-end
@@ -154,6 +154,59 @@ https://github.com/2019-2-arquitetura-desenho/monitoria-app/tree/devel/src/conta
 A aplicação desse padrão proporciona a alteração de comportamento de acordo com o(s) estados. Essa característica o assemelha com os GOFs compornamentais, principalmente o State.
 
 Seu ponto forte são as responsabilidades bem definidas e seu ponto fraco os problemas de gerência que podem surgir no transporte dos tipos de estados relativos pelos descendentes em projetos com muitos descendentes consecutivos.
+
+### Padrão Prop Drilling com Persistência do Redux
+
+A persistência do redux significa que os dados salvos no estado global também são salvos em um armazenamento persistente.
+
+Para implementar a persistência do redux nesse projeto, foi utilizada a biblioteca [redux persist](https://github.com/rt2zz/redux-persist) na versão 6.0.0.
+
+O Redux Persist salva os objetos de estado Redux no armazenamento persistente para que caso o aplicativo seja interrompido ou recarregado, no seu relançamento, ele recupere os dados e o salve novamente no estado global.
+
+#### Diagrama de Sequência - Padrão Prop Drilling com Persistência do Redux
+
+![Diagrama Prop Drilling com Persistência Redux](./assets/img/front-end_patterns/diagrama_sequencia_propdrilling_redux.png)
+
+#### Códigos
+
+```
+/* store/index.js */
+...
+const { store, persistor } = configureStore();
+
+ReactDOM.render(
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <App />
+    </PersistGate>
+  </Provider>,
+  document.getElementById('root')
+);
+...
+```
+
+```
+/* store/index.js */
+...
+const persistConfig = {
+    key: 'root',
+    storage
+};
+
+const persistedReducer = persistReducer(persistConfig, reducers);
+
+export default function configureStore() {
+    const store = createStore(
+        persistedReducer,
+        composeEnhancer(applyMiddleware(thunk))
+    );
+
+    const persistor = persistStore(store);
+
+    return { store, persistor };
+}
+...
+```
 
 ## 2. High Order Components
 
@@ -366,6 +419,8 @@ porém terá no máximo 10^2 repetições(aluno de 10º semestre de engenharia d
 ## Referências
 
 POWELL, Micah. **React State Management Patterns**. Disponível em: <https://itnext.io/react-state-management-patterns-908325dbb8f3> Acesso em: 24 de Outubro de 2019.
+
+NEWTON, Mark. **The Definitive Guide to Redux Persist**. Disponível em: <https://blog.reactnativecoach.com/the-definitive-guide-to-redux-persist-84738167975> Acesso em: 17 de Novembro de 2019
 
 Maruta, Rafael. **10 obstáculos frequentes encontrados pelos novos tripulantes do React**. Disponível em: <https://medium.com/reactbrasil/10-obst%C3%A1culos-frequentes-encontrados-pelos-novos-tripulantes-do-react-7672c4facf58>
 
