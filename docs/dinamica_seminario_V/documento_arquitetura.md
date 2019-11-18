@@ -65,16 +65,16 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 ![arquitetura_front](assets/representacao_arquitetural_front.png)
 
-#### Components: 
+* **Components:** 
 
 Componentes são os componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
 
-#### Actions: 
+* **Actions:** 
 
 É uma coleção de funções que realização alguma requisição no servidor
 
 
-#### Reducer:
+* **Reducer:**
 
 É ele que diz como os estados da aplicação mudam de acordo com as respostas da actions.
 
