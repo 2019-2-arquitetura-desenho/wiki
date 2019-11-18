@@ -9,6 +9,8 @@
 |25/10/2019|0.3|Adiciona Flyweight|[Ivan Dobbin](https://github.com/darmsDD)|
 |25/10/2019|0.3|Adiciona introdução|[Ivan Dobbin](https://github.com/darmsDD)|
 |25/10/2019|0.3|Adiciona divisão entre padrões utilizados e não utilizados|[Ivan Dobbin](https://github.com/darmsDD)|
+|18/11/2019|0.4|Adicionando linkagem com o código|[Ivan Dobbin](https://github.com/darmsDD), [João Rossi](https://github.com/bielrossi15)|
+
 
 ## Introdução
 Este documento apresenta os padrões de design que serão utilizados no front-end
@@ -139,6 +141,14 @@ Stateless Components é uma forma de implementar os "componentes burros". Normal
 
 [Código Completo](https://github.com/rjoao/example_propdrilling_pattern)
 
+https://github.com/2019-2-arquitetura-desenho/monitoria-app/tree/devel/src/containers
+
+#### Rastreabilidade
+
+*   [Pasta do Padrão Prop Drilling Implementado - Containers](https://github.com/2019-2-arquitetura-desenho/monitoria-app/tree/devel/src/containers)
+*   [Pasta do Padrão Prop Drilling Implementado - Store](https://github.com/2019-2-arquitetura-desenho/monitoria-app/tree/devel/src/store)
+
+
 ### Conclusões
 
 A aplicação desse padrão proporciona a alteração de comportamento de acordo com o(s) estados. Essa característica o assemelha com os GOFs compornamentais, principalmente o State.
@@ -259,6 +269,11 @@ export const MyComponentContainer = connect(
 
 export default MyComponentContainer
 ```
+
+#### Rastreabilidade
+
+*   [Pasta do Padrão High Order Implementado](https://github.com/2019-2-arquitetura-desenho/monitoria-app/tree/devel/src/routes)
+
 
 ## Padrões não utilizados
 
