@@ -15,6 +15,7 @@
 |17/11/19 | 0.9 | Adicionando Arquitetura Django | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
 | 17/11/19 | 0.10 | Adiciona diagrama arquitetural crawler api | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 |17/11/19 | 0.11 | Arrumando título do tópico 2.1 | [Ivan Dobbin](https://github.com/darmsDD) 
+|17/11/19 | 0.12| Adição do diagrama de classes do Back-end API| [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1)|
 
 ## 1. Introdução
 
@@ -104,11 +105,13 @@ Local da onde vem os dados.
 
 ### 4.1 Diagrama de Pacotes Geral
 
-[link da criação original](../dinamica_seminario_III/diagrama_pacotes.md)
 
 ![Diagrama de Geral - v3.0](assets/diagrama_pacotes_geral_v3.png)
 
 ### 4.2 Back-end API
+
+#### 4.2.1 Diagrama de Classes do Back-end API
+![Diagrama de classes](../dinamica_seminario_III/assets/img/diagrama_classes/diagrama_classe_geral_v3.png)
 
 ### 4.3 Webcrawler API
 
