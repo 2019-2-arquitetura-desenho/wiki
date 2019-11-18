@@ -18,7 +18,8 @@
 | 17/11/19 | 0.12 | Adição do diagrama de classes do Back-end API| [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1)|
 | 17/11/19 | 0.13 | Adição de tópico de qualidade | [Welison Regis](https://github.com/WelisonR) |
 | 17/11/19 | 0.14 | Inclui tópicos faltantes em implementação |  [Welison Regis](https://github.com/WelisonR) |
-| 17/11/19 | 1.0  | Documento de arquitetura v1.0 | [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 0.15  | Documento de arquitetura v1.0 | [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 1.0 | Adiciona representação redux persist e finaliza versão 1.0 do Documento de Arquitetura | [João Rodrigues](https://github.com/rjoao) |
 
 ## 1. Introdução
 
@@ -48,7 +49,7 @@ As referências aplicáveis são:
 * [Wiki - A Monitoria](https://github.com/2019-2-arquitetura-desenho/wiki)
 * [Reducers](https://redux.js.org/basics/reducers)
 * [React Native Redux Architecture Part-1](https://android.jlelse.eu/react-native-redux-architecture-part-1-8178fc9065c2)
-
+* [Redux-Persist](https://github.com/rt2zz/redux-persist)
 
 ## 2. Representação Arquitetural
 
@@ -65,15 +66,17 @@ A solução arquitetural implementada para aplicação "A Monitoria" pode ser vi
 ### 2.2 Front-end
 
 ![arquitetura_front](assets/representacao_arquitetural_front.png)
+![arquitetura_front_complementar](assets/redux_persist.png)
 
 **Front-end Web**: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o [Upload Care](https://uploadcare.com/business/) e possui o deploy no serviço [Heroku](https://monitoria-app.herokuapp.com/).
 
 Possui como principais componentes:
 
-* **Components:** componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
+* **Components:** funções JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
 * **Actions:** coleção de funções que realização alguma requisição no servidor
 * **Reducer:** diz como os estados da aplicação mudam de acordo com as respostas da actions.
 *  **Server:** Local da onde vem os dados.
+*  **Redux-Persist:** Realiza a persistência dos dados de estado global.
 
 ### 2.3 Crawler API
 
@@ -140,7 +143,7 @@ O serviço de front-end está sendo disponibilizado em interface web por meio de
 
 O front-end fragmenta-se em subsistemas de suma importância para o seu funcionamento, como:
 
-* **Components:** componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
+* **Components:** funções JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
 * **Actions:** coleção de funções que realização alguma requisição no servidor
 * **Reducer:** diz como os estados da aplicação mudam de acordo com as respostas da actions.
 
