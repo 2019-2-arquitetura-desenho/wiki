@@ -27,10 +27,10 @@ Foram utilizados os documentos acima para levantar necessidades, fluxos de traba
 
 Após decidido pelo tema "A Monitoria", foi criado também um [Documento de Visão](../extras/documento_visao.md) para ajudar o processo de entendimento do escopo do projeto, além de alguns artefatos para elicitação, como [Protótipo](../../dinamica_seminario_I/Elicitacao/prototipo/) e [Questionário](../../dinamica_seminario_I/Elicitacao/questionario/) para ajudar a visualização do levantamento do escopo assim como a opinião de futuros usuários sobre o escopo e algumas funcionalidades do projeto.
 
-Para ajudar a equipe a entender como o produto funcionaria a um nível de mercado, a priori, foi criado um documento de [Benchmarking](../dinamica_seminario_I/benchmarking/) para a equipe definir os diferenciais do produto em relação aos concorrentes no mercado.  
-Além da posição no mercado em que o produto se encontraria, foi escolhido levantar os possíveis custos e lucros do produto com um documento de [Estimativas de Custo](../dinamica_seminario_I/estimativas_de_custo/).
+Para ajudar a equipe a entender como o produto funcionaria a um nível de mercado, a priori, foi criado um documento de [Benchmarking](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/benchmarking/) para a equipe definir os diferenciais do produto em relação aos concorrentes no mercado.  
+Além da posição no mercado em que o produto se encontraria, foi escolhido levantar os possíveis custos e lucros do produto com um documento de [Estimativas de Custo](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/estimativas_de_custo/).
 
-Por final, a equipe montou um documento de [Identidade Visual](../dinamica_seminario_II/identidade_visual/) para manter um padrão bem definido sobre o design do produto.
+Por final, a equipe montou um documento de [Identidade Visual](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_II/identidade_visual/) para manter um padrão bem definido sobre o design do produto.
 
 ## 3. Trabalho em Equipe
 Com o escopo começando a melhor se definir, a equipe começou a desenhar de maneira adequada as [Metodologias](../../dinamica_seminario_II/metodologias/) que serão aplicadas no desenvolvimento durante a disciplina.  A equipe utilizou três diferentes metodologias, o Scrum, o Extreme Programming e o Kanban, além de outros artefatos de suporte, todos aliados a tecnologias voltadas para a integração da equipe, conforme pode-se notar no diagrama abaixo:
@@ -60,25 +60,25 @@ Entrando na competência do desenvolvimento, a equipe se ateve primeiro ao geren
 Foram feitos diagramas UML estáticos e dinâmicos, para ter a representação do produto em diferentes níveis de detalhes. 
 
 #### 6.1.1 Diagramas Estáticos
-- [Diagrama de Classes](../dinamica_seminario_III/diagrama_classes/);
-- [Diagrama de Pacotes](../dinamica_seminario_III/diagrama_pacotes/).
+- [Diagrama de Classes](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_III/diagrama_classes/);
+- [Diagrama de Pacotes](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_III/diagrama_pacotes/).
 
 #### 6.1.2 Diagramas Dinâmicos
-- [Diagrama de Sequência](../dinamica_seminario_III/diagrama_seq/);  
-- [Diagrama de Estado](../../dinamica_seminario_III/diagrama_de_estados/);
-- [Diagrama de Atividades](../dinamica_seminario_III/diagrama_de_atividades/).
+- [Diagrama de Sequência](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_III/diagrama_seq/);  
+- [Diagrama de Estado](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_III/diagrama_de_estados/);
+- [Diagrama de Atividades](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_III/diagrama_de_atividades/).
 
 ### 6.2 Patterns
 
 No que compete a padrões de projeto, a equipe selecionou alguns específicos para resolver os problemas do nosso produto. Foram utilizados diferentes padrões em nossos 3 repositórios e aqui tem-se o detalhamento de cada um:  
 
-- [Patterns Web Crawler](../dinamica_seminario_IV/webcrawler_patterns/);  
-- [Patterns Front-end](../dinamica_seminario_IV/front-end_patterns/);  
-- [Patterns Back-end](../dinamica_seminario_IV/back-end_patterns/).
+- [Patterns Web Crawler](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_IV/webcrawler_patterns/);  
+- [Patterns Front-end](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_IV/front-end_patterns/);  
+- [Patterns Back-end](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_IV/back-end_patterns/).
 
 ### 6.3 Documento de Arquitetura de Software
 
-Após um escopo bem definido e com diversos artefatos que subsidiam escolhas arquiteturais ao projeto, começou-se a elaborar o [Documento de Arquitetura](../../dinamica_seminario_V/documento_arquitetura/) para ajudar no entendimento do funcionamento do frontend, backend e do crawler e como ocorreria essa integração entre elas e o funcionamento de cada uma.
+Após um escopo bem definido e com diversos artefatos que subsidiam escolhas arquiteturais ao projeto, começou-se a elaborar o [Documento de Arquitetura](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_V/documento_arquitetura/) para ajudar no entendimento do funcionamento do frontend, backend e do crawler e como ocorreria essa integração entre elas e o funcionamento de cada uma.
 
 ## 7. O produto
 
