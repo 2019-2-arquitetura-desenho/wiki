@@ -78,7 +78,7 @@ Componentes são os componentes JavaScript ou classes JavaScript que são respon
 
 É ele que diz como os estados da aplicação mudam de acordo com as respostas da actions.
 
-#### Server:
+*  **Server:**
 
 Local da onde vem os dados.
 
