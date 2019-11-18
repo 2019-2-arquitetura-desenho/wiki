@@ -108,7 +108,7 @@ Além disso, procurou-se **opiniões e sugestões do público-alvo** (estudantes
 Para alinhar o time que participa no atual projeto, desenvolveu-se um documento de visão com o objetivo de melhor definir uma **visão geral dos fatores que circundam a aplicação**. Documento de visão:
 
 !!! info "Clique sobre o nome para acessar o(s) artefato(s)"
-    #### [Documento de visão](../documento_visao.md)
+    #### [Documento de visão](../extras/documento_visao.md)
 
 Por fim, realizou-se uma última reunião para definir constantes de custo e demais questões relacionadas a **estimativa de custo através método COCOMO**. Estimativas de custo:
 

@@ -1,10 +1,5 @@
 # Notas de Decisões do Grupo
 
-## Histórico de Revisão
-| Data | Versão | Descrição | Autor(es)|
-|:----:|:------:|:---------:|:--------:|
-| 17/11/19 | 1.0 | Adiciona notas de decisões de escopo | [Welison Regis](https://github.com/WelisonR) |
-
 ## Notas de Reuniões
 
 ## Pautas
