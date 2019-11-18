@@ -10,8 +10,10 @@
 | 17/11/19 | 0.4 | Adiciona restrições e metas arquiteturais | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 17/11/19 | 0.5 | Adiciona diagrama de componente | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 | 17/11/19 | 0.6 | Adiciona descrições de implementação e implantação do crawler | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
-|17/11/19 | 0.7 | Adicionando Representação arquitetural do Front | [Ivan Dobbin](https://github.com/darmsDD) |
-|17/11/19 | 0.8 | Adicionando Diagrama de Pacotes | [Ivan Dobbin](https://github.com/darmsDD) |
+|17/11/19 | 0.7 | Adicionando Representação arquitetural do Front | [Ivan Dobbin](https://github.com/darmsDD)
+e [Andre Pinto](https://github.com/andrelucax)
+ |
+|17/11/19 | 0.8 | Adicionando Diagrama de Pacotes | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
 
 ## 1. Introdução
 
@@ -92,8 +94,8 @@ Local da onde vem os dados.
 
 ## 4. Visão Lógica
 
-### 4.1 Front-end
-#### Diagrama de Pacotes
+
+### 4.1 Diagrama de Pacotes Geral
 [link da criação original](../dinamica_seminario_III/diagrama_pacotes.md)
 ![Diagrama de Geral - v3.0](assets/diagrama_pacotes_geral_v3.png)
 
