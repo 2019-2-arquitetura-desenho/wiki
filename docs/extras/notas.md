@@ -1,17 +1,13 @@
-# SPRINT 1
+# Notas de Decisões do Grupo
 
 ## Histórico de Revisão
 | Data | Versão | Descrição | Autor(es)|
 |:----:|:------:|:---------:|:--------:|
-| 23/09/19 | 0.1 | Adiciona primeira reunião da sprint 1 | [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 1.0 | Adiciona notas de decisões de escopo | [Welison Regis](https://github.com/WelisonR) |
 
-## Reuniões
+## Notas de Reuniões
 
-| Reunião | Data | Hora | Local | Presentes |
-|:-------:|:----:|:----:|:-----:|:---------:|
-| 1 | 15/09/19 | 21h35 | Discord | Todos |
-
-## Pautas da sprint
+## Pautas
 
 *   Divisão da organização do GitHub;
 *   Decisão dos diagramas estáticos e dinâmicos a ser utilizados no projeto;
@@ -21,7 +17,7 @@
 
 ## Decisões do Grupo
 
-### Decisões da Primeira reunião
+### Decisões
 
 Por meio de reunião, realizada por voz via discord no dia 15/09, firmou-se os seguintes pontos:
 
@@ -50,7 +46,7 @@ Baseado nas necessidades do grupo e do projeto, decidiu-se fazer os seguintes di
 |:---------:|:-----------:|
 | Protótipo | Gustavo, Rafael |
 
-### Decisões da Segunda Reunião
+### Decisões
 
 ## Pontos principais para o começo do desenvolvimento
 *   Definir: repositório, ambiente, CI/CD.
