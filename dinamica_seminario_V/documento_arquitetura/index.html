@@ -1480,9 +1480,15 @@
 </tr>
 <tr>
 <td align="center">17/11/19</td>
-<td align="center">1.0</td>
+<td align="center">0.15</td>
 <td align="center">Documento de arquitetura v1.0</td>
 <td align="center"><a href="https://github.com/WelisonR">Welison Regis</a></td>
+</tr>
+<tr>
+<td align="center">17/11/19</td>
+<td align="center">1.0</td>
+<td align="center">Adiciona representação redux persist e finaliza versão 1.0 do Documento de Arquitetura</td>
+<td align="center"><a href="https://github.com/rjoao">João Rodrigues</a></td>
 </tr>
 </tbody>
 </table>
@@ -1508,6 +1514,7 @@
 <li><a href="https://github.com/2019-2-arquitetura-desenho/wiki">Wiki - A Monitoria</a></li>
 <li><a href="https://redux.js.org/basics/reducers">Reducers</a></li>
 <li><a href="https://android.jlelse.eu/react-native-redux-architecture-part-1-8178fc9065c2">React Native Redux Architecture Part-1</a></li>
+<li><a href="https://github.com/rt2zz/redux-persist">Redux-Persist</a></li>
 </ul>
 <h2 id="2-representacao-arquitetural">2. Representação Arquitetural</h2>
 <p>A solução arquitetural implementada para aplicação "A Monitoria" pode ser visualizada de forma macro no diagrama abaixo, composto por três módulos internos à aplicação e dois módulos externos.</p>
@@ -1516,14 +1523,16 @@
 <p><img alt="arquitetura_django" src="../assets/representacao_arquitetural_django.png" /></p>
 <p><strong>Back-end API</strong>: módulo da aplicação responsável por prover em conjunto a API WebCrawler recursos necessários ao processo de matrícula em monitoria demandados pelas regras de negócio. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço <a href="http://fga-monitoria-api.herokuapp.com/">Heroku</a>. O modelo implementado pela API segue o padrão MVT, definido pelo Django.</p>
 <h3 id="22-front-end">2.2 Front-end</h3>
-<p><img alt="arquitetura_front" src="../assets/representacao_arquitetural_front.png" /></p>
+<p><img alt="arquitetura_front" src="../assets/representacao_arquitetural_front.png" />
+<img alt="arquitetura_front_complementar" src="../assets/redux_persist.png" /></p>
 <p><strong>Front-end Web</strong>: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o <a href="https://uploadcare.com/business/">Upload Care</a> e possui o deploy no serviço <a href="https://monitoria-app.herokuapp.com/">Heroku</a>.</p>
 <p>Possui como principais componentes:</p>
 <ul>
-<li><strong>Components:</strong> componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.</li>
+<li><strong>Components:</strong> funções JavaScript ou classes JavaScript que são responsáveis por renderizar a view.</li>
 <li><strong>Actions:</strong> coleção de funções que realização alguma requisição no servidor</li>
 <li><strong>Reducer:</strong> diz como os estados da aplicação mudam de acordo com as respostas da actions.</li>
 <li><strong>Server:</strong> Local da onde vem os dados.</li>
+<li><strong>Redux-Persist:</strong> Realiza a persistência dos dados de estado global.</li>
 </ul>
 <h3 id="23-crawler-api">2.3 Crawler API</h3>
 <p><img alt="Arquitetura Crawler" src="../assets/representacao_arquitetural_crawler.jpg" /></p>
@@ -1589,7 +1598,7 @@
 <h4 id="61-front-end">6.1 Front-end</h4>
 <p>O front-end fragmenta-se em subsistemas de suma importância para o seu funcionamento, como:</p>
 <ul>
-<li><strong>Components:</strong> componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.</li>
+<li><strong>Components:</strong> funções JavaScript ou classes JavaScript que são responsáveis por renderizar a view.</li>
 <li><strong>Actions:</strong> coleção de funções que realização alguma requisição no servidor</li>
 <li><strong>Reducer:</strong> diz como os estados da aplicação mudam de acordo com as respostas da actions.</li>
 </ul>
