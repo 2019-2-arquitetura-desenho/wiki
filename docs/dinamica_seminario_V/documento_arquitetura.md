@@ -18,6 +18,7 @@
 | 17/11/19 | 0.12 | Adição do diagrama de classes do Back-end API| [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) e  [Leonardo Medeiros](https://github.com/leomedeiros1)|
 | 17/11/19 | 0.13 | Adição de tópico de qualidade | [Welison Regis](https://github.com/WelisonR) |
 | 17/11/19 | 0.14 | Inclui tópicos faltantes em implementação |  [Welison Regis](https://github.com/WelisonR) |
+| 17/11/19 | 1.0  | Documento de arquitetura v1.0 | [Welison Regis](https://github.com/WelisonR) |
 
 ## 1. Introdução
 
@@ -51,13 +52,7 @@ As referências aplicáveis são:
 
 ## 2. Representação Arquitetural
 
-Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por três principais módulos:
-
-*   **API WebCrawler**: módulo da aplicação responsável por requisitar e disponibilizar as ofertas do campus da UnB-Gama disponíveis no site do Matrícula Web, UnB. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](http://amonitoria-offers.herokuapp.com/discipline/).
-
-*   **Front-end Web**: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o Upload Care e possui o deploy no serviço [Heroku](https://monitoria-app.herokuapp.com/).
-
-*   **API Back-end**: módulo da aplicação responsável por prover em conjunto a API WebCrawler recursos necessários ao processo de matrícula em monitoria demandados pelas regras de negócio. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](http://fga-monitoria-api.herokuapp.com/).
+A solução arquitetural implementada para aplicação "A Monitoria" pode ser visualizada de forma macro no diagrama abaixo, composto por três módulos internos à aplicação e dois módulos externos.
 
 ![Representação Arquitetural](assets/representacao_arquitetural.png)
 
@@ -65,9 +60,15 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 ![arquitetura_django](assets/representacao_arquitetural_django.png)
 
+**Back-end API**: módulo da aplicação responsável por prover em conjunto a API WebCrawler recursos necessários ao processo de matrícula em monitoria demandados pelas regras de negócio. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](http://fga-monitoria-api.herokuapp.com/). O modelo implementado pela API segue o padrão MVT, definido pelo Django.
+
 ### 2.2 Front-end
 
 ![arquitetura_front](assets/representacao_arquitetural_front.png)
+
+**Front-end Web**: módulo da aplicação responsável por apresentar ao usuário informações de monitoria requisitadas nas APIs. O serviço foi desenvolvido em React, utiliza como CDN de PDF's o [Upload Care](https://uploadcare.com/business/) e possui o deploy no serviço [Heroku](https://monitoria-app.herokuapp.com/).
+
+Possui como principais componentes:
 
 * **Components:** componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
 * **Actions:** coleção de funções que realização alguma requisição no servidor
@@ -76,7 +77,11 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 ### 2.3 Crawler API
 
-![aquitetura_Crawler](assets/representacao_arquitetural_crawler.jpg)
+![Arquitetura Crawler](assets/representacao_arquitetural_crawler.jpg)
+
+**API WebCrawler**: módulo da aplicação responsável por requisitar e disponibilizar as ofertas do campus da UnB-Gama disponíveis no site do Matrícula Web, UnB. As informações são disponibilizadas através de uma API elaborada em Django com banco de dados PostgreSQL e hospedada no serviço [Heroku](http://amonitoria-offers.herokuapp.com/discipline/).
+
+Esse módulo trata os dados capturados do matrícula web em diferentes níveis, sendo: builder (constrói o html puro em dados úteis), transformer (transforma em formato de dado útil, json), saver (salva os dados no banco, PostgreSQL) e disponibiliza em forma de API.
 
 ## 3. Restrições e Metas Arquiteturais
 
@@ -131,18 +136,19 @@ O serviço de front-end está sendo disponibilizado em interface web por meio de
 
 ### 6. Visão de Implementação
 
-#### 6.2 Front-end
+#### 6.1 Front-end
 
 O front-end fragmenta-se em subsistemas de suma importância para o seu funcionamento, como:
+
 * **Components:** componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
 * **Actions:** coleção de funções que realização alguma requisição no servidor
 * **Reducer:** diz como os estados da aplicação mudam de acordo com as respostas da actions.
 
-#### 6.3 Back-end
+#### 6.2 Back-end
 
 O framework Django, utilizado no backend e no WebCrawler do projeto, baseia-se em um modelo MVT (Model-View-Template), que é similar ao MVC, modificando a nomenclatura da camada de exibição de View para Template e a camada de controller para View. Nesse sentido, é provido um ORM (Object-relational mapping), que permite utilizar código de sistemas de tipos diferentes, nesse caso SQL e Python, como model, uma view (controller), que tem o papel de decidir como e qual dado será exibido, e os templates, que no caso do translate-me foi substituído pelo React.
 
-#### 6.1 API WebCrawler
+#### 6.3 API WebCrawler
 
 No repositório do Crawler de Ofertas aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nos seguintes submódulos do Crawler:
 
