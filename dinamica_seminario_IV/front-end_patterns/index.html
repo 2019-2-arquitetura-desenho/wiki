@@ -850,6 +850,33 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#padrao-prop-drilling-com-persistencia-do-redux" class="md-nav__link">
+    Padrão Prop Drilling com Persistência do Redux
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-de-sequencia-padrao-prop-drilling-com-persistencia-do-redux" class="md-nav__link">
+    Diagrama de Sequência - Padrão Prop Drilling com Persistência do Redux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigos" class="md-nav__link">
+    Códigos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1237,6 +1264,33 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#padrao-prop-drilling-com-persistencia-do-redux" class="md-nav__link">
+    Padrão Prop Drilling com Persistência do Redux
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-de-sequencia-padrao-prop-drilling-com-persistencia-do-redux" class="md-nav__link">
+    Diagrama de Sequência - Padrão Prop Drilling com Persistência do Redux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigos" class="md-nav__link">
+    Códigos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1413,10 +1467,16 @@
 <td align="center"><a href="https://github.com/darmsDD">Ivan Dobbin</a></td>
 </tr>
 <tr>
-<td align="center">18/11/2019</td>
+<td align="center">17/11/2019</td>
 <td align="center">0.4</td>
 <td align="center">Adicionando linkagem com o código</td>
 <td align="center"><a href="https://github.com/darmsDD">Ivan Dobbin</a>, <a href="https://github.com/bielrossi15">João Rossi</a></td>
+</tr>
+<tr>
+<td align="center">17/11/2019</td>
+<td align="center">0.5</td>
+<td align="center">Adiciona tópico Prop drilling com redux persist</td>
+<td align="center"><a href="https://github.com/rjoao">João Rodrigues</a></td>
 </tr>
 </tbody>
 </table>
@@ -1596,6 +1656,83 @@ e alguns que não foram utilizados e o porque.  </p>
 <h3 id="conclusoes">Conclusões</h3>
 <p>A aplicação desse padrão proporciona a alteração de comportamento de acordo com o(s) estados. Essa característica o assemelha com os GOFs compornamentais, principalmente o State.</p>
 <p>Seu ponto forte são as responsabilidades bem definidas e seu ponto fraco os problemas de gerência que podem surgir no transporte dos tipos de estados relativos pelos descendentes em projetos com muitos descendentes consecutivos.</p>
+<h3 id="padrao-prop-drilling-com-persistencia-do-redux">Padrão Prop Drilling com Persistência do Redux</h3>
+<p>A persistência do redux significa que os dados salvos no estado global também são salvos em um armazenamento persistente.</p>
+<p>Para implementar a persistência do redux nesse projeto, foi utilizada a biblioteca <a href="https://github.com/rt2zz/redux-persist">redux persist</a> na versão 6.0.0.</p>
+<p>O Redux Persist salva os objetos de estado Redux no armazenamento persistente para que caso o aplicativo seja interrompido ou recarregado, no seu relançamento, ele recupere os dados e o salve novamente no estado global.</p>
+<h4 id="diagrama-de-sequencia-padrao-prop-drilling-com-persistencia-do-redux">Diagrama de Sequência - Padrão Prop Drilling com Persistência do Redux</h4>
+<p><img alt="Diagrama Prop Drilling com Persistência Redux" src="../assets/img/front-end_patterns/diagrama_sequencia_propdrilling_redux.png" /></p>
+<h4 id="codigos">Códigos</h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/* store/index.js */
+...
+const { store, persistor } = configureStore();
+
+ReactDOM.render(
+  <span class="nt">&lt;Provider</span> <span class="na">store=</span><span class="s">{store}</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;PersistGate</span> <span class="na">loading=</span><span class="s">{null}</span> <span class="na">persistor=</span><span class="s">{persistor}</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;App</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/PersistGate&gt;</span>
+  <span class="nt">&lt;/Provider&gt;</span>,
+  document.getElementById(&#39;root&#39;)
+);
+...
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/* store/index.js */</span>
+...
+<span class="nv">const</span> <span class="nv">persistConfig</span> <span class="o">=</span> {
+    <span class="nv">key</span>: <span class="s1">&#39;</span><span class="s">root</span><span class="s1">&#39;</span>,
+    <span class="nv">storage</span>
+}<span class="c1">;</span>
+
+<span class="nv">const</span> <span class="nv">persistedReducer</span> <span class="o">=</span> <span class="nv">persistReducer</span><span class="ss">(</span><span class="nv">persistConfig</span>, <span class="nv">reducers</span><span class="ss">)</span><span class="c1">;</span>
+
+<span class="nv">export</span> <span class="nv">default</span> <span class="nv">function</span> <span class="nv">configureStore</span><span class="ss">()</span> {
+    <span class="nv">const</span> <span class="nv">store</span> <span class="o">=</span> <span class="nv">createStore</span><span class="ss">(</span>
+        <span class="nv">persistedReducer</span>,
+        <span class="nv">composeEnhancer</span><span class="ss">(</span><span class="nv">applyMiddleware</span><span class="ss">(</span><span class="nv">thunk</span><span class="ss">))</span>
+    <span class="ss">)</span><span class="c1">;</span>
+
+    <span class="nv">const</span> <span class="nv">persistor</span> <span class="o">=</span> <span class="nv">persistStore</span><span class="ss">(</span><span class="nv">store</span><span class="ss">)</span><span class="c1">;</span>
+
+    <span class="k">return</span> { <span class="nv">store</span>, <span class="nv">persistor</span> }<span class="c1">;</span>
+}
+...
+</pre></div>
+</td></tr></table>
+
 <h2 id="2-high-order-components">2. High Order Components</h2>
 <p>High Order Component é uma função que pega um componente existente e retorna um outro componente, envolvendo-o (wrapper) atribuindo-lhe novas funcionalidades. Ele se originou das Higher-Order Functions. Um HOC é uma técnica avançada no React para reutilizar a lógica do componente, seguindo o mesmo principio do padrão Decorator. Os HOCs não fazem parte da API do React, por si só. Eles são um padrão que emerge da natureza composicional de React.</p>
 <p>Um HOC não modifica o componente de entrada, nem usa herança para copiar seu comportamento. Em vez disso, um HOC compõe o componente original envolvendo-o em um componente de contêiner. Um HOC é uma função pura com zero efeitos colaterais.</p>
@@ -1910,6 +2047,7 @@ como por exemplo o container para cada matéria na hora de escolher a monitoria,
 porém terá no máximo 10^2 repetições(aluno de 10º semestre de engenharia de software terá cursado aproximadamente 52 matérias), isto no pior dos casos. Assim como não há uma quantidade grande de repetições, não há necessidade de economizar memória que é a principal função desse padrão. Desta maneira utiliza-lo no front-end desta aplicação seria um overkill, e uma extensão desnescessário do padrão para o nosso caso específico.</p>
 <h2 id="referencias">Referências</h2>
 <p>POWELL, Micah. <strong>React State Management Patterns</strong>. Disponível em: <a href="https://itnext.io/react-state-management-patterns-908325dbb8f3">https://itnext.io/react-state-management-patterns-908325dbb8f3</a> Acesso em: 24 de Outubro de 2019.</p>
+<p>NEWTON, Mark. <strong>The Definitive Guide to Redux Persist</strong>. Disponível em: <a href="https://blog.reactnativecoach.com/the-definitive-guide-to-redux-persist-84738167975">https://blog.reactnativecoach.com/the-definitive-guide-to-redux-persist-84738167975</a> Acesso em: 17 de Novembro de 2019</p>
 <p>Maruta, Rafael. <strong>10 obstáculos frequentes encontrados pelos novos tripulantes do React</strong>. Disponível em: <a href="https://medium.com/reactbrasil/10-obst%C3%A1culos-frequentes-encontrados-pelos-novos-tripulantes-do-react-7672c4facf58">https://medium.com/reactbrasil/10-obst%C3%A1culos-frequentes-encontrados-pelos-novos-tripulantes-do-react-7672c4facf58</a></p>
 <p><strong>Higher-Order Components no React</strong>. Disponível em: <a href="https://mathmesquita.me/2017/03/01/higher-order-components-no-react.html">https://mathmesquita.me/2017/03/01/higher-order-components-no-react.html</a></p>
 <p><strong>Redux for React: A Simple Introduction</strong>. Disponível em: <a href="https://medium.com/@rossbulat/redux-for-react-a-simple-introduction-b1f9dcbda8f4">https://medium.com/@rossbulat/redux-for-react-a-simple-introduction-b1f9dcbda8f4</a></p>
