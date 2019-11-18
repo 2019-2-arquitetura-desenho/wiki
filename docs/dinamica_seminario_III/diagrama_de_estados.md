@@ -33,7 +33,7 @@ Esse diagrama tenta representar os vários estados por qual um objeto pode passa
 
 
 ### Diagrama de ranking
-
+### Versão 1.0
 ![Diagrama de ranking](assets/img/diagrama_estados/ranking_v1.jpg)
 
 ## Referências
