@@ -150,7 +150,7 @@ No repositório do Crawler de Ofertas aplicou-se alguns padrões de projeto pert
 
 ## 7. Tamanho e Desempenho
 
-A Monitoria é uma aplicação web, logo não há a necessidade de instalação da plataforma no host do usuário, cumprindo com os requiditos não funcionais, uma vez que a nececidade de instalação da aplicação, para uso em cuto período de tempo, causaria desconforto ao usuário. A aplicação não ocupa espaço físico para o usuário, o sistema é representado por três servidores rodando em nuvem, um reponsável pelo front-end, outro pelo back-end e, por fim, um terceiro que realiza comunicação com o matrícula web para extrair os dados sobre a oferta do semestre letivo. 
+A Monitoria é uma aplicação web, logo não há a necessidade de instalação da plataforma no host do usuário, cumprindo com os requisitos não funcionais, uma vez que a necessidade de instalação da aplicação, para uso em cuto período de tempo, causaria desconforto ao usuário. A aplicação não ocupa espaço físico para o usuário, o sistema é representado por três servidores rodando em nuvem, um reponsável pelo front-end, outro pelo back-end e, por fim, um terceiro que realiza comunicação com o matrícula web para extrair os dados sobre a oferta do semestre letivo. 
 
 ## 8. Qualidade
 
