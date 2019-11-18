@@ -70,7 +70,7 @@ To do
 Componentes são os componentes JavaScript ou classes JavaScript que são responsáveis por renderizar a view.
 #### Actions: 
 É uma coleção de funções que realização alguma requisição no servidor
-To do
+
 
 #### Reducer:
 É ele que diz como os estados da aplicação mudam de acordo com as respostas da actions.
