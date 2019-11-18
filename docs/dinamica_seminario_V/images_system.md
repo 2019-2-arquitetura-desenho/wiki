@@ -16,13 +16,16 @@ Este documento tem como objetivo mostrar a foto de todas as telas do sistema.
 ## Breve visão geral
 
 ### Visao do Aluno
-![](./gifs/geral.gif)
+![Visao do Aluno](./gifs/geral.gif)
 
 ### Visao do Professor
-![](./gifs/indicacao.gif)
+![Visao do Professor](./gifs/indicacao.gif)
 
 ### Tratamento em tempo real do pdf
-![](./gifs/pdf_things.gif)
+![PDF](./gifs/pdf_things.gif)
+
+### Após a divulgação do resultado
+![Resultado](./gifs/resultado.gif)
 
 ## Telas
 
