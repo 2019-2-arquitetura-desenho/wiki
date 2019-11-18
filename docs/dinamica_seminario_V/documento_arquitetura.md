@@ -14,6 +14,7 @@
 |17/11/19 | 0.8 | Adicionando Diagrama de Pacotes | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
 |17/11/19 | 0.9 | Adicionando Arquitetura Django | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
 | 17/11/19 | 0.10 | Adiciona diagrama arquitetural crawler api | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
+|17/11/19 | 0.11 | Arrumando título do tópico 2.1 | [Ivan Dobbin](https://github.com/darmsDD) 
 
 ## 1. Introdução
 
@@ -58,7 +59,7 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 
 ![Representação Arquitetural](assets/representacao_arquitetural.png)
 
-### 2.1 Crawler API e Back-end API (Django Rest)
+### 2.1 Back-end API
 
 ![arquitetura_django](assets/representacao_arquitetural_django.png)
 
