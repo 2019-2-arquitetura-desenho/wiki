@@ -13,6 +13,7 @@
 |17/11/19 | 0.7 | Adicionando Representação arquitetural do Front | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
 |17/11/19 | 0.8 | Adicionando Diagrama de Pacotes | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
 |17/11/19 | 0.9 | Adicionando Arquitetura Django | [Ivan Dobbin](https://github.com/darmsDD) e [Andre Pinto](https://github.com/andrelucax) |
+| 17/11/19 | 0.10 | Adiciona diagrama arquitetural crawler api | [Lieverton Silva](https://github.com/lievertom) e [Welison Regis](https://github.com/WelisonR) |
 
 ## 1. Introdução
 
@@ -64,6 +65,10 @@ Numa visão macro da arquitetura, a aplicação "A Monitoria" é subsidiada por 
 ### 2.2 Front-end
 
 ![arquitetura_front](assets/representacao_arquitetural_front.png)
+
+### 2.3 Crawler API
+
+![aquitetura_Crawler](assets/representacao_arquitetural_crawler.jpg)
 
 * **Components:** 
 
