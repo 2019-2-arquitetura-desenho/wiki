@@ -7,10 +7,24 @@
 | 18/11/19 | 0.1 | Adição das imagens do estudante| [Ivan Dobbin](https://github.com/darmsDD)
 |18/11/19 | 0.2 | Adição da introdução| [Ivan Dobbin](https://github.com/darmsDD)
 |18/11/19 | 0.3 | Adição das imagens do professor| [Ivan Dobbin](https://github.com/darmsDD) |
+|18/11/19 | 1.0 | Adição dos gifs da aplicação | [Leonardo Medeiros](https://github.com/leomedeiros1) |
 
-### Introdução
+## Introdução
 
 Este documento tem como objetivo mostrar a foto de todas as telas do sistema.
+
+## Breve visão geral
+
+### Visao do Aluno
+![](./gifs/geral.gif)
+
+### Visao do Professor
+![](./gifs/indicacao.gif)
+
+### Tratamento em tempo real do pdf
+![](./gifs/pdf_things.gif)
+
+## Telas
 
 ### Imagens aluno
 ![1](./imagens_sistema/1.png)
