@@ -772,6 +772,19 @@
     Solução Implementada
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rastreabilidade" class="md-nav__link">
+    Rastreabilidade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -799,12 +812,38 @@
     Padrões comportamentais
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rastreabilidade_1" class="md-nav__link">
+    Rastreabilidade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#padrao-estrutural" class="md-nav__link">
     Padrão estrutural
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rastreabilidade_2" class="md-nav__link">
+    Rastreabilidade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -979,6 +1018,19 @@
     Solução Implementada
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rastreabilidade" class="md-nav__link">
+    Rastreabilidade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1006,12 +1058,38 @@
     Padrões comportamentais
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rastreabilidade_1" class="md-nav__link">
+    Rastreabilidade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#padrao-estrutural" class="md-nav__link">
     Padrão estrutural
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rastreabilidade_2" class="md-nav__link">
+    Rastreabilidade
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1082,13 +1160,19 @@
 <td align="center">Adicionando referencias bibliograficas</td>
 <td align="center"><a href="https://github.com/andrelucax">Andre Pinto</a> e  <a href="https://github.com/leomedeiros1">Leonardo Medeiros</a></td>
 </tr>
+<tr>
+<td align="center">18/11/2019</td>
+<td align="center">0.5</td>
+<td align="center">Adicionando linkagem com o código</td>
+<td align="center"><a href="https://github.com/bielrossi15">João Rossi</a>, <a href="https://github.com/darmsDD">Ivan Dobbin</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="template-method">Template-method</h2>
 <p>O Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. O Template Method foi utilizado no projeto nas funções de extração de informação do PDF de forma a manter a estrutura definida na superclasse intacta.</p>
 <h3 id="pdf-reader">PDF-Reader</h3>
 <p>O <strong>PDF-Reader</strong> do projeto é uma feature do módulo da aplicação <a href="https://github.com/2019-2-arquitetura-desenho/wiki/">A Monitoria</a> responsável por extrair e salvar no banco de dados as informações referentes ao processo de monitoria como <strong>Índice de Rendimento Acadêmico</strong>, <strong>Matrícula</strong> e <strong>Matérias passíveis de monitoria</strong>, presentes no PDF do histórico escolar. Esse módulo é de suma importância para o projeto, pois, possibilitará apresentar as matérias que o aluno poderá realizar monitoria, assim como permitirá que seja disponibilizado um ranking em tempo real a partir da fórmula da monitoria.
-No repositório da <a href="https://github.com/2019-2-arquitetura-desenho/monitoria-api/tree/feature/pdf-reader">Monitoria API</a> aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nas seguintes funções do PDF-Reader:</p>
+No repositório da <a href="https://github.com/2019-2-arquitetura-desenho/monitoria-api/">Monitoria API</a> aplicou-se alguns padrões de projeto pertinentes ao contexto, sendo eles empregados nas seguintes funções do PDF-Reader:</p>
 <ul>
 <li>
 <p><strong>ExtractIra</strong>: função que extrai o Índice de Rendimento Acadêmico do PDF.</p>
@@ -1150,6 +1234,10 @@ No repositório da <a href="https://github.com/2019-2-arquitetura-desenho/monito
         <span class="k">pass</span>
 </pre></div>
 </td></tr></table></p>
+<h4 id="rastreabilidade">Rastreabilidade</h4>
+<ul>
+<li><a href="https://github.com/2019-2-arquitetura-desenho/monitoria-api/blob/devel/pdf_reader/LeitorPDF.py">Código do Padrão Templathe Implementado</a></li>
+</ul>
 <h2 id="padroes-usados-por-padrao-no-django">Padrões usados por padrão no Django</h2>
 <h3 id="active-record">Active Record</h3>
 <p>Modelos devem encapsular cada aspecto de um objeto, seguindo o padrão de projeto Active Record de Martin Fowler.</p>
@@ -1182,8 +1270,16 @@ No repositório da <a href="https://github.com/2019-2-arquitetura-desenho/monito
 </tr>
 </tbody>
 </table>
+<h4 id="rastreabilidade_1">Rastreabilidade</h4>
+<ul>
+<li><a href="https://github.com/2019-2-arquitetura-desenho/monitoria-api/blob/devel/profiles/views.py">Código do Padrão Command Implementado</a></li>
+</ul>
 <h3 id="padrao-estrutural">Padrão estrutural</h3>
 <p>O serializer é uma importante estrutura do Django, que permite a  conversão de dados complexos como querysets e instâncias de modelo, em objetos python nativos, que podem ser facilmente transformados em outros tipos como JSON.</p>
+<h4 id="rastreabilidade_2">Rastreabilidade</h4>
+<ul>
+<li><a href="https://github.com/2019-2-arquitetura-desenho/monitoria-api/blob/devel/profiles/serializers.py">Código do Padrão Implementado</a></li>
+</ul>
 <h2 id="referencias">Referências</h2>
 <p><strong>Django Design Patterns and Best Practices</strong>. Disponível em: <a href="https://subscription.packtpub.com/book/web_development/9781788831345/1/ch01lvl1sec13/what-is-a-pattern">https://subscription.packtpub.com/book/web_development/9781788831345/1/ch01lvl1sec13/what-is-a-pattern</a> Acesso em: 24 de Outubro de 2019.</p>
 <p><strong>Filosofias de Projeto</strong>. Disponível em: <a href="https://docs.djangoproject.com/pt-br/2.2/misc/design-philosophies/">https://docs.djangoproject.com/pt-br/2.2/misc/design-philosophies/</a> Acesso em: 24 de Outubro de 2019.</p>
